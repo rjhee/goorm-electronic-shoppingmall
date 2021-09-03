@@ -41,8 +41,6 @@ $(function () {
     if (e.currentTarget.innerWidth <= 992) {
       $('.nav_main').hide();
       $('.only_pc').hide();
-    } else {
-      $('.nav_main').show();
     }
   });
 
@@ -59,7 +57,8 @@ $(function () {
   // search button
   $('.search_btn').click(function () {
     if ($('.search_form_cover').css('display') === 'none') {
-      slide_Down('.search_form_cover');
+      $('.search_form_cover').show();
+      $('.search_input').focus();
     } else {
       $('.search_form_cover').hide();
     }

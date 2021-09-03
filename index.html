@@ -18,14 +18,15 @@
     />
 
     <link rel="stylesheet" href="./css/common.css" />
-    <script
-      src="https://kit.fontawesome.com/e4031df8e6.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./js/jquery-1.12.3.js"></script>
-    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Goorm</title>
-  </head>
+    <script defer src="./js/jquery-1.12.3.js"></script>
+    <script defer src="./js/main.js"></script>
+    <script
+    src="https://kit.fontawesome.com/e4031df8e6.js"
+    crossorigin="anonymous"
+    ></script>
+    </head>
   <body>
     <div class="nav_cover">
       <header>
@@ -119,7 +120,7 @@
             </button>
             <div class="search_form_cover">
               <form class="search_form hidden">
-                <input type="text" class="search_input" autofocus />
+                <input type="text" class="search_input"/>
                 <button type="submit" id="search_input_btn">
                   <img src="./images/icon/Search.png" alt="search" />
                 </button>
@@ -133,10 +134,192 @@
         </button>
       </header>
     </div>
-
     <div class="sub_cover"></div>
 
-    <div class="contents"></div>
+    <div class="contents">
+      <div class="main_cover tablet_main_cover">
+        <section class="tablet_container">
+          <img
+            src="./images/mainTablet.jpg"
+            class="main_img img_tablet"
+            alt="main tablet"
+          />
+          <div class="main_contents_cover tablet_contents_cover">
+            <h2 class="main_title title_tablet">GOORM PAD</h2>
+            <p class="main_sub_title sub_title_tablet">
+              심플하면서도
+              <br />
+              매력적인 디자인
+            </p>
+            <p class="main_desc desc_tablet">
+              구름 전자 단독 런칭 이벤터 컬러추가
+              <br />어디에도 없던 구름패드를먼저 시작해 보세요
+            </p>
+            <div class="btn_cover btn_tablet">
+              <a href="./tablet.html" class="main_more_btn">자세히 보기</a>
+              <a href="./store.html" class="main_store_btn">구매하기</a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="main_cover phone_main_cover">
+        <section class="phone_container">
+          <img
+            src="./images/mainSmartPhone.png"
+            alt="main smart phone"
+            class="main_img img_phone"
+          />
+          <div class="main_contents_cover phone_contents_cover">
+            <h2 class="main_title title_phone">GOORM PHONE</h2>
+            <p class="main_sub_title sub_title_phone">
+              구름 같은 가벼운 스마트폰
+            </p>
+            <p class="main_desc desc_phone">
+              강렬한 동시에 시대를 초월하는 컬러.
+              <br />
+              시선을 사로잡을 획기적인 네 가지 컬러를 만나보세요.
+            </p>
+            <div class="btn_cover">
+              <a href="./smartPhone.html" class="main_more_btn">자세히 보기</a>
+              <a href="./store.html" class="main_store_btn">구매하기</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main_cover home_main_cover">
+        <section class="home_container">
+          <img
+            src="./images/mainHomeApp.jpg"
+            alt="main home appliances"
+            class="main_img img_home"
+          />
+          <div class="main_contents_cover home_contents_cover">
+            <h2 class="main_title title_home">HOME SCREEN</h2>
+            <p class="main_sub_title sub_title_home">
+              나만의 프라이빗한 스크린
+            </p>
+            <p class="main_desc desc_home">
+              구름전자 최초 이동하는 홈 스크린
+              <br />터치로 실행하고 탭으로 연결하는 스마트 스크린부터 홈시네마,
+              <br />홈트레이닝 등의 홈 라이프 스크린까지
+            </p>
+            <div class="btn_cover">
+              <a href="./homeAppliances.html" class="main_more_btn"
+                >자세히 보기</a
+              >
+              <a href="./store.html" class="main_store_btn">구매하기</a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main_cover pc_main_cover">
+        <section class="pc_container">
+          <img
+            src="./images/mainPc.png"
+            alt="main pc"
+            class="main_img img_pc"
+          />
+          <div class="main_contents_cover pc_contents_cover">
+            <h2 class="main_title title_pc">GOORM BOOK</h2>
+            <p class="main_sub_title sub_title_pc">얇고 가볍다.</p>
+            <p class="main_desc desc_pc">막강한 성능의 데스크탑.</p>
+            <div class="btn_cover">
+              <a href="./pc.html" class="main_more_btn">자세히 보기</a>
+              <a href="./store.html" class="main_store_btn">구매하기</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <aside class="etc_contents">
+      <section class="etc_store">
+        <div class="etc_img"><a href="./store.html"></a></div>
+        <h3 class="etc_title"><a href="./store.html">Goorm의 모든제품</a></h3>
+        <p class="etc_desc">
+          스마트폰, 태블릿, 노트북, 구름의 모든제품을 스토어에서 만나보세요.
+        </p>
+      </section>
+      <section class="etc_service">
+        <div class="etc_img"><a href="./customerService.html"></a></div>
+        <h3 class="etc_title">
+          <a href="./customerService.html">도움이 필요하세요?</a>
+        </h3>
+        <p class="etc_desc">
+          구름은 고객님의 문제 해결을 위해 최선을 다합니다.
+        </p>
+      </section>
+    </aside>
+    <nav class="footer_menu">
+      <li class="footer_menu_title">
+        <a href="./store.html">스토어</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./store.html">스마트폰</a></li>
+          <li><a href="./store.html">태블릿</a></li>
+          <li><a href="./store.html">PC</a></li>
+          <li><a href="./store.html">가전</a></li>
+          <li><a href="./store.html">악세서리</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./smartPhone.html">스마트폰</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./smartPhone">GR폰22 PRO</a></li>
+          <li><a href="./smartPhone">GR폰22 AIR</a></li>
+          <li><a href="./smartPhone">GR폰 X</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./tablet.html">태블릿</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./tablet.html">GR패드22 PRO</a></li>
+          <li><a href="./tablet.html">GR패드22 AIR</a></li>
+          <li><a href="./tablet.html">GR패드11</a></li>
+          <li><a href="./tablet.html">GR패드 MINI</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./pc.html">데스크탑</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./pc.html">GR북PRO</a></li>
+          <li><a href="./pc.html">GR북AIR</a></li>
+          <li><a href="./pc.html">데스크탑</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./homeAppliances.html">가전</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./homeAppliances.html">홈스크린</a></li>
+          <li><a href="./homeAppliances.html">에어프라이어</a></li>
+          <li><a href="./homeAppliances.html">로봇청소기</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./customerService.html">고객서비스</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./customerService.html">FAQ</a></li>
+          <li><a href="./customerService.html">Q&A</a></li>
+          <li><a href="./customerService.html">상담하기</a></li>
+          <li><a href="./customerService.html">매장찾기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./company.html">회사소개</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./company.html">공지사항</a></li>
+          <li><a href="./company.html">기업정보</a></li>
+          <li><a href="./company.html">사업정보</a></li>
+          <li><a href="./company.html">경영원칙</a></li>
+          <li><a href="./company.html">채용</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
     <div class="footer_cover">
       <footer>
         <address class="footer_info">
