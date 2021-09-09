@@ -52,6 +52,10 @@ textarea {
   border: none;
 }
 
+.hidden {
+  display: none;
+}
+
 /* header */
 .nav_cover {
   width: 100%;
