@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "category": "스마트폰",
+      "image": "../images/storephone.jpg",
+      "title": "GR폰 22 PRO",
+      "productName": "GR-PHROHJAE2022HEEPRO",
+      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 730,000원~"
+    },
+    {
+      "category": "스마트폰",
+      "image": "../images/storephone2.jpg",
+      "title": "GR폰 22 AIR",
+      "productName": "GR-PHROHJAE2022HEEAIR",
+      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 610,000원~"
+    },
+    {
+      "category": "스마트폰",
+      "image": "../images/storephone3.jpg",
+      "title": "GR폰 X",
+      "productName": "GR-PHROHJAE2022HEEX",
+      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 610,000원~"
+    },
+    {
+      "category": "태블릿",
+      "image": "../images/storePad.jpg",
+      "title": "GR패드 22 PRO",
+      "productName": "GR-PDROHJAE2022HEEPRO",
+      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 920,000원~"
+    },
+    {
+      "category": "태블릿",
+      "image": "../images/storePad2.jpg",
+      "title": "GR패드 22 AIR",
+      "productName": "GR-PDROHJAE2022HEEAIR",
+      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 790,000원~"
+    },
+    {
+      "category": "PC",
+      "image": "../images/storepc.jpg",
+      "title": "GR 북 PRO 16인치",
+      "productName": "GR-BOOKPROJAEHEE202216",
+      "color": ["#000", "#555", "#c9332d"],
+      "price": " 1,450,000원~"
+    },
+    {
+      "category": "악세서리",
+      "image": "../images/storecase.jpg",
+      "title": "GR폰 케이스  adidas leather",
+      "productName": "adidas leather case GR",
+      "color": [
+        "#00c6ff",
+        "#ff9bcd",
+        "#c9332d",
+        "#fffb5c",
+        "#fff",
+        "#000",
+        "#555"
+      ],
+      "price": " 34,000원"
+    },
+    {
+      "category": "악세서리",
+      "image": "../images/storecase2.jpg",
+      "title": "GR폰 케이스 범퍼",
+      "productName": "GR case bumper",
+      "color": [
+        "#00c6ff",
+        "#ff9bcd",
+        "#c9332d",
+        "#fffb5c",
+        "#fff",
+        "#000",
+        "#555"
+      ],
+      "price": "23,000원"
+    },
+    {
+      "category": "악세서리",
+      "image": "../images/storewatch.jpg",
+      "title": "GR 스마트 워치",
+      "productName": "GR smatrt watch",
+      "color": "#555",
+      "price": "153,000원"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+/* customer_banner  */
+
+.customer_banner {
+  width: 100%;
+  height: 400px;
+}
+
+.customer_banner_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.customer_banner span {
+  display: block;
+  background-image: url(../images/customerService.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* customer_contents  */
+
+.customer_contents {
+  padding: 0 2rem;
+}
+
+.customer_menu {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  border-bottom: solid 1px #555;
+  margin-bottom: 3rem;
+}
+
+.customer_menu li button {
+  padding: 1.4rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.customer_menu li button:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+/* FAQ,  QNA */
+
+.customer_FAQ,
+.customer_QNA {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #555;
+  border-radius: 50px;
+  padding: 1rem 2rem;
+  overflow: auto;
+  margin-bottom: 5rem;
+}
+
+.FAQ_title {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 2px solid #555;
+  padding: 0.2rem 0;
+}
+
+.QNA_title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #555;
+  padding: 0.2rem 0;
+}
+
+.FAQ_title h2,
+.QNA_title h2 {
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.FAQ_menu {
+  display: flex;
+  margin: 0 2rem;
+}
+
+.FAQ_menu li {
+  margin: 0.8rem;
+}
+
+.FAQ_menu li button {
+  padding: 0 0.5rem;
+}
+
+.FAQ_menu li button:hover {
+  text-decoration: underline;
+}
+
+.FAQ_contents,
+.QNA_contents {
+  width: 100%;
+}
+
+.FAQ_content_title,
+.QNA_content_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #555;
+  cursor: pointer;
+}
+
+.FAQ_content_title td,
+.QNA_content_title td {
+  display: flex;
+}
+
+.FAQ_content_title td span,
+.QNA_content_title td span,
+.FAQ_content_title td p,
+.QNA_content_title td p {
+  margin: 0 1rem;
+}
+
+.FAQ_content_title td span,
+.QNA_content_title td span {
+  font-weight: 600;
+}
+
+.FAQ_content_text td,
+.QNA_content_text td {
+  padding: 2rem 5rem;
+  background-color: rgba(153, 153, 153, 0.2);
+}
+
+/* customer_service  */
+
+.customer_service_cover {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.customer_service {
+  width: 100%;
+  border: 1px solid #555;
+  border-radius: 30px;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.customer_service_cover .customer_service:last-child {
+  margin-right: 0;
+}
+
+.customer_service_title {
+  margin-bottom: 3rem;
+}
+
+.customer_service_text {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.customer_service_text strong {
+  display: block;
+  width: fit-content;
+  margin-bottom: 0.4rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #555;
+}
+
+/* customer_offline_store  */
+
+.customer_offline_store {
+  border: 1px solid #555;
+  border-radius: 50px;
+  padding: 2rem;
+  margin-bottom: 10rem;
+}
+
+.customer_offline_store h2 {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #555;
+  font-size: 2rem;
+  text-indent: 2rem;
+  padding: 0.2rem 0;
+  margin-bottom: 2rem;
+}
+
+.offline_store_search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 2rem;
+}
+
+.offline_store_search label {
+  font-weight: 600;
+}
+
+.offline_store_search input {
+  width: 60%;
+  border: 1px solid rgba(153, 153, 153, 0.5);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+}
+
+.offline_store_search button {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.offline_store_map {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.offline_store_map span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/customermap.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

@@ -1,3 +1,47 @@
+function loadItems() {
+  return fetch('./data/storeData.json')
+    .then((response) => response.json())
+    .then((json) => json.items);
+}
+
+function displayItems(items) {
+  const container = document.querySelector('.items');
+  container.innerHTML = items.map((item) => createHTMLString(item)).join('');
+}
+
+function createHTMLString(item) {
+  return `
+  <li class="item_cover">
+    <strong class="item_category">${item.category}</strong>
+    <div class="item_img" style="background-image: url(${item.image});"></div>
+    <h2 class="item_title">${item.title}</h2>
+    <span class="item_product_name">${item.productName}</span>
+    <ul class="item_color">
+      <li style="background-color:${item.color}"></li>
+      <li style="background-color:${item.color}"></li>
+      <li style="background-color:${item.color}"></li>
+      <li style="background-color:${item.color}"></li>
+      <li style="background-color:${item.color}"></li>
+    </ul>
+    <strong class="item_price">${item.price}</strong>
+    <div class="btn_cover">
+      <button class="buy_btn">구매하기</button>
+      <button class="heart_btn">
+        <i class="fas fa-heart"></i>
+      </button>
+    </div>
+  </li>
+`;
+}
+
+loadItems()
+  .then((items) => {
+    displayItems(items);
+    setEventListeners(items);
+    console.log(items);
+  })
+  .catch(console.log);
+
 $(function () {
   // slide image
 

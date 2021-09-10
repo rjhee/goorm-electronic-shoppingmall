@@ -1,13 +1,14 @@
 .slide {
   position: relative;
   width: 100%;
-  height: 405px;
+  height: 410px;
+  overflow: hidden;
 }
 
 .slide_img img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .prev_btn,
@@ -46,4 +47,178 @@
 
 .control_line .hover {
   background-color: #00c6ff;
+}
+
+/* store */
+.store {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+/* store-nav */
+
+.store_nav {
+  margin: 2rem;
+  color: #333;
+}
+
+.store_nav_title {
+  margin-bottom: 2rem;
+}
+
+.store_nav_all {
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  margin-bottom: 1rem;
+}
+
+.store_nav_all button {
+  font-weight: 600;
+}
+
+.store_nav {
+  width: 100%;
+  max-width: 180px;
+}
+
+.store_nav button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0;
+  text-indent: 1rem;
+}
+
+.store_nav button:hover {
+  color: #888;
+}
+
+/* store-items */
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem 0 20rem 0;
+}
+
+.item_cover {
+  margin: 1rem;
+  padding: 30px;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
+}
+
+.item_category {
+  color: #00c6ff;
+  font-size: 0.87rem;
+  text-align: left;
+}
+
+.item_img {
+  width: 100%;
+  height: 240px;
+  background-image: url(/images/storephone.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.item_title {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.item_product_name {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.item_price {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+  text-align: right;
+}
+
+.item_color {
+  display: flex;
+  text-align: left;
+}
+
+.item_color li {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: khaki;
+  margin: 0 2px;
+}
+
+.item_color li:nth-child(1) {
+  background-color: #00c6ff;
+}
+
+.item_color li:nth-child(2) {
+  background-color: #555;
+}
+
+.item_color li:nth-child(3) {
+  background-color: #000;
+}
+
+.item_color li:nth-child(4) {
+  background-color: #fff;
+  border: solid 1px #555;
+}
+
+.btn_cover {
+  display: flex;
+}
+
+.buy_btn {
+  display: block;
+  width: 210px;
+  height: 40px;
+  margin: 0 0.4rem;
+  border-radius: 20px;
+  border: 1px solid #555;
+}
+
+.buy_btn:hover {
+  background-image: linear-gradient(90deg, #00c6ff, #04276b);
+  box-shadow: 0 4px 15px 0 #888;
+  border: none;
+  color: #fff;
+}
+
+.heart_btn {
+  font-size: 1.6rem;
+  color: #888;
+}
+
+.heart_btn:hover {
+  color: #c9332d;
+}
+
+.store_more_btn {
+  position: absolute;
+  bottom: 10rem;
+  width: 220px;
+  height: 60px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.329);
+  transition: 200ms;
+}
+
+.store_more_btn:hover {
+  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.699);
 }

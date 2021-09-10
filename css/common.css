@@ -62,7 +62,7 @@ textarea {
   background-color: #000;
 }
 
-header {
+.nav_cover header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -230,6 +230,7 @@ nav {
 }
 
 .contents {
+  width: 100%;
   min-height: 1000px;
 }
 

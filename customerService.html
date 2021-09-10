@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icon/logo(blue).png"
+    />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/customerService.css" />
+    <title>Goorm</title>
+    <script
+      src="https://kit.fontawesome.com/e4031df8e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/jquery-1.12.3.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/customerService.js"></script>
+  </head>
+  <body>
+    <div class="nav_cover">
+      <header>
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"
+              ><img src="./images/icon/logo(white).png" alt="logo"
+            /></a>
+          </h1>
+          <ul class="nav_main">
+            <li>
+              <a href="./store.html">스토어</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./store.html">전체보기</a></li>
+                <li><a href="./store.html">스마트폰</a></li>
+                <li><a href="./store.html">태블릿</a></li>
+                <li><a href="./store.html">PC</a></li>
+                <li><a href="./store.html">가전</a></li>
+                <li><a href="./store.html">악세서리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./smartPhone.html">스마트폰</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./smartPhone">GR폰22 PRO</a></li>
+                <li><a href="./smartPhone">GR폰22 AIR</a></li>
+                <li><a href="./smartPhone">GR폰 X</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./tablet.html">태블릿</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./tablet.html">GR패드22 PRO</a></li>
+                <li><a href="./tablet.html">GR패드22 AIR</a></li>
+                <li><a href="./tablet.html">GR패드11</a></li>
+                <li><a href="./tablet.html">GR패드 MINI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./pc.html">데스크탑</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./pc.html">GR북PRO</a></li>
+                <li><a href="./pc.html">GR북AIR</a></li>
+                <li><a href="./pc.html">데스크탑</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./homeAppliances.html">가전</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./homeAppliances.html">홈스크린</a></li>
+                <li><a href="./homeAppliances.html">에어프라이어</a></li>
+                <li><a href="./homeAppliances.html">로봇청소기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./customerService.html">고객서비스</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./customerService.html">FAQ</a></li>
+                <li><a href="./customerService.html">Q&A</a></li>
+                <li><a href="./customerService.html">상담하기</a></li>
+                <li><a href="./customerService.html">매장찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./company.html">회사소개</a>
+              <ul class="nav_sub only_pc">
+                <li><a href="./company.html">공지사항</a></li>
+                <li><a href="./company.html">기업정보</a></li>
+                <li><a href="./company.html">사업정보</a></li>
+                <li><a href="./company.html">경영원칙</a></li>
+                <li><a href="./company.html">채용</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="nav_side">
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/user.png" alt="user-profile"
+            /></a>
+          </li>
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/Cart.png" alt="cart"
+            /></a>
+          </li>
+          <li>
+            <button class="search_btn">
+              <img src="./images/icon/Search.png" alt="search" />
+            </button>
+            <div class="search_form_cover">
+              <form class="search_form hidden">
+                <input type="text" class="search_input" autofocus />
+                <button type="submit" id="search_input_btn">
+                  <img src="./images/icon/Search.png" alt="search" />
+                </button>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+        <button class="toggle_btn only_mobile">
+          <img src="./images/icon/Menu.png" alt="toggle-btn" />
+        </button>
+      </header>
+    </div>
+    <div class="sub_cover"></div>
+
+    <div class="contents">
+      <section class="customer_banner">
+        <div class="customer_banner_title">
+          <h1>고객서비스</h1>
+          <p>무엇을 도와 드릴까요?</p>
+        </div>
+        <span></span>
+      </section>
+
+      <ul class="customer_menu">
+        <li><button class="menu_FAQ_btn">FAQ</button></li>
+        <li><button class="menu_QNA_btn">Q&A</button></li>
+        <li><button class="menu_online_btn">온라인상담</button></li>
+        <li><button class="menu_call_btn">전화상담</button></li>
+        <li><button class="menu_offline_btn">방문상담</button></li>
+        <li><button class="menu_offline_store_btn">매장찾기</button></li>
+      </ul>
+      <div class="customer_contents">
+        <article class="customer_FAQ">
+          <div class="FAQ_title">
+            <h2>FAQ</h2>
+            <ul class="FAQ_menu">
+              <li><button>전체</button></li>
+              <li><button>사이트이용</button></li>
+              <li><button>회원/멤버십</button></li>
+              <li><button>이벤트/혜택</button></li>
+              <li><button>주문/배송/취소</button></li>
+            </ul>
+          </div>
+          <table class="FAQ_contents">
+            <tr class="FAQ_content_title">
+              <td>
+                <span>Q</span>
+                <span>[FAQ카테고리]</span>
+                <p>자주하는 질문내용</p>
+              </td>
+              <td>
+                <i class="fas fa-chevron-down"></i>
+              </td>
+            </tr>
+            <tr class="FAQ_content_text">
+              <td>
+                검색 창에서 자동완성되는 모델명을 선택하시면, 해당 모델의
+                고객지원 정보와 서비스가 한 곳에 모여 있는 제품 지원 화면으로
+                이동합니다. 하지만, 모델명을 입력 후 검색 버튼을 선택하시면 검색
+                결과 화면으로 이동합니다. 원하시는 방법으로 편리하게
+                이용해보세요.
+              </td>
+            </tr>
+          </table>
+        </article>
+
+        <article class="customer_QNA">
+          <div class="QNA_title">
+            <h2>Q&A</h2>
+            <button>글쓰기</button>
+          </div>
+          <table class="QNA_contents">
+            <tr class="QNA_content_title">
+              <td>
+                <span>Q</span>
+                <span>[Q&A카테고리]</span>
+                <p>자주하는 질문내용</p>
+              </td>
+              <td>
+                <i class="fas fa-chevron-down"></i>
+              </td>
+            </tr>
+            <tr class="QNA_content_text">
+              <td>
+                검색 창에서 자동완성되는 모델명을 선택하시면, 해당 모델의
+                고객지원 정보와 서비스가 한 곳에 모여 있는 제품 지원 화면으로
+                이동합니다. 하지만, 모델명을 입력 후 검색 버튼을 선택하시면 검색
+                결과 화면으로 이동합니다. 원하시는 방법으로 편리하게
+                이용해보세요.
+              </td>
+            </tr>
+          </table>
+        </article>
+        <div class="customer_service_cover">
+          <article class="customer_service">
+            <h2 class="customer_service_title">
+              <i class="fas fa-tv"></i>
+              온라인상담
+            </h2>
+            <p class="customer_service_text">
+              <strong> 컴퓨터 온라인상담 </strong>
+              제품에대한 상담을 원격, 채팅으로
+              <br />상담하실 수 있습니다.
+            </p>
+            <p class="customer_service_text">
+              <strong> 이메일 상담 </strong>
+              이메일로 상담하실 수 있습니다.
+            </p>
+          </article>
+          <article class="customer_service">
+            <h2 class="customer_service_title">
+              <i class="fas fa-phone-alt"></i>
+              전화상담
+            </h2>
+            <p class="customer_service_text">
+              <strong> 일반상담 1588-0000 </strong>
+              평일 오전9시 ~ 오후6시
+            </p>
+            <p class="customer_service_text">
+              <strong> 전화 상담 예약 </strong>
+              원하시는 시간대에
+              <br />전화상담을 받을 수 있습니다.
+            </p>
+          </article>
+          <article class="customer_service">
+            <h2 class="customer_service_title">
+              <i class="fas fa-map-marker-alt"></i>
+              방문상담
+            </h2>
+            <p class="customer_service_text">
+              <strong> 서비스센터 찾기 </strong>
+              가까운 서비스센터 위치와 정보를 찾을 수 있습니다.
+            </p>
+            <p class="customer_service_text">
+              <strong> 출장서비스 예약 </strong>공해 드립니다 원하시는 시간에
+              기사님이 방문해서 서비스를 제공해드립니다
+            </p>
+          </article>
+        </div>
+        <article class="customer_offline_store">
+          <h2>가까운 매장찾기</h2>
+          <form class="offline_store_search">
+            <label for="city">· 지역</label>
+            <input type="text" id="city" />
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="offline_store_map">
+            <span></span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <ul class="footer_menu">
+      <li class="footer_menu_title">
+        <a href="./store.html">스토어</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./store.html">스마트폰</a></li>
+          <li><a href="./store.html">태블릿</a></li>
+          <li><a href="./store.html">PC</a></li>
+          <li><a href="./store.html">가전</a></li>
+          <li><a href="./store.html">악세서리</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./smartPhone.html">스마트폰</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./smartPhone">GR폰22 PRO</a></li>
+          <li><a href="./smartPhone">GR폰22 AIR</a></li>
+          <li><a href="./smartPhone">GR폰 X</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./tablet.html">태블릿</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./tablet.html">GR패드22 PRO</a></li>
+          <li><a href="./tablet.html">GR패드22 AIR</a></li>
+          <li><a href="./tablet.html">GR패드11</a></li>
+          <li><a href="./tablet.html">GR패드 MINI</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./pc.html">데스크탑</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./pc.html">GR북PRO</a></li>
+          <li><a href="./pc.html">GR북AIR</a></li>
+          <li><a href="./pc.html">데스크탑</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./homeAppliances.html">가전</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./homeAppliances.html">홈스크린</a></li>
+          <li><a href="./homeAppliances.html">에어프라이어</a></li>
+          <li><a href="./homeAppliances.html">로봇청소기</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./customerService.html">고객서비스</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./customerService.html">FAQ</a></li>
+          <li><a href="./customerService.html">Q&A</a></li>
+          <li><a href="./customerService.html">상담하기</a></li>
+          <li><a href="./customerService.html">매장찾기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./company.html">회사소개</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./company.html">공지사항</a></li>
+          <li><a href="./company.html">기업정보</a></li>
+          <li><a href="./company.html">사업정보</a></li>
+          <li><a href="./company.html">경영원칙</a></li>
+          <li><a href="./company.html">채용</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="footer_cover">
+      <footer>
+        <address class="footer_info">
+          <span>구름전자 주식회사</span>
+          <span>대표이사 :</span> 노재희
+          <span>사업자등록번호 :</span> 123-456-78910
+          <span>사업자 정보확인 통신판매업 신고 :</span> 2000-서울강남-0515
+          <br />
+          <span>사업장주소 :</span> 경기도 성남시 분당구 대왕판교로 50
+          <span>호스팅서비스사업자 :</span> 구름전자(주) <span>대표번호 :</span>
+          <a href="tel:031-1234-2345">031-1234-2345</a>
+          <span>제품/서비스/멤버십:</span>
+          <a href="tel:1588-1234">1588-1234</a> <span>구매문의 :</span>
+          <a href="tel:1588-123">1588-123</a>
+        </address>
+        <p class="footer_desc">
+          본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는
+          상품이 포함되어 있습니다.
+          <br />
+          개별 판매자 판매 상품의 경우 구름전자(주)는 통신판매중개업자로서
+          통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및
+          거래 등에 대해 책임을 지지 않습니다.
+          <br />본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사,
+          배포 등을 금합니다.
+        </p>
+        <p class="footer_copyright">
+          Copyright © 2021-08-19 ROH JAE HEE
+          <a href="https://github.com/rjhee">
+            https://github.com/rjhee 작품 더보기
+          </a>
+        </p>
+        <div class="footer_sns">
+          <a href="https://github.com/rjhee"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://github.com/rjhee"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
