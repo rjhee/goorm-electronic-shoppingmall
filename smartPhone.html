@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icon/logoblue.png"
+    />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/smartPhone.css" />
+    <title>Goorm</title>
+    <script
+      src="https://kit.fontawesome.com/e4031df8e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/jquery-1.12.3.js"></script>
+    <script defer src="./js/index.js"></script>
+  </head>
+  <body>
+    <div class="nav_cover">
+      <header>
+        <div class="fixed_btn">
+          <button class="page_up">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <button class="chat">
+            <span>상담하기</span>
+          </button>
+        </div>
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"
+              ><img src="./images/icon/logowhite.png" alt="logo"
+            /></a>
+          </h1>
+          <ul class="nav_main">
+            <li>
+              <a href="./store.html">스토어</a>
+              <ul class="nav_sub">
+                <li><a href="./store.html">전체보기</a></li>
+                <li><a href="./store.html">스마트폰</a></li>
+                <li><a href="./store.html">태블릿</a></li>
+                <li><a href="./store.html">PC</a></li>
+                <li><a href="./store.html">가전</a></li>
+                <li><a href="./store.html">악세서리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./smartPhone.html">스마트폰</a>
+              <ul class="nav_sub">
+                <li><a href="./smartPhone">GR폰22 PRO</a></li>
+                <li><a href="./smartPhone">GR폰22 AIR</a></li>
+                <li><a href="./smartPhone">GR폰 X</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./tablet.html">태블릿</a>
+              <ul class="nav_sub">
+                <li><a href="./tablet.html">GR패드22 PRO</a></li>
+                <li><a href="./tablet.html">GR패드22 AIR</a></li>
+                <li><a href="./tablet.html">GR패드11</a></li>
+                <li><a href="./tablet.html">GR패드 MINI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./pc.html">데스크탑</a>
+              <ul class="nav_sub">
+                <li><a href="./pc.html">GR북PRO</a></li>
+                <li><a href="./pc.html">GR북AIR</a></li>
+                <li><a href="./pc.html">데스크탑</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./homeAppliances.html">가전</a>
+              <ul class="nav_sub">
+                <li><a href="./homeAppliances.html">홈스크린</a></li>
+                <li><a href="./homeAppliances.html">에어프라이어</a></li>
+                <li><a href="./homeAppliances.html">로봇청소기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./customerService.html">고객서비스</a>
+              <ul class="nav_sub">
+                <li><a href="./customerService.html">FAQ</a></li>
+                <li><a href="./customerService.html">Q&A</a></li>
+                <li><a href="./customerService.html">상담하기</a></li>
+                <li><a href="./customerService.html">매장찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./company.html">회사소개</a>
+              <ul class="nav_sub">
+                <li><a href="./company.html">기업정보</a></li>
+                <li><a href="./company.html">사업정보</a></li>
+                <li><a href="./company.html">경영원칙</a></li>
+                <li><a href="./company.html">채용</a></li>
+                <li><a href="./company.html">비지니스</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="nav_side">
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/user.png" alt="user-profile"
+            /></a>
+          </li>
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/Cart.png" alt="cart"
+            /></a>
+          </li>
+          <li>
+            <button class="search_btn">
+              <img src="./images/icon/Search.png" alt="search" />
+            </button>
+            <div class="search_form_cover">
+              <form class="search_form hidden">
+                <input type="text" class="search_input" autofocus />
+                <button type="submit" id="search_input_btn">
+                  <img src="./images/icon/Search.png" alt="search" />
+                </button>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+        <button class="toggle_btn only_mobile">
+          <img src="./images/icon/Menu.png" alt="toggle-btn" />
+        </button>
+      </header>
+    </div>
+
+    <div class="sub_cover"></div>
+
+    <div class="contents">
+      <section class="phone_page">
+        <div class="phone_detail">
+          <h3 class="phone_detail_title">
+            GR폰 22 PRO
+          </h3>
+          <div class="phone_detail_img"></div>
+          <div class="btn_cover">
+            <button class="more_btn">자세히 보기</button>
+            <button class="store_btn">구매하기</button>
+          </div>
+        </div>
+
+        <div class="phone_detail">
+          <h3 class="phone_detail_title">
+            GR폰 22 AIR
+          </h3>
+          <div class="phone_detail_img"></div>
+          <div class="btn_cover">
+            <button class="more_btn">자세히 보기</button>
+            <button class="store_btn">구매하기</button>
+          </div>
+        </div>
+        <div class="phone_detail">
+          <h3 class="phone_detail_title">
+            GR폰 X
+          </h3>
+          <div class="phone_detail_img"></div>
+          <div class="btn_cover">
+            <button class="more_btn">자세히 보기</button>
+            <button class="store_btn">구매하기</button>
+          </div>
+        </div>
+        <div class="phone_detail">
+          <h3 class="phone_detail_title">
+            GR폰 11
+          </h3>
+          <div class="phone_detail_img"></div>
+          <div class="btn_cover">
+            <button class="more_btn">자세히 보기</button>
+            <button class="store_btn">구매하기</button>
+          </div>
+        </div>
+        <button class="more">
+          <i class="fas fa-arrow-circle-right"></i>
+        </button>
+      </section>
+      <section class="more_contents">
+        <button class="spec_btn">
+          스펙 더 알아보기
+        </button>
+        <button class="compare_btn">
+          다른 제품과 비교하기
+        </button>
+      </section>
+    </div>
+    <nav class="footer_menu">
+      <li class="footer_menu_title">
+        <a href="./store.html">스토어</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./store.html">스마트폰</a></li>
+          <li><a href="./store.html">태블릿</a></li>
+          <li><a href="./store.html">PC</a></li>
+          <li><a href="./store.html">가전</a></li>
+          <li><a href="./store.html">악세서리</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./smartPhone.html">스마트폰</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./smartPhone">GR폰22 PRO</a></li>
+          <li><a href="./smartPhone">GR폰22 AIR</a></li>
+          <li><a href="./smartPhone">GR폰 X</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./tablet.html">태블릿</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./tablet.html">GR패드22 PRO</a></li>
+          <li><a href="./tablet.html">GR패드22 AIR</a></li>
+          <li><a href="./tablet.html">GR패드11</a></li>
+          <li><a href="./tablet.html">GR패드 MINI</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./pc.html">데스크탑</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./pc.html">GR북PRO</a></li>
+          <li><a href="./pc.html">GR북AIR</a></li>
+          <li><a href="./pc.html">데스크탑</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./homeAppliances.html">가전</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./homeAppliances.html">홈스크린</a></li>
+          <li><a href="./homeAppliances.html">에어프라이어</a></li>
+          <li><a href="./homeAppliances.html">로봇청소기</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./customerService.html">고객서비스</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./customerService.html">FAQ</a></li>
+          <li><a href="./customerService.html">Q&A</a></li>
+          <li><a href="./customerService.html">상담하기</a></li>
+          <li><a href="./customerService.html">매장찾기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./company.html">회사소개</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./company.html">공지사항</a></li>
+          <li><a href="./company.html">기업정보</a></li>
+          <li><a href="./company.html">사업정보</a></li>
+          <li><a href="./company.html">경영원칙</a></li>
+          <li><a href="./company.html">채용</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+    <div class="footer_cover">
+      <footer>
+        <address class="footer_info">
+          <span>구름전자 주식회사</span>
+          <span>대표이사 :</span> 노재희
+          <span>사업자등록번호 :</span> 123-456-78910
+          <span>사업자 정보확인 통신판매업 신고 :</span> 2000-서울강남-0515
+          <br />
+          <span>사업장주소 :</span> 경기도 성남시 분당구 대왕판교로 50
+          <span>호스팅서비스사업자 :</span> 구름전자(주) <span>대표번호 :</span>
+          <a href="tel:031-1234-2345">031-1234-2345</a>
+          <span>제품/서비스/멤버십:</span>
+          <a href="tel:1588-1234">1588-1234</a> <span>구매문의 :</span>
+          <a href="tel:1588-123">1588-123</a>
+        </address>
+        <p class="footer_desc">
+          본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는
+          상품이 포함되어 있습니다.
+          <br />
+          개별 판매자 판매 상품의 경우 구름전자(주)는 통신판매중개업자로서
+          통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및
+          거래 등에 대해 책임을 지지 않습니다.
+          <br />본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사,
+          배포 등을 금합니다.
+        </p>
+        <p class="footer_copyright">
+          Copyright © 2021-08-19 ROH JAE HEE
+          <a href="https://github.com/rjhee">
+            https://github.com/rjhee 작품 더보기
+          </a>
+        </p>
+        <div class="footer_sns">
+          <a href="https://github.com/rjhee"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://github.com/rjhee"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

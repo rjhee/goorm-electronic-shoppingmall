@@ -1,0 +1,193 @@
+.company_banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+
+.company_banner_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  text-align: center;
+  color: #00c6ff;
+}
+
+.company_banner span {
+  display: block;
+  background-image: url(../images/company.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.company_menu {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border-bottom: solid 1px #555;
+  margin-bottom: 8rem;
+  z-index: 1;
+}
+
+.menu_hover {
+  background-color: #999;
+  color: #fff;
+}
+
+.company_menu li button {
+  padding: 1.4rem 3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.company_menu li button:hover {
+  background-color: #999;
+  color: #fff;
+}
+
+/* company menu  */
+.company_contents {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 3rem;
+  border-bottom: 1px solid #555;
+  line-height: 1.8;
+}
+
+.company_title {
+  width: 140px;
+  font-size: 1.4rem;
+  margin-right: 2rem;
+  line-height: 1.2;
+}
+
+.company_text {
+  width: 100%;
+  max-width: 1200px;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 8rem;
+}
+
+.management .company_text p {
+  margin-bottom: 4rem;
+}
+
+.management .company_text > ul {
+  text-indent: 4rem;
+  padding: 0 6rem;
+}
+
+.management .company_text > ul > li {
+  margin-bottom: 3rem;
+}
+
+.management .company_text ul .title {
+  display: block;
+  width: 100%;
+  height: 60px;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 60px;
+  margin-bottom: 1rem;
+  color: #555;
+  background-color: rgba(153, 153, 153, 0.301);
+}
+
+.employment .company_text div {
+  margin-bottom: 5rem;
+  text-align: center;
+  border-bottom: solid 1px #555;
+}
+
+.employment .company_text h3 {
+  font-size: 2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.employment .company_text p {
+  margin-bottom: 3rem;
+}
+
+.employment .company_text button {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #555;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+
+.employment .company_text button:hover {
+  background-color: #00c6ff;
+  color: #fff;
+  border: 1px solid #999;
+}
+
+.employment .company_text div .img {
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 3rem;
+}
+
+.employment .company_text div:nth-child(1) .img {
+  background-image: url(../images/companyemployment.jpg);
+}
+
+.employment .company_text div:nth-child(2) .img {
+  background-image: url(../images/companyemployment2.jpg);
+}
+
+.business .company_text > p {
+  margin-bottom: 5rem;
+}
+
+.business .company_text > div > p {
+  width: 800px;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 1px solid #555;
+}
+
+.business .company_text ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.business .company_text ul li {
+  max-width: 340px;
+  margin: 0 1rem;
+}
+
+.business .company_text ul li span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 2rem auto;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #00c6ff;
+}

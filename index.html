@@ -14,7 +14,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/icon/logo(blue).png"
+      href="./images/icon/logoblue.png"
     />
 
     <link rel="stylesheet" href="./css/common.css" />
@@ -30,16 +30,24 @@
   <body>
     <div class="nav_cover">
       <header>
+        <div class="fixed_btn">
+          <button class="page_up">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <button class="chat">
+            <span>상담하기</span>
+          </button>
+        </div>
         <nav>
           <h1 class="logo">
             <a href="./index.html"
-              ><img src="./images/icon/logo(white).png" alt="logo"
+              ><img src="./images/icon/logowhite.png" alt="logo"
             /></a>
           </h1>
           <ul class="nav_main">
             <li>
               <a href="./store.html">스토어</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./store.html">전체보기</a></li>
                 <li><a href="./store.html">스마트폰</a></li>
                 <li><a href="./store.html">태블릿</a></li>
@@ -50,7 +58,7 @@
             </li>
             <li>
               <a href="./smartPhone.html">스마트폰</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./smartPhone">GR폰22 PRO</a></li>
                 <li><a href="./smartPhone">GR폰22 AIR</a></li>
                 <li><a href="./smartPhone">GR폰 X</a></li>
@@ -58,7 +66,7 @@
             </li>
             <li>
               <a href="./tablet.html">태블릿</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./tablet.html">GR패드22 PRO</a></li>
                 <li><a href="./tablet.html">GR패드22 AIR</a></li>
                 <li><a href="./tablet.html">GR패드11</a></li>
@@ -67,7 +75,7 @@
             </li>
             <li>
               <a href="./pc.html">데스크탑</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./pc.html">GR북PRO</a></li>
                 <li><a href="./pc.html">GR북AIR</a></li>
                 <li><a href="./pc.html">데스크탑</a></li>
@@ -75,7 +83,7 @@
             </li>
             <li>
               <a href="./homeAppliances.html">가전</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./homeAppliances.html">홈스크린</a></li>
                 <li><a href="./homeAppliances.html">에어프라이어</a></li>
                 <li><a href="./homeAppliances.html">로봇청소기</a></li>
@@ -83,7 +91,7 @@
             </li>
             <li>
               <a href="./customerService.html">고객서비스</a>
-              <ul class="nav_sub only_pc">
+              <ul class="nav_sub">
                 <li><a href="./customerService.html">FAQ</a></li>
                 <li><a href="./customerService.html">Q&A</a></li>
                 <li><a href="./customerService.html">상담하기</a></li>
@@ -92,12 +100,12 @@
             </li>
             <li>
               <a href="./company.html">회사소개</a>
-              <ul class="nav_sub only_pc">
-                <li><a href="./company.html">공지사항</a></li>
+              <ul class="nav_sub">
                 <li><a href="./company.html">기업정보</a></li>
                 <li><a href="./company.html">사업정보</a></li>
                 <li><a href="./company.html">경영원칙</a></li>
                 <li><a href="./company.html">채용</a></li>
+                <li><a href="./company.html">비지니스</a></li>
               </ul>
             </li>
           </ul>
@@ -250,10 +258,10 @@
         </p>
       </section>
     </aside>
-    <nav class="footer_menu">
+    <nav class="footer_menu only_pc">
       <li class="footer_menu_title">
         <a href="./store.html">스토어</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./store.html">스마트폰</a></li>
           <li><a href="./store.html">태블릿</a></li>
           <li><a href="./store.html">PC</a></li>
@@ -264,7 +272,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./smartPhone.html">스마트폰</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./smartPhone">GR폰22 PRO</a></li>
           <li><a href="./smartPhone">GR폰22 AIR</a></li>
           <li><a href="./smartPhone">GR폰 X</a></li>
@@ -273,7 +281,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./tablet.html">태블릿</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./tablet.html">GR패드22 PRO</a></li>
           <li><a href="./tablet.html">GR패드22 AIR</a></li>
           <li><a href="./tablet.html">GR패드11</a></li>
@@ -283,7 +291,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./pc.html">데스크탑</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./pc.html">GR북PRO</a></li>
           <li><a href="./pc.html">GR북AIR</a></li>
           <li><a href="./pc.html">데스크탑</a></li>
@@ -292,7 +300,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./homeAppliances.html">가전</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./homeAppliances.html">홈스크린</a></li>
           <li><a href="./homeAppliances.html">에어프라이어</a></li>
           <li><a href="./homeAppliances.html">로봇청소기</a></li>
@@ -301,7 +309,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./customerService.html">고객서비스</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./customerService.html">FAQ</a></li>
           <li><a href="./customerService.html">Q&A</a></li>
           <li><a href="./customerService.html">상담하기</a></li>
@@ -310,7 +318,7 @@
       </li>
       <li class="footer_menu_title">
         <a href="./company.html">회사소개</a>
-        <ul class="footer_menu_sub only_pc">
+        <ul class="footer_menu_sub">
           <li><a href="./company.html">공지사항</a></li>
           <li><a href="./company.html">기업정보</a></li>
           <li><a href="./company.html">사업정보</a></li>

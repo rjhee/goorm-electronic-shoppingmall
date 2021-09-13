@@ -1,8 +1,9 @@
 /* customer_banner  */
 
 .customer_banner {
+  position: relative;
   width: 100%;
-  height: 400px;
+  height: 500px;
 }
 
 .customer_banner_title {
@@ -28,7 +29,7 @@
 /* customer_contents  */
 
 .customer_contents {
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
 .customer_menu {
@@ -38,11 +39,11 @@
   background-color: #fff;
   top: 0;
   border-bottom: solid 1px #555;
-  margin-bottom: 3rem;
+  margin-bottom: 8rem;
 }
 
 .customer_menu li button {
-  padding: 1.4rem 2rem;
+  padding: 1.4rem 3rem;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -52,17 +53,24 @@
   color: #fff;
 }
 
+.menu_hover {
+  background-color: #999;
+  color: #fff;
+}
+
 /* FAQ,  QNA */
 
 .customer_FAQ,
 .customer_QNA {
   width: 100%;
-  height: 500px;
+  max-width: 1400px;
+  height: 700px;
   border: 1px solid #555;
-  border-radius: 50px;
+  border-radius: 60px;
   padding: 1rem 2rem;
   overflow: auto;
-  margin-bottom: 5rem;
+  margin: auto;
+  margin-bottom: 10rem;
 }
 
 .FAQ_title {
@@ -117,25 +125,29 @@
   cursor: pointer;
 }
 
-.FAQ_content_title td,
-.QNA_content_title td {
+.FAQ_content_title div,
+.QNA_content_title div {
   display: flex;
 }
 
-.FAQ_content_title td span,
-.QNA_content_title td span,
-.FAQ_content_title td p,
-.QNA_content_title td p {
+.FAQ_content_title div span,
+.QNA_content_title div span,
+.FAQ_content_title div p,
+.QNA_content_title div p {
   margin: 0 1rem;
 }
 
-.FAQ_content_title td span,
-.QNA_content_title td span {
+.FAQ_content_title div span,
+.QNA_content_title div span {
   font-weight: 600;
 }
 
-.FAQ_content_text td,
-.QNA_content_text td {
+.FAQ_content_text {
+  padding: 2rem 5rem;
+  background-color: rgba(153, 153, 153, 0.2);
+}
+
+.QNA_content_text {
   padding: 2rem 5rem;
   background-color: rgba(153, 153, 153, 0.2);
 }
@@ -145,14 +157,17 @@
 .customer_service_cover {
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
+  max-width: 1400px;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 12rem;
 }
 
 .customer_service {
   width: 100%;
   border: 1px solid #555;
-  border-radius: 30px;
-  padding: 2rem;
+  border-radius: 50px;
+  padding: 3.5rem;
   margin-right: 2rem;
 }
 
@@ -161,18 +176,18 @@
 }
 
 .customer_service_title {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 
 .customer_service_text {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   cursor: pointer;
 }
 
 .customer_service_text strong {
   display: block;
   width: fit-content;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
   border-bottom: 1px solid #555;
 }
@@ -183,7 +198,9 @@
   border: 1px solid #555;
   border-radius: 50px;
   padding: 2rem;
-  margin-bottom: 10rem;
+  max-width: 1400px;
+  margin: auto;
+  margin-bottom: 20rem;
 }
 
 .customer_offline_store h2 {
@@ -223,7 +240,7 @@
 
 .offline_store_map {
   width: 100%;
-  height: 300px;
+  height: 500px;
   overflow: hidden;
   cursor: pointer;
 }

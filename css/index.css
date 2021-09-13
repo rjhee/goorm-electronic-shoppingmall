@@ -34,7 +34,9 @@
 }
 
 .main_more_btn,
-.main_store_btn {
+.main_store_btn,
+.more_btn,
+.store_btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +53,9 @@
 }
 
 .main_more_btn:hover,
-.main_store_btn:hover {
+.main_store_btn:hover,
+.more_btn:hover,
+.store_btn:hover {
   transform: scale(1.1);
 }
 
@@ -292,7 +296,7 @@
 }
 
 .footer_menu_title {
-  padding: 3rem 1.4rem;
+  padding: 3rem 4rem;
   height: 300px;
 }
 

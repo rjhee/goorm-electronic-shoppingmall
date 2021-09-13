@@ -1,10 +1,461 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icon/logoblue.png"
+    />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/company.css">
+    <title>Goorm</title>
+    <script
+      src="https://kit.fontawesome.com/e4031df8e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/jquery-1.12.3.js"></script>
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/company.js"></script>
+
   </head>
-  <body></body>
+  <body>
+    <div class="nav_cover">
+      <header>
+        <div class="fixed_btn">
+          <button class="page_up">
+            <i class="fas fa-chevron-up"></i>
+          </button>
+          <button class="chat">
+            <span>상담하기</span>
+          </button>
+        </div>
+        <nav>
+          <h1 class="logo">
+            <a href="./index.html"
+              ><img src="./images/icon/logowhite.png" alt="logo"
+            /></a>
+          </h1>
+          <ul class="nav_main">
+            <li>
+              <a href="./store.html">스토어</a>
+              <ul class="nav_sub">
+                <li><a href="./store.html">전체보기</a></li>
+                <li><a href="./store.html">스마트폰</a></li>
+                <li><a href="./store.html">태블릿</a></li>
+                <li><a href="./store.html">PC</a></li>
+                <li><a href="./store.html">가전</a></li>
+                <li><a href="./store.html">악세서리</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./smartPhone.html">스마트폰</a>
+              <ul class="nav_sub">
+                <li><a href="./smartPhone">GR폰22 PRO</a></li>
+                <li><a href="./smartPhone">GR폰22 AIR</a></li>
+                <li><a href="./smartPhone">GR폰 X</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./tablet.html">태블릿</a>
+              <ul class="nav_sub">
+                <li><a href="./tablet.html">GR패드22 PRO</a></li>
+                <li><a href="./tablet.html">GR패드22 AIR</a></li>
+                <li><a href="./tablet.html">GR패드11</a></li>
+                <li><a href="./tablet.html">GR패드 MINI</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./pc.html">데스크탑</a>
+              <ul class="nav_sub">
+                <li><a href="./pc.html">GR북PRO</a></li>
+                <li><a href="./pc.html">GR북AIR</a></li>
+                <li><a href="./pc.html">데스크탑</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./homeAppliances.html">가전</a>
+              <ul class="nav_sub">
+                <li><a href="./homeAppliances.html">홈스크린</a></li>
+                <li><a href="./homeAppliances.html">에어프라이어</a></li>
+                <li><a href="./homeAppliances.html">로봇청소기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./customerService.html">고객서비스</a>
+              <ul class="nav_sub">
+                <li><a href="./customerService.html">FAQ</a></li>
+                <li><a href="./customerService.html">Q&A</a></li>
+                <li><a href="./customerService.html">상담하기</a></li>
+                <li><a href="./customerService.html">매장찾기</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./company.html">회사소개</a>
+              <ul class="nav_sub">
+                <li><a href="./company.html">기업정보</a></li>
+                <li><a href="./company.html">사업정보</a></li>
+                <li><a href="./company.html">경영원칙</a></li>
+                <li><a href="./company.html">채용</a></li>
+                <li><a href="./company.html">비지니스</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="nav_side">
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/user.png" alt="user-profile"
+            /></a>
+          </li>
+          <li>
+            <a href="./user.html"
+              ><img src="./images/icon/Cart.png" alt="cart"
+            /></a>
+          </li>
+          <li>
+            <button class="search_btn">
+              <img src="./images/icon/Search.png" alt="search" />
+            </button>
+            <div class="search_form_cover">
+              <form class="search_form hidden">
+                <input type="text" class="search_input" autofocus />
+                <button type="submit" id="search_input_btn">
+                  <img src="./images/icon/Search.png" alt="search" />
+                </button>
+              </form>
+            </div>
+          </li>
+        </ul>
+
+        <button class="toggle_btn only_mobile">
+          <img src="./images/icon/Menu.png" alt="toggle-btn" />
+        </button>
+      </header>
+    </div>
+
+    <div class="sub_cover"></div>
+
+    <div class="contents">
+      <section class="company_banner">
+        <div class="company_banner_title">
+          <h2>회사소개</h2>
+          <p>Goorm company</p>
+        </div>
+        <span></span>
+      </section>
+      <ul class="company_menu">
+        <li><button class="menu_company_info">기업정보</button></li>
+        <li><button class="menu_business_info">사업정보</button></li>
+        <li><button class="menu_management">경영원칙</button></li>
+        <li><button class="menu_employment">채용</button></li>
+        <li><button class="menu_business">비지니스</button></li>
+      </ul>
+      <article class="company_contents company_info">
+        <h2 class="company_title">
+          <i class="fas fa-cloud"></i>
+          기업정보
+        </h2>
+        <div class="company_text">
+          <p>
+            구름전자는가전제품, 전자제품, 자동차 부품 등 여러 분야에서 기술혁신을 선도하는 글로벌 리더이며 세계 130여 개 
+            사업장에서 사업을 전개하고 있습니다. 
+            H&A(Home Appliance & Air Solution), HE(Home Entertainment), 
+            VS(Vehicle component Solutions), BS(Business Solutions), MC(Mobile Communications) 등 5개 
+            사업본부로 구성되어 있으며 세탁기, 냉장고, TV, 자동차 부품, 태양광 등 다양한 분야에서 시장을 
+            선도하고 있습니다. 2020년 매출액은 63조 2,620억 원, 영업이익은 3조 1,950억 원을 기록했습니다.
+          </p>
+          <p>
+   
+          </p>
+        </div>
+      </article>
+      <article class="company_contents business_info">
+        <h2 class="company_title">
+          <i class="fas fa-cloud"></i>
+          사업소개
+        </h2>
+        <div class="company_text">
+          <p>
+             구름전자의 기술 혁신은 성장과 성과로 이어집니다. 
+            스마트폰 부문의 놀라운 기술력은 전 세계 4억 대 이상의 
+            휴대폰 판매로 입증되었습니다. 
+            구름전자의 정보통신 부문 장비와 솔루션 또한 지구촌 곳곳의 
+            4G 보급에 기여하고 있습니다.
+            <br>
+            <br>
+            구름전자는 10 여년 전부터 5G 기술에 대한 선제적 투자를 통해 차별화된 
+            기술력을 확보했으며, 글로벌 산업 생태계 구성 및 국제표준 선도, 
+            세계 주요 통신사업자와의 시범 서비스를 통해 통신기술의 혁신과 차세대 
+            서비스의 방향성을 제시해왔습니다.
+            <br>
+            <br>
+            또한, 5G 이동통신 장비뿐만 아니라 무선통신 핵심칩(모뎀칩, RFIC, DAFE 등)과
+            단말 등 상용서비스를 위한 핵심 포트폴리오를 갖춘 회사로써, 개별 통신사업자의 
+            주파수 환경, 세대별 통신 기술의 보급률, 미래 비즈니스 모델을 종합적으로 고려한 
+            서비스 상용서비스를 추진하데 최적의 파트너로서 한국, 미국 등 선도 시장 내 혁신 
+            기술 도입과 상용화를 주도하고 있습니다.
+            <br>
+            <br>
+            이러한 앞선 기술력과 경험, 사업 포트폴리오를 바탕으로 구름전자는 2018년 10월
+            미국에서 세계최초 5G Home 서비스를 개시하고, 2019년 4월 한국에서 세계최초
+              Mobile 5G 서비스를 상용화하면서 이동통신 시장의 혁신적인 변화를 이끌어내는 
+              한편 5G 상용화 경쟁에서 선두업체로 자리매김 했습니다.
+              <br>
+              <br>
+            또한, 일본 KDDI의 5G 공급 업체로 선정되면서 2020년 5G 상용서비스에 핵심적인 
+            역할을 담당하고 있으며, 선도통신사업자와의 세계최초 5G 상용화 경험을 바탕으로 오세아니아,
+            북미, 동남아, 유럽 등으로 적극적으로 시장을 확대하고 있습니다.
+          </p>
+        </div>
+      </article>
+      <article class="company_contents management">
+        <h2 class="company_title">
+          <i class="fas fa-cloud"></i>
+          경영원칙
+        </h2>
+        <div class="company_text">
+          <p>
+            구름전자는 사람과 사회를 생각하는 글로벌 일류기업을 추구합니다. 
+            ‘경영이념, 핵심가치, 경영원칙’의 가치체계를 경영의 나침반으로 삼고, 
+            인재와 기술을 바탕으로 최고의 제품과 서비스를 창출하여 인류사회에 공헌하는 
+            것을 궁극적인 목표로 삼고 있습니다. 
+            <br>이를 위해 구름전자가 지켜나갈 
+            약속인 5가지 경영원칙을 세부원칙과 행동지침으로 구체화하여 구름전자 
+            임직원이 지켜야 할 행동규범(Global Code of Conduct)으로 제정하였으며, 
+            모든 임직원의 사고와 행동에 5가지 핵심가치를 내재화하여 구름전자의 
+            지속적인 성장을 견인하고 미래 방향성을 제시하고자 합니다.
+          </p>
+          <ul>
+            <li>
+              <span class="title">1 인재와 기술을 바탕으로</span>
+              <ul>
+                <li>· 인재육성과 기술우위 확보를 경영의 원칙으로 삼는다.</li>
+                <li>· 인재와 기술의 조화를 통하여 경영전반의 시너지 효과를 증대한다.</li>
+              </ul>
+            </li>
+            <li><span class="title">2 최고의 제품과 서비스를 창출하여</span>
+              <ul>
+                <li>· 고객에게 최고의 만족을 줄 수 있는 제품과 서비스를 창출한다.</li>
+                <li>· 동종업계에서 세계 1군의 위치를 확보한다.</li>
+              </ul>
+            </li>
+            <li> <span class="title">
+              3 인류사회에 공헌한다
+            </span> 
+              <ul>
+                <li>· 인류의 공동이익과 풍요로운 삶을 위해 기여한다.</li>
+                <li>· 인류공동체 일원으로서의 사명을 다한다.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="company_contents employment">
+        <h2 class="company_title">
+          <i class="fas fa-cloud"></i>
+          채용
+        </h2>
+        <div class="company_text">
+          <div>
+            <h3>채용 프로세스 안내</h3>
+            <p>우리는 즐겁고 열정이 넘치는 근무환경 속에서 임직원들의 
+              성장과 자기계발을 통해 새로운 가치를 만들어 내고 있습니다.
+              <br>이 곳에서 많은 사람들의 삶을 바꿀 수 있는 새로운 혁신의 기회를 찾아보세요.
+            </p>
+            <button> 자세히 보기</button>
+            <span class="img"></span>
+          </div>
+          <div>
+          <h3>채용공고</h3>
+            <p>자신에게 잘 맞는 기회를 찾아보세요.</p>
+            <button> 자세히 보기</button>
+            <span class="img"></span>
+          </div>
+      </article>
+      <article class="company_contents business">
+        <h2 class="company_title">
+          <i class="fas fa-cloud"></i>
+          비지니스
+        </h2>
+        <div class="company_text">
+          <p>
+            비즈니스 환경에 맞는 최적의 제품, 고객사별 맞춤 솔루션,
+            비즈니스 전문 통합 서비스를 통해
+            고객의 비즈니스 성공을 이루어갑니다.
+          </p>
+          <div>
+            <p>Business Product</p>
+            <ul>
+              <li>
+                <span>BUILDING</span>
+                <p>최적의 빌딩 공간을 완성하는 다양한 공조, 
+                  <br>조명 제품군과 효과적인 정보 관리가 가능한
+                  <br> 고화질 디스플레이</p>
+              </li>
+              <li>
+                <span>WORK</span>
+                <p>업무 환경의 효율과 생산성을 높이고 
+                  <br>강력한 오피스 보안을 제공하는 IT 제품
+                </p>
+              </li>
+              <li>
+                <span>MOBILITY</span>
+                <p>언제 어디서나 제약없는 비즈니스 환경을 
+                  <br>가능하게 하는 모바일 제품
+                </p>
+              </li>
+            </ul>
+            <p>Business Solution</p>
+            <ul>
+              <li>
+                <span>교육</span>
+                <p>풍부한 학습 경험을 제공하는 교육 솔루션</p>
+              </li>
+              <li>
+                <span>리테일</span>
+                <p>고객 맞춤형 리테일 솔루션
+                </p>
+              </li>
+              <li>
+                <span>금융</span>
+                <p>최고 수준의 보안을 제공하는 금융 솔루션
+                </p>
+              </li>
+              <li>
+                <span>건설</span>
+                <p>공간의 새로운 가치를 
+                  <br>제시하는 빌딩 / 홈IOT 솔루션까지</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <nav class="footer_menu">
+      <li class="footer_menu_title">
+        <a href="./store.html">스토어</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./store.html">스마트폰</a></li>
+          <li><a href="./store.html">태블릿</a></li>
+          <li><a href="./store.html">PC</a></li>
+          <li><a href="./store.html">가전</a></li>
+          <li><a href="./store.html">악세서리</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./smartPhone.html">스마트폰</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./smartPhone">GR폰22 PRO</a></li>
+          <li><a href="./smartPhone">GR폰22 AIR</a></li>
+          <li><a href="./smartPhone">GR폰 X</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./tablet.html">태블릿</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./tablet.html">GR패드22 PRO</a></li>
+          <li><a href="./tablet.html">GR패드22 AIR</a></li>
+          <li><a href="./tablet.html">GR패드11</a></li>
+          <li><a href="./tablet.html">GR패드 MINI</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./pc.html">데스크탑</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./pc.html">GR북PRO</a></li>
+          <li><a href="./pc.html">GR북AIR</a></li>
+          <li><a href="./pc.html">데스크탑</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./homeAppliances.html">가전</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./homeAppliances.html">홈스크린</a></li>
+          <li><a href="./homeAppliances.html">에어프라이어</a></li>
+          <li><a href="./homeAppliances.html">로봇청소기</a></li>
+          <li><a href="./store.html">더보기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./customerService.html">고객서비스</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./customerService.html">FAQ</a></li>
+          <li><a href="./customerService.html">Q&A</a></li>
+          <li><a href="./customerService.html">상담하기</a></li>
+          <li><a href="./customerService.html">매장찾기</a></li>
+        </ul>
+      </li>
+      <li class="footer_menu_title">
+        <a href="./company.html">회사소개</a>
+        <ul class="footer_menu_sub only_pc">
+          <li><a href="./company.html">공지사항</a></li>
+          <li><a href="./company.html">기업정보</a></li>
+          <li><a href="./company.html">사업정보</a></li>
+          <li><a href="./company.html">경영원칙</a></li>
+          <li><a href="./company.html">채용</a></li>
+        </ul>
+      </li>
+    </ul>
+    </nav>
+    <div class="footer_cover">
+      <footer>
+        <address class="footer_info">
+          <span>구름전자 주식회사</span>
+          <span>대표이사 :</span> 노재희
+          <span>사업자등록번호 :</span> 123-456-78910
+          <span>사업자 정보확인 통신판매업 신고 :</span> 2000-서울강남-0515
+          <br />
+          <span>사업장주소 :</span> 경기도 성남시 분당구 대왕판교로 50
+          <span>호스팅서비스사업자 :</span> 구름전자(주) <span>대표번호 :</span>
+          <a href="tel:031-1234-2345">031-1234-2345</a>
+          <span>제품/서비스/멤버십:</span>
+          <a href="tel:1588-1234">1588-1234</a> <span>구매문의 :</span>
+          <a href="tel:1588-123">1588-123</a>
+        </address>
+        <p class="footer_desc">
+          본 사이트에서 판매되는 상품 중에는 등록된 개별 판매자가 판매하는
+          상품이 포함되어 있습니다.
+          <br />
+          개별 판매자 판매 상품의 경우 구름전자(주)는 통신판매중개업자로서
+          통신판매의 당사자가 아니므로, 개별 판매자가 등록한 상품, 거래정보 및
+          거래 등에 대해 책임을 지지 않습니다.
+          <br />본 사이트의 컨텐츠는 저작권법의 보호를 받는 바 무단 전재, 복사,
+          배포 등을 금합니다.
+        </p>
+        <p class="footer_copyright">
+          Copyright © 2021-08-19 ROH JAE HEE
+          <a href="https://github.com/rjhee">
+            https://github.com/rjhee 작품 더보기
+          </a>
+        </p>
+        <div class="footer_sns">
+          <a href="https://github.com/rjhee"><i class="fab fa-youtube"></i></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/rjhee"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://github.com/rjhee"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
