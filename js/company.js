@@ -1,4 +1,5 @@
 $(function () {
+  // 회사소개 배너 밑에 있는 메뉴 클릭시 해당 컨텐츠로 스크롤 이동.
   $('.company_menu').click(function (event) {
     let target = event.target;
 
@@ -26,6 +27,7 @@ $(function () {
     }
   });
 
+  // 사용자 스크롤시 현재 컨텐츠위치에 메뉴 배경색 바뀌기
   $(window).scroll(function () {
     let userScroll = $(this).scrollTop();
 

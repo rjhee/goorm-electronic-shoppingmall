@@ -1,4 +1,5 @@
 $(function () {
+  // 고객서비스 배너 밑에 있는 메뉴 클릭시 해당 컨텐츠로 스크롤 이동.
   $('.customer_menu').click(function (event) {
     let target = event.target;
 
@@ -24,6 +25,7 @@ $(function () {
     }
   });
 
+  // 사용자 스크롤시 현재 컨텐츠위치에 메뉴 배경색 바뀌기
   $(window).scroll(function () {
     let userScroll = $(this).scrollTop();
 
@@ -61,6 +63,7 @@ $(function () {
   });
 });
 
+// FAQ 데이터 json 파일로 불러오고 display
 function loadfaq() {
   return fetch('./data/faqData.json')
     .then((response) => response.json())
@@ -91,6 +94,7 @@ function createHTMLStringFaq(text) {
   </p>`;
 }
 
+// FAQ 제목 클릭시 해당컨텐츠 내용 보여주기
 let FAQtitle = document.querySelector('.FAQ_contents');
 FAQtitle.addEventListener('click', (event) => onFaqTextClick(event));
 
@@ -111,6 +115,7 @@ function onFaqTextClick(event) {
   }
 }
 
+// FAQ 카테고리 클릭시 해당 데이터만 보여주기
 function setEventListeners(faqText) {
   let all = document.querySelector('.FAQ_menu .all');
   let buttons = document.querySelector('.FAQ_menu');
@@ -120,7 +125,6 @@ function setEventListeners(faqText) {
 
 function onFaqNavClick(event, faqText) {
   let category = event.target.className;
-
   switch (category) {
     case 'user':
       displayfaq(faqText.filter((text) => text.category == '회원가입/탈퇴'));
@@ -145,6 +149,7 @@ loadfaq()
   })
   .catch(console.log);
 
+// QNA 데이터 json 파일로 불러오고 display
 function loadqna() {
   return fetch('./data/qnaData.json')
     .then((response) => response.json())
@@ -173,6 +178,7 @@ function createHTMLString(text) {
     </p>`;
 }
 
+// FAQ 제목 클릭시 해당컨텐츠 내용 보여주기
 let QNAtitle = document.querySelector('.QNA_contents');
 QNAtitle.addEventListener('click', (event) => onQnaTextClick(event));
 

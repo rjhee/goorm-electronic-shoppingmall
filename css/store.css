@@ -103,6 +103,8 @@
 }
 
 .store_nav {
+  position: relative;
+
   width: 100%;
   max-width: 180px;
 }

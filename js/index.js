@@ -1,11 +1,10 @@
 $(function () {
-  // header fixed button
-
+  // 버튼 클릭시 스크롤 맨위
   $('.page_up').click(function () {
     $(window).scrollTop(0);
   });
 
-  // header-pc
+  // 네비게이션 PC버전에서만 보이기
   $('.nav_sub').hide();
   $('.sub_cover').hide();
 
@@ -16,6 +15,7 @@ $(function () {
     }
   });
 
+  // 메인네비에 마우스 오버시 서브 네비 슬라이드다운
   function slide_Down(seleted) {
     $(seleted).stop().slideDown();
   }
@@ -31,6 +31,13 @@ $(function () {
     }
   });
 
+  $('.nav_main>li').mouseover(function () {
+    $(this)
+      .children('.nav_sub')
+      .css('background-color', 'rgba(255, 255, 255, 0.5)');
+  });
+
+  // 메인네비에 마우스 아웃시 서브 네비 슬라이드업
   $('.nav_main').mouseout(() => {
     if (window.innerWidth >= 992) {
       slide_Up('.nav_sub');
@@ -38,16 +45,11 @@ $(function () {
     }
   });
 
-  $('.nav_main>li').mouseover(function () {
-    $(this)
-      .children('.nav_sub')
-      .css('background-color', 'rgba(255, 255, 255, 0.5)');
-  });
-
   $('.nav_main>li').mouseout(function () {
     $(this).children('.nav_sub').css('background-color', 'inherit');
   });
 
+  // 스크롤내릴때 네비게이션 숨기고 스크롤 올릴때 네비게이션 보이기
   let didScroll;
   let lastScrollTop = 0;
   let delta = 5;
@@ -82,7 +84,7 @@ $(function () {
     lastScrollTop = userScrollTop;
   }
 
-  // toggle button-mobile
+  모바일 버전에서만 toggle 버튼 보이기
 
   window.addEventListener('resize', (e) => {
     if (e.currentTarget.innerWidth <= 992) {
@@ -91,6 +93,8 @@ $(function () {
       $('.only_pc').hide();
     }
   });
+
+  // 모바일 버전 토글 버튼 클릭시 메인네비게이션 보이기
 
   $('.toggle_btn').click(function () {
     let nav = $('.nav_cover header').offset();
@@ -105,7 +109,7 @@ $(function () {
     }
   });
 
-  // search button
+  // 돋보기 버튼 클릭시 검색창 보이기
   $('.search_btn').click(function () {
     if ($('.search_form_cover').css('display') === 'none') {
       $('.search_form_cover').show();

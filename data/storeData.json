@@ -54,7 +54,23 @@
       "title": "GR 북 PRO 16인치",
       "productName": "GR-BOOKPROJAEHEE202216",
       "color": ["#000", "#555", "#c9332d"],
-      "price": " 1,450,000원~"
+      "price": " 1,650,000원~"
+    },
+    {
+      "category": "PC",
+      "image": "./images/pc5.jpg",
+      "title": "GR 북 PRO 13인치",
+      "productName": "GR-BOOKPROJAEHEE202213",
+      "color": ["#000", "#555", "#c9332d"],
+      "price": " 1,350,000원~"
+    },
+    {
+      "category": "PC",
+      "image": "./images/pc3.jpg",
+      "title": "GR 북 AIR 13인치",
+      "productName": "GR-BOOKAIRJAEHEE202213",
+      "color": ["#000", "#555", "#c9332d"],
+      "price": " 1,150,000원~"
     },
     {
       "category": "악세서리",

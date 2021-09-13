@@ -1,5 +1,5 @@
 $(function () {
-  // slide image
+  // 배너 이미지 슬라이드
 
   let userWidth = window.innerWidth;
   $('.slide_img span').not(':eq(0)').css('left', `${userWidth}px`);
@@ -51,19 +51,16 @@ $(function () {
     clearInterval(slideInterval);
   });
 
-  // prev, next button
-
-  // 버튼 클릭시 함수호출
-  $('.prev').click(function () {
+  // prev, next 버튼 클릭시 슬라이드 이동
+  $('.prev_btn').click(function () {
     slidePrev();
   });
 
-  $('.next').click(function () {
+  $('.next_btn').click(function () {
     slide();
   });
 
-  //블릿기호
-
+  // 슬라이드 이미지의 순서에 따라 밑에 라인에 색 바뀌기
   $('.control_line li').click(function () {
     let controlNumber = $(this).index();
     if (now == controlNumber) return;
@@ -84,16 +81,10 @@ $(function () {
       now = controlNumber;
     }
   });
-
-  // prev, next button
-  $('.prev_btn').click(function () {
-    slidePrev();
-  });
-
-  $('.next_btn').click(function () {
-    slide();
-  });
 });
+
+// json 파일로 store 상품 데이터 불러와서 display
+// liveserve 로만 데이터 가져올수 있음.
 
 function loadItems() {
   return fetch('./data/storeData.json')
@@ -142,6 +133,7 @@ function setEventListeners(items) {
   });
 }
 
+// store nav 메뉴 클릭시 카테고리별로 상품 보여주기
 function onButtonClick(event, items) {
   let category = event.target.className;
 
