@@ -84,7 +84,7 @@ $(function () {
     lastScrollTop = userScrollTop;
   }
 
-  모바일 버전에서만 toggle 버튼 보이기
+  // 모바일 버전에서만 toggle 버튼 보이기
 
   window.addEventListener('resize', (e) => {
     if (e.currentTarget.innerWidth <= 992) {
