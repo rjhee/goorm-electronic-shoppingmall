@@ -208,6 +208,10 @@
   text-shadow: 7px 20px 13px #555;
 }
 
+.pc_contents_cover .btn_cover {
+  text-shadow: none;
+}
+
 .title_pc {
   margin-bottom: 3.75rem;
 }
@@ -233,7 +237,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8rem 0;
+  padding: 15rem 0;
 }
 
 .etc_store,
@@ -248,7 +252,7 @@
   margin-bottom: 1.6rem;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 5px 9px 30px 7px #555;
+  box-shadow: 5px 9px 30px 7px rgba(85, 85, 85, 0.5);
 }
 
 .etc_img a {

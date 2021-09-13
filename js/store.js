@@ -102,7 +102,7 @@ function loadItems() {
 }
 
 function displayItems(items) {
-  const container = document.querySelector('.items');
+  let container = document.querySelector('.items');
   container.innerHTML = items.map((item) => createHTMLString(item)).join('');
 }
 
@@ -129,6 +129,39 @@ function createHTMLString(item) {
     </div>
   </li>
 `;
+}
+
+function setEventListeners(items) {
+  let all = document.querySelector('.store_nav_all');
+  let buttons = document.querySelector('.store_nav');
+  all.addEventListener('click', () => displayItems(items));
+  buttons.addEventListener('click', (event) => onButtonClick(event, items));
+  let buyBtn = document.querySelector('.btn_cover');
+  buyBtn.addEventListener('click', () => {
+    open('./productDetail.html');
+  });
+}
+
+function onButtonClick(event, items) {
+  let category = event.target.className;
+
+  switch (category) {
+    case 'store_nav_phone':
+      displayItems(items.filter((item) => item.category == '스마트폰'));
+      break;
+    case 'store_nav_tablet':
+      displayItems(items.filter((item) => item.category == '태블릿'));
+      break;
+    case 'store_nav_pc':
+      displayItems(items.filter((item) => item.category == 'PC'));
+      break;
+    case 'store_nav_homeapp':
+      displayItems(items.filter((item) => item.category == '가전'));
+      break;
+    case 'store_nav_etc':
+      displayItems(items.filter((item) => item.category == '악세서리'));
+      break;
+  }
 }
 
 loadItems()

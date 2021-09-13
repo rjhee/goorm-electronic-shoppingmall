@@ -85,7 +85,7 @@ textarea {
 }
 
 .chat {
-  background-image: url(/images/icon/logostroke6.png);
+  background-image: url(../images/icon/logostroke6.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -199,9 +199,9 @@ textarea {
 .nav_sub > li > a {
   display: block;
   font-size: 0.8rem;
-  line-height: 50px;
+  line-height: 60px;
   width: 120px;
-  height: 50px;
+  height: 60px;
   color: #fff;
   transition: all 150ms ease-in;
 }
@@ -214,6 +214,7 @@ textarea {
 .nav_side {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .nav_side li {
@@ -292,7 +293,7 @@ textarea {
   color: #fff;
 }
 
-footer {
+.footer_cover footer {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,77 +1,5 @@
-function loadfaq() {
-  return fetch('./data/faqData.json')
-    .then((response) => response.json())
-    .then((json) => json.faqText);
-}
-
-function displayfaq(faqText) {
-  const container = document.querySelector('.FAQ_contents');
-  container.innerHTML = faqText
-    .map((text) => createHTMLStringFaq(text))
-    .join('');
-}
-
-function createHTMLStringFaq(text) {
-  return `
-  <div class="FAQ_content_title">
-    <div>
-      <span>Q</span>
-      <span>[${text.category}]</span>
-      <p>${text.title}</p>
-    </div>
-    <button class="FAQ_toggle_btn">
-      <i class="fas fa-chevron-down"></i>
-    </button>
-  </div>
-  <p class="FAQ_content_text">
-    ${text.contents}
-  </p>`;
-}
-
-loadfaq()
-  .then((faqText) => {
-    displayfaq(faqText);
-    console.log(faqText);
-  })
-  .catch(console.log);
-
-function loadqna() {
-  return fetch('./data/qnaData.json')
-    .then((response) => response.json())
-    .then((json) => json.qnaText);
-}
-
-function displayqna(qnaText) {
-  const container = document.querySelector('.QNA_contents');
-  container.innerHTML = qnaText.map((text) => createHTMLString(text)).join('');
-}
-
-function createHTMLString(text) {
-  return `
-    <div class="QNA_content_title">
-      <div>
-        <span>Q</span>
-        <span>[${text.category}]</span>
-        <p>${text.title}</p>
-      </div>
-      <button class="QNA_toggle_btn">
-        <i class="fas fa-chevron-down"></i>
-      </button>
-    </div>
-    <p class="QNA_content_text">
-      ${text.contents}
-    </p>`;
-}
-
-loadqna()
-  .then((qnaText) => {
-    displayqna(qnaText);
-    console.log(qnaText);
-  })
-  .catch(console.log);
-
 $(function () {
-  $('.customer_menu').click(function () {
+  $('.customer_menu').click(function (event) {
     let target = event.target;
 
     let faq = $('.customer_FAQ').offset().top;
@@ -131,18 +59,142 @@ $(function () {
       $('.menu_offline_btn').removeClass('menu_hover');
     }
   });
-
-  // $('.FAQ_toggle_btn');
-  $('.FAQ_content_text').hide();
-
-  // $('.answer').hide();
-  // $('.fqa_cover h3').click(function () {
-  //   if ($(this).next().css('display') == 'none') {
-  //     $(this).next().slideDown();
-  //     $('span', this).text('⬆️');
-  //   } else {
-  //     $(this).next().slideUp();
-  //     $('span', this).text('⬇️');
-  //   }
-  // });
 });
+
+function loadfaq() {
+  return fetch('./data/faqData.json')
+    .then((response) => response.json())
+    .then((json) => json.faqText);
+}
+
+function displayfaq(faqText) {
+  const container = document.querySelector('.FAQ_contents');
+  container.innerHTML = faqText
+    .map((text) => createHTMLStringFaq(text))
+    .join('');
+}
+
+function createHTMLStringFaq(text) {
+  return `
+  <div class="FAQ_content_title">
+    <div>
+      <span>Q</span>
+      <span>[${text.category}]</span>
+      <p>${text.title}</p>
+    </div>
+    <button class="FAQ_toggle_btn">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+  <p class="FAQ_content_text" style="display:none">
+    ${text.contents}
+  </p>`;
+}
+
+let FAQtitle = document.querySelector('.FAQ_contents');
+FAQtitle.addEventListener('click', (event) => onFaqTextClick(event));
+
+function onFaqTextClick(event) {
+  let title = event.target;
+  let text = title.nextElementSibling;
+  let toggle = title.lastElementChild;
+
+  if (title.className == 'FAQ_content_title') {
+    console.log(text);
+    if (text.style.display == 'none') {
+      title.nextElementSibling.style.display = 'flex';
+      toggle.lastElementChild.setAttribute('class', 'fas fa-chevron-up');
+    } else {
+      title.nextElementSibling.style.display = 'none';
+      toggle.lastElementChild.setAttribute('class', 'fas fa-chevron-down');
+    }
+  }
+}
+
+function setEventListeners(faqText) {
+  let all = document.querySelector('.FAQ_menu .all');
+  let buttons = document.querySelector('.FAQ_menu');
+  all.addEventListener('click', () => displayfaq(faqText));
+  buttons.addEventListener('click', (event) => onFaqNavClick(event, faqText));
+}
+
+function onFaqNavClick(event, faqText) {
+  let category = event.target.className;
+
+  switch (category) {
+    case 'user':
+      displayfaq(faqText.filter((text) => text.category == '회원가입/탈퇴'));
+      break;
+    case 'product':
+      displayfaq(faqText.filter((text) => text.category == '제품상세문의'));
+      break;
+    case 'pay':
+      displayfaq(faqText.filter((text) => text.category == '결제문의'));
+      break;
+    case 'order':
+      displayfaq(faqText.filter((text) => text.category == '주문문의'));
+      break;
+  }
+}
+
+loadfaq()
+  .then((faqText) => {
+    displayfaq(faqText);
+    setEventListeners(faqText);
+    console.log(faqText);
+  })
+  .catch(console.log);
+
+function loadqna() {
+  return fetch('./data/qnaData.json')
+    .then((response) => response.json())
+    .then((json) => json.qnaText);
+}
+
+function displayqna(qnaText) {
+  const container = document.querySelector('.QNA_contents');
+  container.innerHTML = qnaText.map((text) => createHTMLString(text)).join('');
+}
+
+function createHTMLString(text) {
+  return `
+    <div class="QNA_content_title">
+      <div>
+        <span>Q</span>
+        <span>[${text.category}]</span>
+        <p>${text.title}</p>
+      </div>
+      <button class="QNA_toggle_btn">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+    <p class="QNA_content_text" style="display:none">
+      ${text.contents}
+    </p>`;
+}
+
+let QNAtitle = document.querySelector('.QNA_contents');
+QNAtitle.addEventListener('click', (event) => onQnaTextClick(event));
+
+function onQnaTextClick(event) {
+  let title = event.target;
+  let text = title.nextElementSibling;
+  let toggle = title.lastElementChild;
+
+  if (title.className == 'QNA_content_title') {
+    if (text.style.display == 'none') {
+      title.nextElementSibling.style.display = 'flex';
+      toggle.lastElementChild.setAttribute('class', 'fas fa-chevron-up');
+    } else {
+      title.nextElementSibling.style.display = 'none';
+      toggle.lastElementChild.setAttribute('class', 'fas fa-chevron-down');
+    }
+  }
+}
+
+loadqna()
+  .then((qnaText) => {
+    displayqna(qnaText);
+    console.log(qnaText);
+  })
+  .catch(console.log);
