@@ -2,7 +2,7 @@
   "items": [
     {
       "category": "스마트폰",
-      "image": "../images/storephone.jpg",
+      "image": "./images/storephone.jpg",
       "title": "GR폰 22 PRO",
       "productName": "GR-PHROHJAE2022HEEPRO",
       "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -10,7 +10,7 @@
     },
     {
       "category": "스마트폰",
-      "image": "../images/storephone2.jpg",
+      "image": "./images/storephone2.jpg",
       "title": "GR폰 22 AIR",
       "productName": "GR-PHROHJAE2022HEEAIR",
       "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -18,7 +18,7 @@
     },
     {
       "category": "스마트폰",
-      "image": "../images/storephone3.jpg",
+      "image": "./images/storephone3.jpg",
       "title": "GR폰 X",
       "productName": "GR-PHROHJAE2022HEEX",
       "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -26,7 +26,7 @@
     },
     {
       "category": "태블릿",
-      "image": "../images/storePad.jpg",
+      "image": "./images/storePad.jpg",
       "title": "GR패드 22 PRO",
       "productName": "GR-PDROHJAE2022HEEPRO",
       "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -34,7 +34,7 @@
     },
     {
       "category": "태블릿",
-      "image": "../images/storePad2.jpg",
+      "image": "./images/storePad2.jpg",
       "title": "GR패드 22 AIR",
       "productName": "GR-PDROHJAE2022HEEAIR",
       "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -42,7 +42,7 @@
     },
     {
       "category": "태블릿",
-      "image": "../images/pad.jpg",
+      "image": "./images/pad.jpg",
       "title": "GR패드 11",
       "productName": "GR-PDROHJAE201HEE1234",
       "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -50,7 +50,7 @@
     },
     {
       "category": "PC",
-      "image": "../images/storepc.jpg",
+      "image": "./images/storepc.jpg",
       "title": "GR 북 PRO 16인치",
       "productName": "GR-BOOKPROJAEHEE202216",
       "color": ["#000", "#555", "#c9332d"],
@@ -58,7 +58,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/storecase.jpg",
+      "image": "./images/storecase.jpg",
       "title": "GR폰 케이스  adidas leather",
       "productName": "adidas leather case GR",
       "color": [
@@ -74,7 +74,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/storecase2.jpg",
+      "image": "./images/storecase2.jpg",
       "title": "GR폰 케이스 범퍼",
       "productName": "GR case bumper",
       "color": [
@@ -90,7 +90,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/keyborad.jpg",
+      "image": "./images/keyborad.jpg",
       "title": "GR패드 블루투스 키보드",
       "productName": "GR smatrt keyborad",
       "color": "#555",
@@ -98,7 +98,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/ear.jpg",
+      "image": "./images/ear.jpg",
       "title": "유선 이어폰",
       "productName": "line earphone",
       "color": "#555",
@@ -106,7 +106,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/keyboard2.jpg",
+      "image": "./images/keyboard2.jpg",
       "title": "스마트 블루투스 키보드2",
       "productName": "GR smatrt keyboard2",
       "color": "#555",
@@ -114,7 +114,7 @@
     },
     {
       "category": "악세서리",
-      "image": "../images/bookcase.jpg",
+      "image": "./images/bookcase.jpg",
       "title": "GRBOOK CASE color",
       "productName": "GRBOOK case ",
       "color": [
