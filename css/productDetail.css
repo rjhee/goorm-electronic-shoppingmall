@@ -1,0 +1,235 @@
+.product_detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #efefef;
+  padding: 6rem 10rem;
+}
+
+.product_detail h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.product_img_cover {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 5rem;
+}
+
+.product_img {
+  display: block;
+  background-image: url(/images/productDetailphone.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 400px;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.product_color {
+  display: flex;
+}
+
+.product_color li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 5px #000;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.product_color li:nth-child(1),
+.product_detail_color ul li:nth-child(1) div {
+  background-color: rgb(188, 188, 188);
+}
+
+.product_color li:nth-child(2),
+.product_detail_color ul li:nth-child(2) div {
+  background-color: rgb(0, 69, 133);
+}
+
+.product_color li:nth-child(3),
+.product_detail_color ul li:nth-child(3) div {
+  background-color: rgb(255, 208, 0);
+}
+
+.product_color li:nth-child(4),
+.product_detail_color ul li:nth-child(4) div {
+  background-color: rgb(90, 90, 90);
+}
+
+.product_detail_contents {
+  margin-bottom: 4rem;
+}
+
+.product_detail_cover {
+  background-color: #fff;
+  width: 480px;
+  min-height: 1100px;
+  padding: 2.5rem;
+  border-radius: 20px;
+}
+
+.product_category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.product_category span {
+  font-size: 0.8rem;
+  color: #00c6ff;
+  font-weight: 600;
+}
+
+.product_category button {
+  font-size: 1.4rem;
+}
+
+.product_title {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  padding: 0 1rem;
+}
+
+.product_name {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+  padding: 0 1.2rem;
+}
+
+.product_review {
+  color: #00c6ff;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0 1.2rem;
+}
+
+.product_review strong {
+  text-decoration: underline;
+}
+
+.product_detail_color {
+  border-bottom: 1px solid rgb(189, 189, 189);
+  padding: 2rem 0;
+  margin-bottom: 2rem;
+}
+
+.product_detail_color ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product_detail_color ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.7rem;
+  color: #555;
+  width: 50%;
+  max-width: 185px;
+  height: 80px;
+  border-radius: 10px;
+  margin: 6px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.product_detail_color ul li div {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 3px 3px 5px #000;
+  margin: 6px;
+}
+
+.product_volume {
+  border-bottom: 1px solid rgb(189, 189, 189);
+  padding-bottom: 2rem;
+  margin-bottom: 10rem;
+}
+
+.product_volume ul {
+  display: flex;
+  justify-content: center;
+}
+
+.product_volume ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  max-width: 185px;
+  height: 80px;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  margin: 6px;
+  background-color: #efefef;
+  cursor: pointer;
+}
+
+.product_price {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(189, 189, 189);
+  padding: 0.4rem 0;
+  margin-bottom: 0.4rem;
+}
+
+.product_price strong {
+  font-size: 1.5rem;
+}
+
+.product_price_info {
+  text-align: right;
+  margin-bottom: 3rem;
+}
+
+.product_price_info p {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+.product_cart,
+.product_heart {
+  font-size: 1.4rem;
+  color: rgb(158, 157, 157);
+}
+
+.product_cart:hover {
+  color: #00c6ff;
+}
+
+.product_heart:hover {
+  color: #c9332d;
+}
+
+.product_buy {
+  width: 75%;
+  height: 40px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 20px;
+  background-image: linear-gradient(90deg, #00c6ff, #04276b);
+}
+
+.product_buy:hover {
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #00c6ff;
+  color: #00c6ff;
+}

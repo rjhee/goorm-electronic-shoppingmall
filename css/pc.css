@@ -3,7 +3,7 @@
   width: 100%;
   padding: 10rem;
   flex-grow: 1;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .pc_detail {
@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 600px;
   height: 500px;
   box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
@@ -58,6 +59,10 @@
 }
 
 .more {
+  position: absolute;
+  right: 5%;
+  top: 50vh;
+
   font-size: 5rem;
   color: #00c6ff;
 }

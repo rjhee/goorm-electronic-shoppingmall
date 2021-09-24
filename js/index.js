@@ -68,7 +68,6 @@ $(function () {
 
   function hasScrolled() {
     let userScrollTop = $(this).scrollTop();
-
     if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
 
     if (userScrollTop > lastScrollTop && userScrollTop > navbarHeight) {
@@ -83,6 +82,28 @@ $(function () {
 
     lastScrollTop = userScrollTop;
   }
+
+  // 스크롤시 이미지 보여주기
+  $('.img_phone, .home_container, .pc_container').hide();
+
+  $(window).scroll(function () {
+    let scrollTop = $(this).scrollTop();
+    if (scrollTop >= 350) {
+      $('.img_phone').fadeIn('slow');
+    } else {
+      $('.img_phone').fadeOut('slow');
+    }
+    if (scrollTop >= 1000) {
+      $('.home_container').fadeIn('slow');
+    } else {
+      $('.home_container').fadeOut('slow');
+    }
+    if (scrollTop >= 1800) {
+      $('.pc_container').fadeIn('slow');
+    } else {
+      $('.pc_container').fadeOut('slow');
+    }
+  });
 
   // 모바일 버전에서만 toggle 버튼 보이기
 

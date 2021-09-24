@@ -1,7 +1,14 @@
 $(function () {
   // 배너 이미지 슬라이드
 
-  let userWidth = window.innerWidth;
+  let userWidth = $(window).width();
+  if (userWidth <= 1400) {
+    userWidth = 1400;
+  } else {
+    userWidth = $(window).width();
+  }
+
+  userWidth = window.innerWidth;
   $('.slide_img span').not(':eq(0)').css('left', `${userWidth}px`);
   let now = 0;
   let slideImg = 3;

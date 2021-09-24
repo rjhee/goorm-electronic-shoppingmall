@@ -1,13 +1,8 @@
 .slide {
   position: relative;
   width: 100%;
-  height: 410px;
+  height: 480px;
   overflow: hidden;
-}
-
-.slide_img {
-  width: 100%;
-  height: 410px;
 }
 
 .slide_img span {
@@ -15,12 +10,16 @@
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: 410px;
+  height: auto;
 }
 
 .slide_img span:nth-child(1),
 .slide_img span:nth-child(4) {
   background-color: #000;
+}
+
+.slide_img span:nth-child(2) {
+  background-color: #f7f7f7;
 }
 
 .slide_img span:nth-child(3) {
@@ -104,7 +103,6 @@
 
 .store_nav {
   position: relative;
-
   width: 100%;
   max-width: 180px;
 }

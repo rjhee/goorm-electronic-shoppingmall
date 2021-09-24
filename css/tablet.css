@@ -4,7 +4,7 @@
   height: 800px;
   padding: 10rem;
   flex-grow: 1;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 .tablet_detail {
@@ -12,9 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 600px;
   height: 500px;
-  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
+  box-shadow: 5px 5px 10px 5px rgba(153, 153, 153, 0.288);
   margin: 0 3rem;
   padding: 2rem 3rem;
   border-radius: 20px;
@@ -67,6 +68,10 @@
 }
 
 .more {
+  position: absolute;
+  right: 5%;
+  top: 50vh;
+
   font-size: 5rem;
   color: #00c6ff;
 }
