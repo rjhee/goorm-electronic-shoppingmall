@@ -12,8 +12,19 @@ $(function () {
     if (e.currentTarget.innerWidth > 992) {
       $('.nav_main').show();
       $('.only_pc').show();
+    } else if (e.currentTarget.innerWidth <= 991) {
+      $('.nav_main').hide();
+      $('.only_pc').hide();
     }
   });
+
+  function mobileNavHide() {
+    if (window.innerWidth <= 991) {
+      $('.nav_main').hide();
+    }
+  }
+
+  mobileNavHide();
 
   // 메인네비에 마우스 오버시 서브 네비 슬라이드다운
   function slide_Down(seleted) {
@@ -55,8 +66,12 @@ $(function () {
   let delta = 5;
   let navbarHeight = $('.nav_cover').outerHeight();
 
-  $(window).scroll(function (event) {
-    didScroll = true;
+  $(window).scroll(function () {
+    if (window.innerWidth >= 992) {
+      didScroll = true;
+    } else {
+      didScroll = false;
+    }
   });
 
   setInterval(function () {

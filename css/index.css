@@ -110,6 +110,7 @@
   max-height: 700px;
   overflow: hidden;
 }
+
 .phone_container {
   display: flex;
   flex-direction: column;
@@ -304,55 +305,18 @@
   text-decoration: underline;
 }
 
-/* footer menu nav  */
-.footer_menu {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  border-top: 1px solid #555;
-}
-
-.footer_menu_title {
-  padding: 3rem 4rem;
-  height: 300px;
-}
-
-.footer_menu_title > a {
-  display: block;
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.footer_menu_title a:hover {
-  color: #888;
-}
-
-.footer_menu .footer_menu_title:nth-child(5),
-.footer_menu .footer_menu_title:nth-child(6) {
-  border-right: 1px solid #555;
-}
-
-.footer_menu_sub {
-  font-size: 0.87rem;
-}
-
-.footer_menu_sub li {
-  margin-bottom: 0.6rem;
-}
-
-.footer_menu_sub li:last-child {
-  text-decoration: underline;
-}
-
 @media screen and (max-width: 992px) {
   /* common */
   .main_title {
-    font-size: 3.2rem;
+    font-size: 3rem;
+  }
+
+  .main_desc {
+    font-size: 0.8rem;
   }
 
   .main_sub_title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .main_cover {
@@ -362,14 +326,29 @@
     padding: 1rem 0;
   }
 
+  .main_more_btn,
+  .main_store_btn,
+  .more_btn,
+  .store_btn {
+    width: 8rem;
+    height: 2.6rem;
+  }
+
   .tablet_container {
     flex-direction: column;
     padding: 5rem 0;
     transform: translateX(0);
   }
+
   /* tablet */
   .img_tablet {
     margin-bottom: 1rem;
+  }
+
+  /* phone */
+
+  .phone_container {
+    padding: 1rem;
   }
 
   /* home */
@@ -377,13 +356,33 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .home_contents_cover {
+    margin: 0;
+    padding: 1rem;
+  }
+
   /* pc */
+
   .pc_container {
     flex-direction: column;
-    padding: 3rem 3rem 6rem 3rem;
+    padding: 3rem 1rem 6rem 1rem;
   }
 
   .pc_contents_cover {
     align-items: center;
+  }
+  /* .etc_contents */
+  .etc_contents {
+    flex-direction: column;
+    padding: 15rem 1rem 0 1rem;
+  }
+
+  .etc_store {
+    margin-bottom: 4rem;
+  }
+
+  .etc_img {
+    height: 300px;
   }
 }
