@@ -34,6 +34,7 @@
 }
 
 .new_product_cpu {
+  overflow: hidden;
   background-color: #fafafa;
 }
 
@@ -85,6 +86,7 @@
   background-color: #fafafa;
   width: 100%;
   height: 2000px;
+  padding: 10rem 0;
 }
 
 .new_product_battery .video_cover {
@@ -95,27 +97,29 @@
   background-image: url(../images/battery3.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 140%;
   width: 100%;
   height: 100vh;
   z-index: 100;
   position: absolute;
   top: 50%;
+  overflow: hidden;
 }
 
 .new_product_battery .video_cover video {
   position: absolute;
   top: 50%;
-  width: 100%;
+  width: 120%;
   height: 100vh;
   z-index: 10;
 }
 
 .new_product_battery h2 {
   position: sticky;
-  top: 10%;
+  top: 20%;
   margin: auto;
   text-align: center;
+  transform: translateY(-10%);
 }
 
 .new_product_battery .img {
@@ -419,6 +423,7 @@
 .etc_keyboard .img span {
   background-image: url(../images/etc.png);
   background-size: 60%;
+  background-position: top center;
 }
 
 .etc_app .img span {
@@ -439,6 +444,7 @@
 .etc_recommend .img span {
   background-image: url(../images/etc8.png);
   background-size: 80%;
+  background-position: top center;
 }
 
 .etc_pad .img span {
@@ -514,4 +520,84 @@
 
 .btn_cover {
   margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .new_product h2 {
+    font-size: 2rem;
+  }
+
+  .new_product_size {
+    position: relative;
+    top: 80px;
+    height: 100vh;
+    padding: 3rem 0;
+  }
+
+  .new_product_battery .img {
+    background-size: 300px auto;
+  }
+
+  .battery_cover {
+    top: 58px;
+  }
+
+  .battery_cover > span {
+    width: 26px;
+    height: 100px;
+    border-radius: 4px;
+  }
+
+  .new_product_pencil h2 {
+    font-size: 1.6rem;
+  }
+
+  .new_product_pencil p {
+    font-size: 0.8rem;
+  }
+
+  .pencil_drowing .img span:nth-child(2),
+  .pencil_drowing .img span:nth-child(4),
+  .pencil_drowing .img span:nth-child(5),
+  .pencil_program .img span:nth-child(1),
+  .pencil_program .img span:nth-child(2),
+  .pencil_video .img span:nth-child(2),
+  .pencil_video .img span:nth-child(3) {
+    display: none;
+  }
+
+  .new_product_etc {
+    flex-direction: column;
+    padding: 10rem 1rem;
+  }
+
+  .etc {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .etc p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .etc .img span {
+    max-height: 200px;
+  }
+
+  .tablet_page {
+    padding: 1rem;
+  }
+
+  .tablet_detail {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem;
+    margin: 1rem auto;
+    overflow: hidden;
+  }
+
+  .tblet_detail_title {
+    font-size: 1.5rem;
+  }
 }

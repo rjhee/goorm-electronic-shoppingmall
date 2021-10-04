@@ -34,7 +34,7 @@
     },
     {
       "category": "태블릿",
-      "image": "./images/storePad2.jpg",
+      "image": "./images/etc7.png",
       "title": "GR패드 22 AIR",
       "productName": "GR-PDROHJAE2022HEEAIR",
       "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
@@ -42,15 +42,23 @@
     },
     {
       "category": "태블릿",
-      "image": "./images/pad.jpg",
+      "image": "./images/pad3.jpg",
       "title": "GR패드 11",
       "productName": "GR-PDROHJAE201HEE1234",
       "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
       "price": " 560,000원~"
     },
     {
+      "category": "태블릿",
+      "image": "./images/storePad2.jpg",
+      "title": "GR패드 NIMI",
+      "productName": "GR-MINIROHJAE201HEE00",
+      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "price": " 360,000원~"
+    },
+    {
       "category": "PC",
-      "image": "./images/storepc.jpg",
+      "image": "./images/storepc2.jpg",
       "title": "GR 북 PRO 16인치",
       "productName": "GR-BOOKPROJAEHEE202216",
       "color": ["#000", "#555", "#c9332d"],
@@ -58,7 +66,7 @@
     },
     {
       "category": "PC",
-      "image": "./images/pc5.jpg",
+      "image": "./images/storepc.jpg",
       "title": "GR 북 PRO 13인치",
       "productName": "GR-BOOKPROJAEHEE202213",
       "color": ["#000", "#555", "#c9332d"],
@@ -73,13 +81,14 @@
       "price": " 1,150,000원~"
     },
     {
-      "category": "악세서리",
-      "image": "./images/keyboard2.jpg",
-      "title": "스마트 블루투스 키보드2",
-      "productName": "GR smatrt keyboard2",
-      "color": "#555",
-      "price": "210,000원"
+      "category": "PC",
+      "image": "./images/pc.png",
+      "title": "GR 데스크탑 일체형",
+      "productName": "GR-BOOKPROJAEHEE202213",
+      "color": ["#000"],
+      "price": " 1,350,000원~"
     },
+
     {
       "category": "가전",
       "image": "./images/storehomeapp.jpg",
@@ -112,9 +121,9 @@
       "color": [
         "#00c6ff",
         "#ff9bcd",
+        "#fff",
         "#c9332d",
         "#fffb5c",
-        "#fff",
         "#000",
         "#555"
       ],
@@ -150,15 +159,39 @@
       "title": "GRBOOK CASE color",
       "productName": "GRBOOK case ",
       "color": [
+        "#fff",
         "#00c6ff",
         "#ff9bcd",
         "#c9332d",
         "#fffb5c",
-        "#fff",
         "#000",
         "#555"
       ],
       "price": "32,000원"
+    },
+    {
+      "category": "악세서리",
+      "image": "./images/store.jpg",
+      "title": "GR Pad CASE 스탠드형",
+      "productName": "GR Pad case ",
+      "color": [
+        "#fff",
+        "#00c6ff",
+        "#ff9bcd",
+        "#c9332d",
+        "#fffb5c",
+        "#000",
+        "#555"
+      ],
+      "price": "45,000원"
+    },
+    {
+      "category": "악세서리",
+      "image": "./images/etc10.png",
+      "title": "GR pencil",
+      "productName": "GR pencil2 ",
+      "color": ["#fff"],
+      "price": "125,000원"
     }
   ]
 }

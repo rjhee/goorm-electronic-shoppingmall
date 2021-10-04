@@ -1,3 +1,7 @@
+header {
+  width: 100%;
+}
+
 .contents_smartphone {
   position: relative;
 }
@@ -532,13 +536,20 @@
     background-size: contain;
     width: 300px;
   }
+
   .phone_page {
-    padding: 0;
+    padding: 1rem;
   }
+
   .phone_detail {
     width: 100%;
     max-width: 320px;
     padding: 1rem;
     margin: 1rem auto;
+    overflow: hidden;
+  }
+
+  .phone_detail_title {
+    font-size: 1.5rem;
   }
 }

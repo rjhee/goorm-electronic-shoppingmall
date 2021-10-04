@@ -103,8 +103,8 @@
 }
 
 .store_nav_all {
-  border-top: 1px solid #555;
-  border-bottom: 1px solid #555;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   margin-bottom: 1rem;
 }
 
@@ -199,25 +199,8 @@
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-  background-color: khaki;
+
   margin: 0 2px;
-}
-
-.item_color li:nth-child(1) {
-  background-color: #00c6ff;
-}
-
-.item_color li:nth-child(2) {
-  background-color: #555;
-}
-
-.item_color li:nth-child(3) {
-  background-color: #000;
-}
-
-.item_color li:nth-child(4) {
-  background-color: #fff;
-  border: solid 1px #555;
 }
 
 .btn_cover {

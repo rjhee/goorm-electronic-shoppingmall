@@ -88,6 +88,11 @@ textarea {
   color: #00c6ff;
   font-weight: 600;
   margin-bottom: 4rem;
+  cursor: pointer;
+}
+
+.more_text:hover {
+  color: #888;
 }
 
 .pc_container .main_more_btn,

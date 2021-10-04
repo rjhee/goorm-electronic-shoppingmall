@@ -113,11 +113,12 @@ function createHTMLString(item) {
     <h2 class="item_title">${item.title}</h2>
     <span class="item_product_name">${item.productName}</span>
     <ul class="item_color">
-      <li style="background-color:${item.color}"></li>
-      <li style="background-color:${item.color}"></li>
-      <li style="background-color:${item.color}"></li>
-      <li style="background-color:${item.color}"></li>
-      <li style="background-color:${item.color}"></li>
+      <li style="background-color:${item.color[0]}"></li>
+      <li style="background-color:${item.color[1]}"></li>
+      <li style="background-color:${item.color[2]}"></li>
+      <li style="background-color:${item.color[3]}"></li>
+      <li style="background-color:${item.color[4]}"></li>
+      <li style="background-color:${item.color[5]}"></li>
     </ul>
     <strong class="item_price">${item.price}</strong>
     <div class="btn_cover">

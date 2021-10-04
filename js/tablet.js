@@ -2,7 +2,7 @@ $(function () {
   let i = 70;
   function rotateSizeImg() {
     i = i - 1;
-    console.log(i);
+
     if (i > 0) {
       $('.new_product_size .img span').css('transform', `rotateX(${i}deg)`);
     }
@@ -23,14 +23,14 @@ $(function () {
   $('.pencil_program .img').hide();
   $('.pencil_video .img').hide();
   function fadeIn(item) {
-    $(`.pencil_${item} .img`).fadeIn(5000);
+    $(`.pencil_${item} .img`).fadeIn(3000);
   }
 
   $(window).scroll(function () {
     let sizeTop = $('.new_product_size').offset().top;
     let cpuTop = $('.new_product_cpu').offset().top;
     let weightTop = $('.new_product_weight').offset().top;
-    let batteryTop = $('.new_product_battery').offset().top + 1000;
+    let batteryTop = $('.new_product_battery').offset().top;
     let drowingTop = $('.pencil_drowing').offset().top;
     let noteTop = $('.pencil_note').offset().top;
     let programTop = $('.pencil_program').offset().top;
