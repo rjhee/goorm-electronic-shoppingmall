@@ -1,66 +1,146 @@
 $(function () {
   // 고객서비스 배너 밑에 있는 메뉴 클릭시 해당 컨텐츠로 스크롤 이동.
-  $('.customer_menu').click(function (event) {
-    let target = event.target;
+  if (window.innerWidth <= 991) {
+    $('.customer_menu').click(function (event) {
+      let target = event.target;
 
-    let faq = $('.customer_FAQ').offset().top;
-    let qna = $('.customer_QNA').offset().top;
-    let service = $('.customer_service').offset().top;
-    let offlineStore = $('.customer_offline_store').offset().top;
-    switch (target.className) {
-      case 'menu_FAQ_btn':
-        $('html').animate({ scrollTop: faq - 70 }, 400);
-        break;
-      case 'menu_QNA_btn':
-        $('html').animate({ scrollTop: qna - 70 }, 400);
-        break;
-      case 'menu_online_btn':
-      case 'menu_call_btn':
-      case 'menu_offline_btn':
-        $('html').animate({ scrollTop: service - 70 }, 400);
-        break;
-      case 'menu_offline_store_btn':
-        $('html').animate({ scrollTop: offlineStore - 70 }, 400);
-        break;
-    }
-  });
+      let faq = $('.customer_FAQ').offset().top;
+      let qna = $('.customer_QNA').offset().top;
+      let onlineService = $('.online').offset().top;
+      let callService = $('.call').offset().top;
+      let visiteService = $('.visite').offset().top;
+      let offlineStore = $('.customer_offline_store').offset().top;
+      switch (target.className) {
+        case 'menu_FAQ_btn':
+          $('html').animate({ scrollTop: faq - 70 }, 400);
+          break;
+        case 'menu_QNA_btn':
+          $('html').animate({ scrollTop: qna - 70 }, 400);
+          break;
+        case 'menu_online_btn':
+          $('html').animate({ scrollTop: onlineService - 70 }, 400);
+          break;
+        case 'menu_call_btn':
+          $('html').animate({ scrollTop: callService - 70 }, 400);
+          break;
+        case 'menu_offline_btn':
+          $('html').animate({ scrollTop: visiteService - 70 }, 400);
+          break;
+        case 'menu_offline_store_btn':
+          $('html').animate({ scrollTop: offlineStore - 70 }, 400);
+          break;
+      }
+    });
+  } else {
+    $('.customer_menu').click(function (event) {
+      let target = event.target;
+
+      let faq = $('.customer_FAQ').offset().top;
+      let qna = $('.customer_QNA').offset().top;
+      let service = $('.customer_service').offset().top;
+      let offlineStore = $('.customer_offline_store').offset().top;
+      switch (target.className) {
+        case 'menu_FAQ_btn':
+          $('html').animate({ scrollTop: faq - 70 }, 400);
+          break;
+        case 'menu_QNA_btn':
+          $('html').animate({ scrollTop: qna - 70 }, 400);
+          break;
+        case 'menu_online_btn':
+        case 'menu_call_btn':
+        case 'menu_offline_btn':
+          $('html').animate({ scrollTop: service - 70 }, 400);
+          break;
+        case 'menu_offline_store_btn':
+          $('html').animate({ scrollTop: offlineStore - 70 }, 400);
+          break;
+      }
+    });
+  }
 
   // 사용자 스크롤시 현재 컨텐츠위치에 메뉴 배경색 바뀌기
-  $(window).scroll(function () {
-    let userScroll = $(this).scrollTop();
+  if (window.innerWidth <= 991) {
+    $(window).scroll(function () {
+      let userScroll = $(this).scrollTop();
 
-    let customerFAQ = $('.customer_FAQ').offset().top + 500;
-    let customerQNA = $('.customer_QNA').offset().top;
-    let customerService = $('.customer_service_cover').offset().top;
-    let customerOffline = $('.customer_offline_store').offset().top;
+      let customerFAQ = $('.customer_FAQ').offset().top + 500;
+      let customerQNA = $('.customer_QNA').offset().top;
+      let onlineService = $('.online').offset().top;
+      let callService = $('.call').offset().top;
+      let visiteService = $('.visite').offset().top;
+      let customerOffline = $('.customer_offline_store').offset().top;
 
-    if (500 < userScroll && userScroll < customerFAQ) {
-      $('.menu_FAQ_btn').addClass('menu_hover');
-      $('.menu_QNA_btn').removeClass('menu_hover');
-    } else if (customerFAQ < userScroll && userScroll < customerQNA) {
-      $('.menu_QNA_btn').addClass('menu_hover');
-      $('.menu_FAQ_btn').removeClass('menu_hover');
-      $('.menu_online_btn').removeClass('menu_hover');
-    } else if (customerQNA < userScroll && userScroll < customerService - 100) {
-      $('.menu_online_btn').addClass('menu_hover');
-      $('.menu_QNA_btn').removeClass('menu_hover');
-      $('.menu_call_btn').removeClass('menu_hover');
-    } else if (customerQNA < userScroll && userScroll < customerService) {
-      $('.menu_call_btn').addClass('menu_hover');
-      $('.menu_online_btn').removeClass('menu_hover');
-      $('.menu_offline_btn').removeClass('menu_hover');
-    } else if (customerQNA < userScroll && userScroll < customerService + 100) {
-      $('.menu_offline_btn').addClass('menu_hover');
-      $('.menu_call_btn').removeClass('menu_hover');
-      $('.menu_offline_store_btn').removeClass('menu_hover');
-    } else if (
-      customerService + 400 < userScroll &&
-      userScroll < customerOffline
-    ) {
-      $('.menu_offline_store_btn').addClass('menu_hover');
-      $('.menu_offline_btn').removeClass('menu_hover');
-    }
-  });
+      if (500 < userScroll && userScroll < customerFAQ) {
+        $('.menu_FAQ_btn').addClass('menu_hover');
+        $('.menu_QNA_btn').removeClass('menu_hover');
+      } else if (customerFAQ < userScroll && userScroll < customerQNA) {
+        $('.menu_QNA_btn').addClass('menu_hover');
+        $('.menu_FAQ_btn').removeClass('menu_hover');
+        $('.menu_online_btn').removeClass('menu_hover');
+      } else if (customerQNA < userScroll && userScroll < onlineService) {
+        $('.menu_online_btn').addClass('menu_hover');
+        $('.menu_QNA_btn').removeClass('menu_hover');
+        $('.menu_call_btn').removeClass('menu_hover');
+      } else if (onlineService < userScroll && userScroll < callService) {
+        $('.menu_call_btn').addClass('menu_hover');
+        $('.menu_online_btn').removeClass('menu_hover');
+        $('.menu_offline_btn').removeClass('menu_hover');
+      } else if (callService < userScroll && userScroll < visiteService) {
+        $('.menu_offline_btn').addClass('menu_hover');
+        $('.menu_call_btn').removeClass('menu_hover');
+        $('.menu_offline_store_btn').removeClass('menu_hover');
+      } else if (
+        visiteService < userScroll &&
+        userScroll < customerOffline + 200
+      ) {
+        $('.menu_offline_store_btn').addClass('menu_hover');
+        $('.menu_call_btn').removeClass('menu_hover');
+        $('.menu_offline_btn').removeClass('menu_hover');
+      }
+    });
+  } else {
+    $(window).scroll(function () {
+      let userScroll = $(this).scrollTop();
+
+      let customerFAQ = $('.customer_FAQ').offset().top + 500;
+      let customerQNA = $('.customer_QNA').offset().top;
+      let customerService = $('.customer_service_cover').offset().top;
+      let customerOffline = $('.customer_offline_store').offset().top;
+
+      if (500 < userScroll && userScroll < customerFAQ) {
+        $('.menu_FAQ_btn').addClass('menu_hover');
+        $('.menu_QNA_btn').removeClass('menu_hover');
+      } else if (customerFAQ < userScroll && userScroll < customerQNA) {
+        $('.menu_QNA_btn').addClass('menu_hover');
+        $('.menu_FAQ_btn').removeClass('menu_hover');
+        $('.menu_online_btn').removeClass('menu_hover');
+      } else if (
+        customerQNA < userScroll &&
+        userScroll < customerService - 100
+      ) {
+        $('.menu_online_btn').addClass('menu_hover');
+        $('.menu_QNA_btn').removeClass('menu_hover');
+        $('.menu_call_btn').removeClass('menu_hover');
+      } else if (customerQNA < userScroll && userScroll < customerService) {
+        $('.menu_call_btn').addClass('menu_hover');
+        $('.menu_online_btn').removeClass('menu_hover');
+        $('.menu_offline_btn').removeClass('menu_hover');
+      } else if (
+        customerQNA < userScroll &&
+        userScroll < customerService + 100
+      ) {
+        $('.menu_offline_btn').addClass('menu_hover');
+        $('.menu_call_btn').removeClass('menu_hover');
+        $('.menu_offline_store_btn').removeClass('menu_hover');
+      } else if (
+        customerService + 400 < userScroll &&
+        userScroll < customerOffline
+      ) {
+        $('.menu_offline_store_btn').addClass('menu_hover');
+        $('.menu_offline_btn').removeClass('menu_hover');
+      }
+    });
+  }
 });
 
 // FAQ 데이터 json 파일로 불러오고 display
@@ -81,8 +161,10 @@ function createHTMLStringFaq(text) {
   return `
   <div class="FAQ_content_title">
     <div>
-      <span>Q</span>
-      <span>[${text.category}]</span>
+      <div class="FAQ_category"> 
+        <span>Q</span>
+        <span>[${text.category}]</span>
+      </div>
       <p>${text.title}</p>
     </div>
     <button class="FAQ_toggle_btn">
@@ -165,8 +247,10 @@ function createHTMLString(text) {
   return `
     <div class="QNA_content_title">
       <div>
-        <span>Q</span>
-        <span>[${text.category}]</span>
+        <div class="QNA_category"> 
+          <span>Q</span>
+          <span>[${text.category}]</span>
+        </div>
         <p>${text.title}</p>
       </div>
       <button class="QNA_toggle_btn">

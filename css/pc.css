@@ -1,3 +1,269 @@
+.new_product_cover {
+  background-color: #000;
+}
+
+.new_product {
+  padding: 10rem 1rem;
+}
+
+.new_product h2 {
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.new_product p {
+  padding: 1rem;
+}
+
+.new_product .img {
+  width: 100%;
+  height: 100%;
+}
+
+.new_product .img > span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+}
+
+.new_product_size {
+  text-align: center;
+  background: linear-gradient(0deg, #ffffff 0%, #000000 89%);
+  color: transparent;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+.new_product_size strong {
+  font-size: 1.4rem;
+}
+
+.new_product_size h2 {
+  font-weight: 900;
+}
+
+.new_product_size p {
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.new_product_size .img span {
+  background-image: url(../images/large_0121.jpg);
+}
+
+.new_product_spec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.new_product_spec .img {
+  position: sticky;
+  top: 100px;
+  width: 55%;
+}
+
+.new_product_spec .img span {
+  background-image: url(../images/spec.png);
+}
+
+.new_product_spec .spec_text {
+  font-size: 2rem;
+  width: 40%;
+  background: linear-gradient(0deg, #ffffff 0%, #000000 89%);
+  color: transparent;
+  background-attachment: fixed;
+  -webkit-background-clip: text;
+}
+
+.new_product_spec .spec_text p {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 3rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid #999;
+}
+
+.spec_detail_display {
+  margin: 1rem auto;
+  padding: 5rem 1rem;
+  width: 80%;
+  max-height: 140vh;
+  border-radius: 30px;
+  color: #fff;
+  background-attachment: fixed;
+  background-color: #ee61b1;
+  background-image: linear-gradient(
+    225deg,
+    #ee61b1 0%,
+    #784ba0 50%,
+    #3d8bc3 100%
+  );
+  overflow: hidden;
+}
+
+.spec_detail_display .img span {
+  background-image: url(../images/store.png);
+  background-position: top center;
+}
+
+.spec_detail_storage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  width: 80%;
+  padding: 2rem 2rem 2rem 0;
+  height: 100%;
+  max-height: 100vh;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #ffeb6a;
+  background-image: linear-gradient(315deg, #ffeb6a 0%, #f23a72 100%);
+}
+
+.spec_detail_storage .spec_text {
+  order: 2;
+}
+
+.spec_detail_storage .img {
+  order: 1;
+}
+
+.spec_detail_storage .img span {
+  background-image: url(../images/spec2.png);
+  background-position: left center;
+}
+
+.spec_detail_cover {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+}
+
+.spec_detail_core {
+  margin: 0 0.5rem 0 0;
+  padding: 2rem 0;
+  width: 40%;
+  max-height: 800px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #f4d03f;
+  background-image: linear-gradient(315deg, #f4d03f 0%, #16a085 100%);
+}
+
+.spec_detail_core .spec_text h2 {
+  font-size: 2rem;
+}
+
+.spec_detail_core .spec_text p {
+  font-size: 6rem;
+  font-weight: 900;
+}
+
+.spec_detail_core .img span {
+  background-image: url(../images/core.png);
+  background-size: 20%;
+  width: 100%;
+  height: 200px;
+}
+
+.spec_detail_memory {
+  flex-grow: 1;
+  margin: 0 0 0 0.5rem;
+  padding: 2rem 0;
+  width: 40%;
+  max-height: 800px;
+  border-radius: 30px;
+  color: #fff;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+}
+
+.spec_detail_memory p {
+  font-size: 1.4rem;
+}
+
+.spec_detail_memory .img span {
+  background-image: url(../images/momory.png);
+  background-size: 20%;
+  width: 100%;
+  height: 200px;
+}
+
+.spec_detail_keyboard {
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 80%;
+  max-height: 100vh;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #545454;
+  background-image: linear-gradient(180deg, #545454 0%, #000000 32%);
+
+  overflow: hidden;
+}
+
+.spec_detail_keyboard .spec_text {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.spec_detail_keyboard h2 {
+  padding: 3rem;
+  margin-bottom: 2rem;
+  width: 60%;
+}
+
+.spec_detail_keyboard p {
+  padding: 3rem;
+  width: 50%;
+}
+
+.spec_detail_keyboard .img span {
+  background-image: url(../images/keyboard.jpg);
+  background-position: top center;
+  transform: translateY(-10%);
+}
+
+.spec_detail_sound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 80%;
+  max-height: 100vh;
+  border-radius: 30px;
+  color: #fff;
+  background-image: linear-gradient(
+    64.5deg,
+    rgba(245, 116, 185, 1) 14.7%,
+    rgba(89, 97, 223, 1) 88.7%
+  );
+}
+
+.spec_detail_sound .spec_text {
+  width: 50%;
+}
+
+.video_cover {
+  width: 400px;
+  height: auto;
+}
+
+.video_cover video {
+  width: 100%;
+  height: 100vh;
+}
+
 .pc_page {
   display: flex;
   width: 100%;
@@ -32,6 +298,139 @@
   width: 300px;
   height: 300px;
   margin-bottom: 2rem;
+}
+
+.new_product_connect {
+  height: fit-content;
+  color: #555;
+  background-color: #f5f5f7;
+  text-align: center;
+  padding: 5rem 1rem;
+  margin: 1rem;
+}
+
+.new_product_connect h2 {
+  margin-bottom: 3rem;
+}
+
+.new_product_connect p {
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.new_product_connect .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.new_product_connect .img span {
+  /* background-size: 45%; */
+  width: 45%;
+  max-height: 300px;
+}
+
+.new_product_connect .img span:nth-child(1) {
+  background-image: url(../images/pcetc.png);
+}
+
+.new_product_connect .img span:nth-child(2) {
+  background-image: url(../images/pcetc5.png);
+}
+
+.new_product_connect .img span:nth-child(3) {
+  background-image: url(../images/pcetc3.png);
+}
+
+.new_product_connect .img span:nth-child(4) {
+  background-image: url(../images/pcetc4.png);
+}
+
+.new_product_etc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10rem 0;
+}
+
+.etc {
+  background-color: #f5f5f7;
+  border-radius: 20px;
+  margin: 0.5rem;
+  padding: 3rem 0;
+  max-height: 1000px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.etc h2 {
+  padding: 3rem;
+}
+
+.etc p {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 3rem;
+}
+
+.etc .img {
+  width: 100%;
+  height: 100%;
+}
+
+.etc .img span {
+  background-repeat: no-repeat;
+  background-position: center center;
+  max-width: 800px;
+  max-height: 500px;
+  margin: auto;
+}
+
+.etc_display {
+  width: 55%;
+  max-height: 100vh;
+}
+
+.etc_app {
+  width: 35%;
+  max-height: 100vh;
+}
+
+.etc_accessory {
+  width: 91%;
+  margin: 1rem;
+}
+
+.etc_app p {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #00c6ff;
+}
+
+.etc_color p {
+  text-align: center;
+}
+
+.etc_accessory h2,
+.etc_accessory p {
+  color: #0178bd;
+}
+
+.etc_display .img span {
+  background-image: url(../images/pc.png);
+  background-size: 80%;
+}
+
+.etc_app .img span {
+  background-image: url(../images/etc4.png);
+  background-size: 20%;
+  background-position: 10% 10%;
+}
+
+.etc_accessory .img span {
+  background-image: url(../images/etcpc8.png);
+  max-width: 1200px;
 }
 
 .pc_page .pc_detail:nth-child(1) .pc_detail_img {
@@ -77,13 +476,14 @@
 
 .more_contents button {
   width: 400px;
-  height: 200px;
-  font-size: 2rem;
-  font-weight: 200;
+  height: 100px;
+  font-size: 1.4rem;
+  font-weight: 400;
   border-radius: 20px;
   margin: 2rem;
   cursor: pointer;
   transition: all 250ms ease-in;
+  padding: 1rem;
 }
 
 .more_contents button:hover {
@@ -93,6 +493,7 @@
 
 .spec_btn {
   background-color: #00c6ff;
+  color: #fff;
 }
 
 .compare_btn {

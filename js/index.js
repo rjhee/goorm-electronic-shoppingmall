@@ -1,5 +1,6 @@
 $(function () {
   // 버튼 클릭시 스크롤 맨위
+
   $('.page_up').click(function () {
     $(window).scrollTop(0);
   });
@@ -12,9 +13,12 @@ $(function () {
     if (e.currentTarget.innerWidth > 992) {
       $('.nav_main').show();
       $('.only_pc').show();
+      $('.nav_cover').show();
     } else if (e.currentTarget.innerWidth <= 991) {
       $('.nav_main').hide();
       $('.only_pc').hide();
+      $('.nav_cover').show();
+      $('.company_menu, .customer_menu').css('top', '48px');
     }
   });
 
@@ -82,20 +86,24 @@ $(function () {
   }, 250);
 
   function hasScrolled() {
-    let userScrollTop = $(this).scrollTop();
-    if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
+    if (window.innerWidth > 992) {
+      let userScrollTop = $(this).scrollTop();
+      if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
 
-    if (userScrollTop > lastScrollTop && userScrollTop > navbarHeight) {
-      $('.nav_cover').slideUp('fast');
-      $('.customer_menu, .company_menu').animate({ top: '0' }, 200);
-    } else {
-      if (userScrollTop + $(window).height() < $(document).height()) {
-        $('.nav_cover').slideDown('fast');
-        $('.customer_menu, .company_menu').animate({ top: '80px' }, 200);
+      if (userScrollTop > lastScrollTop && userScrollTop > navbarHeight) {
+        $('.nav_cover').slideUp('fast');
+        $('.customer_menu, .company_menu').animate({ top: '0' }, 200);
+      } else {
+        if (userScrollTop + $(window).height() < $(document).height()) {
+          $('.nav_cover').slideDown('fast');
+          $('.customer_menu, .company_menu').animate({ top: '80px' }, 200);
+        }
       }
-    }
 
-    lastScrollTop = userScrollTop;
+      lastScrollTop = userScrollTop;
+    } else {
+      $('.nav_cover').show();
+    }
   }
 
   // 스크롤시 이미지 보여주기
@@ -127,14 +135,13 @@ $(function () {
       $('.nav_main').hide();
       $('.nav_sub').hide();
       $('.only_pc').hide();
+      $('.sub_cover').hide();
     }
   });
 
   // 모바일 버전 토글 버튼 클릭시 메인네비게이션 보이기
 
   $('.toggle_btn').click(function () {
-    let nav = $('.nav_cover header').offset();
-    console.log(nav);
     if ($('.nav_main').css('display') === 'none') {
       $('.nav_main').show();
       $('.logo').hide();

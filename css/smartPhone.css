@@ -2,12 +2,393 @@
   position: relative;
 }
 
+.prodect .img span {
+  display: block;
+}
+
+.new_product_color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 1000px;
+  padding: 5rem 1rem;
+  background-color: #f2f2f2;
+}
+
+.new_product_color h2 {
+  font-size: 5rem;
+  margin: 1rem;
+  color: #555;
+}
+
+.new_product_color .img {
+  width: 100%;
+  max-width: 700px;
+  height: 700px;
+  margin: 1rem;
+}
+
+.new_product_color .img span {
+  background-image: url(../images/newsmartphone.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.new_product_color_detail .text-cover {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.new_product_color_detail .text-cover:nth-child(1) {
+  background-color: #efe5fe;
+  color: #8464b4;
+}
+.new_product_color_detail .text-cover:nth-child(2) {
+  background-color: #9c99a2;
+}
+
+.new_product_color_detail .text-cover:nth-child(3) {
+  background-color: #aecbdb;
+  color: #3c81a7;
+}
+.new_product_color_detail .text-cover:nth-child(4) {
+  background-color: #e2f4de;
+  color: #499238;
+}
+.new_product_color_detail .text-cover:nth-child(5) {
+  background-color: #ff9e9d;
+  color: #fa3632;
+}
+.new_product_color_detail .text-cover:nth-child(6) {
+  background-color: #fef7f1;
+  color: #a7917d;
+}
+
+.new_product_color_detail .text-cover .img {
+  width: 100%;
+  max-width: 1000px;
+  height: 700px;
+  margin-right: 10rem;
+}
+
+.new_product_color_detail .text-cover .img span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 20% bottom;
+  background-size: 600px auto;
+  background-attachment: fixed;
+  width: 100%;
+  min-width: 700px;
+  height: 100%;
+}
+
+.new_product_color_detail .text-cover:nth-child(1) .img span {
+  background-image: url(../images/color1.jpg);
+}
+
+.new_product_color_detail .text-cover:nth-child(2) .img span {
+  background-image: url(../images/color2.jpg);
+}
+
+.new_product_color_detail .text-cover:nth-child(3) .img span {
+  background-image: url(../images/color3.jpg);
+}
+
+.new_product_color_detail .text-cover:nth-child(4) .img span {
+  background-image: url(../images/color4.jpg);
+}
+
+.new_product_color_detail .text-cover:nth-child(5) .img span {
+  background-image: url(../images/color5.jpg);
+}
+
+.new_product_color_detail .text-cover:nth-child(6) .img span {
+  background-image: url(../images/color6.jpg);
+}
+
+.new_product_color_detail .text-cover h3 {
+  font-size: 4em;
+}
+
+.new_product_camera {
+  position: relative;
+  height: fit-content;
+}
+
+.new_product_camera .text-cover {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.new_product_camera .text-cover .img {
+  width: auto;
+  height: 100%;
+}
+
+.new_product_camera .text-cover h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0rem;
+}
+
+.new_product_camera .text-cover:nth-child(1) {
+  position: relative;
+  background-color: #000;
+  height: 1500px;
+  padding-top: 5rem;
+  overflow: hidden;
+}
+
+.new_product_camera .text-cover:nth-child(1) .img span {
+  position: sticky;
+  top: 0;
+  background-image: url(../images/product1.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.new_product_camera .text-cover:nth-child(1) h3 {
+  position: sticky;
+  top: 0;
+  color: #fff;
+  margin-bottom: 5rem;
+}
+
+.new_product_camera .text-cover:nth-child(2) {
+  background-color: #aecbd9;
+  height: 1400px;
+  padding: 5rem 1rem;
+}
+.new_product_camera .text-cover:nth-child(2) h3 {
+  margin-bottom: 10rem;
+}
+
+.new_product_camera .text-cover:nth-child(2) .img {
+  position: relative;
+}
+
+.new_product_camera .text-cover:nth-child(2) .img span {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
+  height: 300px;
+}
+
+.new_product_camera .text-cover:nth-child(2) .img span:nth-child(1) {
+  background-image: url(../images/product4.jpg);
+  position: absolute;
+  z-index: 1000;
+}
+
+.new_product_camera .text-cover:nth-child(2) .img span:nth-child(2) {
+  background-image: url(../images/product6.png);
+  position: absolute;
+  top: 30%;
+}
+
+.new_product_camera .text-cover:nth-child(3) {
+  height: fit-content;
+  background-color: #f2f2f2;
+}
+
+.new_product_camera .text-cover:nth-child(3) h3 {
+  position: sticky;
+  top: 10%;
+  left: 10%;
+  width: fit-content;
+  height: fit-content;
+  color: #00c6ff;
+  padding: 3rem 1rem;
+}
+
+.new_product_camera .text-cover:nth-child(3) .img {
+  width: 100%;
+  height: fit-content;
+}
+
+.new_product_camera .text-cover:nth-child(3) .img span {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 90vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.new_product_camera .text-cover:nth-child(3) .img span:nth-child(1) {
+  background-image: url(../images/water4.jpg);
+}
+
+.new_product_camera .text-cover:nth-child(3) .img span:nth-child(2) {
+  background-image: url(../images/water4.jpg);
+}
+
+.new_product_camera .text-cover:nth-child(3) .img span:nth-child(3) {
+  background-image: url(../images/water4.jpg);
+}
+
+.new_product_camera .text-cover:nth-child(4) {
+  background-color: #f2f2f2;
+  height: 1000px;
+  padding: 10rem 1rem 0 1rem;
+}
+
+.new_product_camera .text-cover:nth-child(4) h3 {
+  padding: 0;
+  margin-bottom: 5rem;
+}
+.new_product_camera .text-cover:nth-child(4) .img {
+  width: 100%;
+  height: fit-content;
+}
+.new_product_camera .text-cover:nth-child(4) .img span {
+  background-image: url(../images/product3.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  max-height: 600px;
+}
+
+.new_product_photo {
+  padding: 10rem 1rem;
+  display: flex;
+}
+
+.new_product_photo h3 {
+  position: sticky;
+  top: 10%;
+  left: 10%;
+  font-size: 7rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  height: fit-content;
+}
+
+.new_product_photo h3 span {
+  color: #ff9e9d;
+}
+
+.new_product_photo .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.new_product_photo .img span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  border-radius: 20px;
+  margin: 1rem;
+}
+
+.new_product_photo .img span:nth-child(1) {
+  background-image: url(../images/camera.jpg);
+}
+
+.new_product_photo .img span:nth-child(2) {
+  background-image: url(../images/camera2.jpg);
+}
+
+.new_product_photo .img span:nth-child(3) {
+  background-image: url(../images/camera3.jpg);
+}
+
+.new_product_photo .img span:nth-child(4) {
+  background-image: url(../images/camera4.jpg);
+}
+
+.new_product_photo .img span:nth-child(5) {
+  background-image: url(../images/camera5.jpg);
+}
+
+.new_product_photo .img span:nth-child(6) {
+  background-image: url(../images/camera6.jpg);
+}
+
+.new_product_photo .img span:nth-child(7) {
+  background-image: url(../images/camera7.jpg);
+}
+
+.new_product_photo .img span:nth-child(8) {
+  background-image: url(../images/camera8.jpg);
+}
+
+.new_product_trueDepth {
+  color: #fff;
+  background-color: #2e2e3a;
+  width: 100%;
+  padding: 10rem 1rem;
+}
+
+.new_product_trueDepth h3 {
+  font-size: 6rem;
+  margin-bottom: 5rem;
+}
+
+.new_product_trueDepth h3 span {
+  color: #00c6ff;
+}
+
+.new_product_trueDepth p {
+  font-size: 2rem;
+  margin-bottom: 8rem;
+}
+
+.new_product_trueDepth .img {
+  display: flex;
+}
+
+.new_product_trueDepth .img span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 33%;
+  height: 100vh;
+  margin: 1rem;
+}
+
+.new_product_trueDepth .img span:nth-child(1) {
+  background-image: url(../images/phone.jpg);
+}
+
+.new_product_trueDepth .img span:nth-child(2) {
+  background-image: url(../images/phone2.jpg);
+}
+
+.new_product_trueDepth .img span:nth-child(3) {
+  background-image: url(../images/phone3.jpg);
+}
+
 .phone_page {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 10rem;
+  padding: 10rem 2rem;
   flex-grow: 1;
-  overflow: hidden;
 }
 
 .phone_detail {
@@ -16,10 +397,10 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
+  width: 400px;
   height: 500px;
-  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
-  margin: 0 3rem;
+  box-shadow: 5px 5px 25px 10px rgba(153, 153, 153, 0.144);
+  margin: 1rem;
   padding: 2rem 3rem;
   border-radius: 20px;
 }
@@ -54,47 +435,110 @@
   background-image: url(../images/mainSmartPhone.png);
 }
 
-.btn_cover {
-  margin-bottom: 2rem;
-}
+@media screen and (max-width: 992px) {
+  .new_product_color {
+    flex-direction: column;
+    padding: 0;
+  }
 
-.more {
-  position: absolute;
-  right: 5%;
-  top: 50vh;
+  .new_product_color h2 {
+    font-size: 2rem;
+    margin: 1rem 5rem;
+  }
 
-  font-size: 5rem;
-  color: #00c6ff;
-}
+  .new_product_color .img span {
+    background-size: 150%;
+  }
 
-.more_contents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-}
+  .new_product_color_detail .text-cover .img {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+  }
 
-.more_contents button {
-  width: 400px;
-  height: 200px;
-  font-size: 2rem;
-  font-weight: 200;
-  border-radius: 20px;
-  margin: 2rem;
-  cursor: pointer;
-  transition: all 250ms ease-in;
-}
+  .new_product_color_detail .text-cover .img span {
+    background-position: 20% bottom;
+    background-size: 100%;
+    margin: 0;
+  }
 
-.more_contents button:hover {
-  box-shadow: 9px 7px 30px 9px #00c8ff45;
-  transform: scale(1.1);
-}
+  .new_product_color_detail .text-cover h3 {
+    display: none;
+    font-size: 2rem;
+  }
 
-.spec_btn {
-  background-color: #00c6ff;
-}
+  .new_product_camera .text-cover h3 {
+    margin: 0;
+    font-size: 2rem;
+  }
 
-.compare_btn {
-  border: 1px solid #00c6ff;
+  .new_product_camera .text-cover:nth-child(4) {
+    padding: 10rem 0 0 0;
+  }
+
+  .new_product_camera .text-cover:nth-child(4) .img span {
+    background-size: 200%;
+  }
+
+  .new_product_photo {
+    flex-direction: column;
+  }
+
+  .new_product_photo h3 {
+    font-size: 2rem;
+    background-color: #fff;
+    top: 6%;
+    left: 0;
+    width: 130%;
+  }
+
+  .new_product_photo .img {
+    flex-direction: column;
+  }
+
+  .new_product_photo .img span:nth-child(1),
+  .new_product_photo .img span:nth-child(2),
+  .new_product_photo .img span:nth-child(3),
+  .new_product_photo .img span:nth-child(4),
+  .new_product_photo .img span:nth-child(5),
+  .new_product_photo .img span:nth-child(6),
+  .new_product_photo .img span:nth-child(7),
+  .new_product_photo .img span:nth-child(8) {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    margin: 0.2rem;
+  }
+
+  .new_product_trueDepth {
+    margin-bottom: 10rem;
+  }
+
+  .new_product_trueDepth h3 {
+    font-size: 2rem;
+  }
+
+  .new_product_trueDepth p {
+    font-size: 1rem;
+  }
+
+  .new_product_trueDepth .img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .new_product_trueDepth .img span {
+    background-size: contain;
+    width: 300px;
+  }
+  .phone_page {
+    padding: 0;
+  }
+  .phone_detail {
+    width: 100%;
+    max-width: 320px;
+    padding: 1rem;
+    margin: 1rem auto;
+  }
 }

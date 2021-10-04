@@ -55,6 +55,7 @@
 /* company menu  */
 .company_contents {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   width: 100%;
@@ -66,7 +67,7 @@
 .company_title {
   width: 140px;
   font-size: 1.4rem;
-  margin-right: 2rem;
+  margin-bottom: 4rem;
   line-height: 1.2;
 }
 
@@ -157,7 +158,8 @@
 }
 
 .business .company_text > div > p {
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   font-size: 2rem;
   text-align: center;
   margin: 3rem auto;
@@ -191,4 +193,54 @@
   border-radius: 50%;
   color: #fff;
   background-color: #00c6ff;
+}
+
+@media screen and (max-width: 992px) {
+  .company_banner_title {
+    font-size: 1.6rem;
+  }
+
+  .company_menu {
+    top: 48px;
+  }
+
+  .company_menu li button {
+    padding: 1rem;
+    font-size: 0.6rem;
+  }
+
+  .company_contents {
+    padding: 2rem 1rem;
+  }
+
+  .management .company_text > ul {
+    padding: 0;
+    text-indent: 0.4rem;
+  }
+
+  .management .company_text ul .title {
+    font-size: 1.2rem;
+  }
+
+  .employment .company_text div .img {
+    height: 300px;
+  }
+
+  .business {
+    border-bottom: none;
+  }
+
+  .business .company_text > div > p {
+    border-radius: 3rem;
+  }
+
+  .business .company_text ul {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .business .company_text ul li {
+    margin: 1rem 0;
+  }
 }

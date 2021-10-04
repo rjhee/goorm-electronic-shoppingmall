@@ -10,20 +10,30 @@
   justify-content: center;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
-.slide_img span:nth-child(1),
-.slide_img span:nth-child(4) {
+.slide_img span:nth-child(1) {
+  background-image: url(../images/storeslide1.png);
   background-color: #000;
 }
 
 .slide_img span:nth-child(2) {
+  background-image: url(../images/storeslide2.png);
   background-color: #f7f7f7;
 }
 
 .slide_img span:nth-child(3) {
+  background-image: url(../images/storeslide3.png);
   background-color: #fff;
+}
+
+.slide_img span:nth-child(4) {
+  background-image: url(../images/storeslide4.png);
+  background-color: #000;
 }
 
 .slide_img img {
@@ -58,8 +68,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 .control_line li {
-  width: 20rem;
+  width: 5rem;
   height: 0.4rem;
   margin: 0 8px;
   background-color: #fff;
@@ -120,6 +131,9 @@
 }
 
 /* store-items */
+.store_items {
+  padding: 1rem;
+}
 
 .items {
   display: flex;
@@ -256,10 +270,77 @@
 
 @media screen and (max-width: 992px) {
   .slide {
+    height: 300px;
   }
 
   .prev_btn,
   .next_btn {
     display: none;
+  }
+
+  .store {
+    flex-direction: column;
+  }
+
+  .store_nav {
+    position: sticky;
+    top: 48px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    margin: 0;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+  }
+
+  .store_nav li:first-child {
+    display: none;
+  }
+
+  .store_nav_all {
+    border: none;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .store_nav button {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0;
+    padding: 1.2rem;
+  }
+
+  .store_nav button:hover {
+    text-decoration: underline;
+  }
+
+  .store_nav .fas {
+    display: none;
+  }
+
+  .store_items {
+    padding: 0.4rem;
+  }
+
+  .items {
+    justify-content: center;
+  }
+
+  .item_cover {
+    max-width: 300px;
+    margin: 0.4rem;
+  }
+
+  .store_more_btn {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

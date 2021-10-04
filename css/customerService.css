@@ -14,6 +14,7 @@
   font-size: 2rem;
   text-align: center;
   color: #fff;
+  width: 100%;
 }
 
 .customer_banner span {
@@ -67,7 +68,7 @@
   max-width: 1400px;
   height: 700px;
   border: 1px solid #555;
-  border-radius: 60px;
+  border-radius: 1rem;
   padding: 1rem 2rem;
   overflow: auto;
   margin: auto;
@@ -143,11 +144,7 @@
   font-weight: 600;
 }
 
-.FAQ_content_text {
-  padding: 2rem 5rem;
-  background-color: rgba(153, 153, 153, 0.2);
-}
-
+.FAQ_content_text,
 .QNA_content_text {
   padding: 2rem 5rem;
   background-color: rgba(153, 153, 153, 0.2);
@@ -254,4 +251,127 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .customer_menu {
+    top: 48px;
+  }
+
+  .customer_menu li button {
+    padding: 1rem;
+    font-size: 0.6rem;
+  }
+
+  .customer_banner_title {
+    font-size: 1.6rem;
+  }
+
+  .customer_contents {
+    padding: 1rem;
+  }
+
+  .customer_FAQ,
+  .customer_QNA {
+    padding: 0;
+  }
+
+  .FAQ_title {
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+  }
+
+  .FAQ_title h2 {
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+  }
+
+  .QNA_title {
+    padding: 0 2rem;
+  }
+
+  .QNA_title h2 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+
+  .FAQ_menu {
+    padding: 1rem 0;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+    width: 100%;
+  }
+
+  .FAQ_menu li {
+    margin: 0;
+    padding: 0.4rem;
+  }
+
+  .FAQ_content_title,
+  .QNA_content_title {
+    padding: 0.5rem;
+  }
+
+  .FAQ_content_title > div,
+  .QNA_content_title > div {
+    flex-direction: column;
+  }
+
+  .FAQ_category {
+    display: flex;
+  }
+
+  .FAQ_content_title div span,
+  .QNA_content_title div span {
+    margin: 0 0.2rem;
+  }
+  .FAQ_content_title div p,
+  .QNA_content_title div p {
+    margin: 0;
+  }
+
+  .FAQ_content_text,
+  .QNA_content_text {
+    padding: 2rem 0.4rem;
+  }
+
+  .customer_service_cover {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .customer_service {
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 2rem 1rem;
+  }
+
+  .customer_service_title {
+    margin-bottom: 3rem;
+  }
+
+  .customer_service_text {
+    margin-bottom: 2rem;
+  }
+
+  .customer_offline_store {
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .customer_offline_store h2 {
+    text-indent: 0;
+    font-size: 1rem;
+  }
+
+  .offline_store_search input {
+    width: 50%;
+
+    border-radius: 0.4rem;
+  }
 }

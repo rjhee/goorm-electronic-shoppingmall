@@ -8,12 +8,12 @@ $(function () {
     userWidth = $(window).width();
   }
 
-  userWidth = window.innerWidth;
-  console.log(window);
   $('.slide_img span').not(':eq(0)').css('left', `${userWidth}px`);
   let now = 0;
   let slideImg = 3;
+
   function slide() {
+    userWidth = window.innerWidth;
     now = now == slideImg ? 0 : (now += 1);
     $('.slide_img span')
       .eq(now - 1)
@@ -88,10 +88,6 @@ $(function () {
       $('.control_line li').eq(controlNumber).addClass('hover');
       now = controlNumber;
     }
-  });
-  // window width 변경시
-  window.addEventListener('resize', () => {
-    let slideHeight = $('.slide_img img').css('height');
   });
 });
 
