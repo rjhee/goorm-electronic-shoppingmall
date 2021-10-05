@@ -37,6 +37,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .new_product_intro .img span {
@@ -45,6 +46,7 @@
 
 .new_product_moving {
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .new_product_moving .text_cover {
@@ -60,6 +62,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .new_product_time .img span {
@@ -70,6 +73,7 @@
   display: flex;
   flex-direction: row-reverse;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .new_product_touch .img span {
@@ -116,6 +120,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .life_edu .video {
@@ -133,6 +138,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .life_shopping .img span {
@@ -144,6 +150,7 @@
   justify-content: center;
   align-items: center;
   padding: 5rem 0;
+  min-height: 100vh;
 }
 
 .life_training .img span {
@@ -157,6 +164,7 @@
   align-items: center;
   padding: 5rem 0;
   height: 100vh;
+  min-height: 100vh;
 }
 
 .life_family .img {
@@ -166,7 +174,7 @@
 
 .life_family .img span {
   position: absolute;
-  background-position: top left;
+  background-position: top center;
   max-width: 700px;
 }
 
@@ -249,10 +257,12 @@
 
 .homeapp_page {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  padding: 10rem;
+  padding: 10rem 2rem;
   flex-grow: 1;
-  overflow: hidden;
 }
 
 .homeapp_detail {
@@ -261,13 +271,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 600px;
+  width: 400px;
   height: 500px;
-  box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
-  margin: 0 3rem;
+  box-shadow: 5px 5px 25px 19px rgba(153, 153, 153, 0.288);
+  margin: 1rem;
   padding: 2rem 3rem;
   border-radius: 20px;
 }
+
 .homeapp_detail_title {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -297,39 +308,134 @@
 .btn_cover {
   margin-bottom: 2rem;
 }
-.more {
-  position: absolute;
-  right: 5%;
-  top: 50vh;
-  font-size: 5rem;
-  color: #00c6ff;
-}
-.more_contents {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-}
-.more_contents button {
-  width: 400px;
-  height: 100px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  border-radius: 20px;
-  margin: 2rem;
-  cursor: pointer;
-  transition: all 250ms ease-in;
-  padding: 1rem;
-}
-.more_contents button:hover {
-  box-shadow: 9px 7px 30px 9px #00c8ff45;
-  transform: scale(1.1);
-}
-.spec_btn {
-  background-color: #00c6ff;
-  color: #fff;
-}
-.compare_btn {
-  border: 1px solid #00c6ff;
+
+@media screen and (max-width: 992px) {
+  .new_product h2 {
+    font-size: 2rem;
+  }
+
+  .new_product p {
+    font-size: 0.9rem;
+    padding: 1rem 0;
+    width: 80%;
+  }
+
+  .new_product .img span {
+    max-height: 350px;
+  }
+
+  .new_product_intro {
+    flex-direction: column;
+  }
+
+  .new_product_moving h2 {
+    width: 85%;
+  }
+
+  .new_product_time {
+    flex-direction: column;
+  }
+
+  .new_product_time p {
+    margin: auto;
+    text-align: center;
+  }
+
+  .new_product_touch {
+    flex-direction: column;
+  }
+
+  .new_product_tema {
+    max-height: 1000px;
+  }
+
+  .new_product_tema p {
+    margin: auto;
+  }
+
+  .new_product_tema .img {
+    max-height: 500px;
+  }
+
+  .new_product_tema .img span {
+    background-size: cover;
+    max-height: 500px;
+  }
+
+  .new_product_experience .video video {
+    max-height: 250px;
+  }
+
+  .life_edu {
+    flex-direction: column;
+  }
+
+  .life_edu p {
+    margin: auto;
+  }
+
+  .life_edu .video video {
+    max-height: 300px;
+  }
+
+  .life_shopping {
+    flex-direction: column-reverse;
+  }
+
+  .life_training {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .life_training h2 {
+    width: 60%;
+    margin: auto;
+  }
+
+  .life_training p {
+    margin: auto;
+  }
+
+  .life_family {
+    flex-direction: column;
+  }
+
+  .life_alone {
+    max-height: 1000px;
+  }
+
+  .life_alone h2 {
+    width: 90%;
+    margin: auto;
+  }
+
+  .life_alone p {
+    margin: auto;
+  }
+
+  .life_alone .img {
+    max-height: 500px;
+  }
+
+  .new_product_spec .img span {
+    max-height: 200px;
+  }
+
+  .homeapp_page {
+    padding: 1rem;
+  }
+
+  .homeapp_detail {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 320px;
+    max-height: 350px;
+    padding: 1rem;
+    margin: 1rem;
+    overflow: hidden;
+  }
+
+  .homeapp_detail_title {
+    font-size: 1.5rem;
+  }
 }

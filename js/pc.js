@@ -1,21 +1,45 @@
 $(function () {
-  let i = 0;
-  let j;
+  let Num = 0;
+  let i;
   function pcImgOpen() {
-    i = i + 1;
-    if (i < 10) {
-      j = '00';
-    } else if (i >= 10 && i < 100) {
-      j = '0';
-    } else if (i >= 100) {
-      j = 0;
+    Num === 121 ? (Num = -1) : Num;
+    Num = Num + 1;
+    if (Num >= 0 && Num < 10) {
+      i = '00';
+    } else if (Num >= 10 && Num < 100) {
+      i = '0';
+    } else if (Num >= 100 && Num <= 121) {
+      i = 0;
     }
-    i <= 121 && $('.pcImg').attr('src', `./images/large_0${j + i}.jpg`);
+
+    Num < 121
+      ? $('.pcImg').attr('src', `./images/large_0${i + Num}.jpg`)
+      : $('html').scrollTop($('.new_product_spec').offset().top);
+
+    console.log(Num);
   }
 
+  function pcImgClose() {
+    Num === 0 ? (Num = 122) : Num;
+    Num = Num - 1;
+    if (Num >= 0 && Num < 10) {
+      i = '00';
+    } else if (Num >= 10 && Num < 100) {
+      i = '0';
+    } else if (Num >= 100 && Num <= 121) {
+      i = 0;
+    }
+    Num > 0
+      ? $('.pcImg').attr('src', `./images/large_0${i + Num}.jpg`)
+      : $('html').scrollTop($('html').offset().top);
+    console.log(Num);
+  }
+
+  let percent = 0;
   function opacityUp() {
-    i = i + 1;
-    i <= 9 && $('.spec_detail_keyboard .img span').css('opacity', `0.${i}`);
+    percent = percent + 1;
+    percent <= 9 &&
+      $('.spec_detail_keyboard .img span').css('opacity', `0.${percent}`);
   }
 
   function fontColorChange() {
@@ -24,6 +48,19 @@ $(function () {
       background: 'linear-gradient(45deg, #fbda61 10%, #ff5acd 100%)',
     });
     $('.etc_app p').css('-webkit-background-clip', 'text');
+  }
+
+  let wheelOn;
+  function wheelMoving() {
+    $('.new_product_size').on('mousewheel', function (e) {
+      var wheel = e.originalEvent.wheelDelta;
+      if (wheel > 0) {
+        wheelOn = false;
+      } else {
+        wheelOn = true;
+      }
+    });
+    return wheelOn;
   }
 
   $(window).scroll(function () {
@@ -35,9 +72,8 @@ $(function () {
     let etcTop = $('.new_product_etc').offset().top;
 
     let userScroll = $(this).scrollTop();
-
     if (userScroll > sizeTop && userScroll < specTop) {
-      pcImgOpen();
+      wheelMoving() === true ? pcImgOpen() : pcImgClose();
     } else if (
       userScroll > specDetailkeyboardTop &&
       userScroll < specDetailsoundTop

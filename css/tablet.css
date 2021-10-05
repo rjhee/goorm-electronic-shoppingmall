@@ -585,15 +585,22 @@
     max-height: 200px;
   }
 
+  .etc_pencil .img span {
+    background-size: 70%;
+    background-position: top center;
+  }
+
   .tablet_page {
     padding: 1rem;
   }
 
   .tablet_detail {
+    font-size: 1rem;
     width: 100%;
     max-width: 320px;
+    max-height: 350px;
     padding: 1rem;
-    margin: 1rem auto;
+    margin: 1rem;
     overflow: hidden;
   }
 

@@ -159,7 +159,7 @@ textarea {
   background-color: #000;
   position: fixed;
   top: 0;
-  z-index: 200;
+  z-index: 20000;
 }
 
 .nav_cover header {
@@ -433,6 +433,22 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+  .nav_cover {
+    min-height: 48px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.4rem;
+  }
+
+  .logo img {
+    width: 3.5rem;
+    height: auto;
+  }
+
   .nav_main,
   .nav_sub,
   .only_pc,
@@ -447,7 +463,7 @@ textarea {
   }
 
   .contents {
-    top: 48px;
+    top: 47px;
   }
 
   .page_up {
@@ -466,15 +482,22 @@ textarea {
     display: flex;
   }
 
-  .toggle_btn img {
-    right: 0.4rem;
-    width: 2rem;
-    height: auto;
+  .toggle_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0.4rem;
     transition: transform 200ms ease-in-out;
-    z-index: 1000;
+    z-index: 300000;
+    cursor: pointer;
   }
 
-  .toggle_btn img:hover {
+  .toggle_btn img {
+    width: 2rem;
+    height: auto;
+  }
+
+  .toggle_btn:hover {
     transform: scale(1.2);
   }
 

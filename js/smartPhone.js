@@ -4,6 +4,7 @@ $(function () {
 
   $('.new_product_camera .text-cover:eq(3) .img span').hide();
   $('.new_product_trueDepth h3').hide();
+
   let i = 50;
 
   function growBigCameraImg() {
@@ -12,7 +13,6 @@ $(function () {
       'background-size',
       i + '%'
     );
-    console.log();
   }
 
   function shadowAnimate() {
@@ -34,7 +34,8 @@ $(function () {
 
   $(window).scroll(function () {
     let cameraTop =
-      $('.new_product_camera .text-cover').eq(0).offset().top - 2000;
+      $('.new_product_camera .text-cover').eq(0).offset().top - 3000;
+
     let designTop =
       $('.new_product_camera .text-cover').eq(1).offset().top - 500;
     let waterTop = $('.new_product_camera .text-cover').eq(2).offset().top;

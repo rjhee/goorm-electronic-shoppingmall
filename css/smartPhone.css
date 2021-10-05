@@ -30,7 +30,6 @@ header {
   width: 100%;
   max-width: 700px;
   height: 700px;
-  margin: 1rem;
 }
 
 .new_product_color .img span {
@@ -76,9 +75,9 @@ header {
 
 .new_product_color_detail .text-cover .img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 800px;
   height: 700px;
-  margin-right: 10rem;
+  margin: 0px;
 }
 
 .new_product_color_detail .text-cover .img span {
@@ -128,7 +127,7 @@ header {
 .new_product_camera .text-cover {
   display: block;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: top center;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -542,10 +541,12 @@ header {
   }
 
   .phone_detail {
+    font-size: 1rem;
     width: 100%;
     max-width: 320px;
+    max-height: 350px;
     padding: 1rem;
-    margin: 1rem auto;
+    margin: 1rem;
     overflow: hidden;
   }
 

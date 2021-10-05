@@ -64,15 +64,16 @@
 .control_line {
   display: flex;
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .control_line li {
-  width: 5rem;
-  height: 0.4rem;
+  width: 0.6rem;
+  height: 0.6rem;
   margin: 0 8px;
+  border-radius: 50%;
   background-color: #fff;
   cursor: pointer;
 }
@@ -278,8 +279,8 @@
     height: fit-content;
     background-color: #fff;
     margin: 0;
-    font-weight: 600;
-    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+
+    border-bottom: 1px solid #555;
   }
 
   .store_nav li:first-child {
@@ -298,11 +299,14 @@
     justify-content: center;
     align-items: center;
     text-indent: 0;
-    padding: 1.2rem;
+    padding: 1rem 0.8rem;
+    font-size: 0.6rem;
+    font-weight: 600;
   }
 
   .store_nav button:hover {
-    text-decoration: underline;
+    background-color: #999;
+    color: #fff;
   }
 
   .store_nav .fas {

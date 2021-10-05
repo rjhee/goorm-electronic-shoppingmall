@@ -30,7 +30,7 @@ $(function () {
     let sizeTop = $('.new_product_size').offset().top;
     let cpuTop = $('.new_product_cpu').offset().top;
     let weightTop = $('.new_product_weight').offset().top;
-    let batteryTop = $('.new_product_battery').offset().top;
+    let batteryTop = $('.new_product_battery').offset().top + 500;
     let drowingTop = $('.pencil_drowing').offset().top;
     let noteTop = $('.pencil_note').offset().top;
     let programTop = $('.pencil_program').offset().top;

@@ -72,6 +72,7 @@
 .phone_main_cover {
   max-height: 700px;
   overflow: hidden;
+  min-height: 100vh;
 }
 
 .phone_container {
@@ -230,7 +231,7 @@
   margin-bottom: 1.6rem;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 5px 9px 30px 7px rgba(85, 85, 85, 0.5);
+  border: 1px solid #111;
 }
 
 .etc_img a {
@@ -253,7 +254,7 @@
 }
 
 .etc_service .etc_img a {
-  background-image: url(../images/mainService.jpg);
+  background-image: url(../images/abc.png);
 }
 
 .etc_title {
@@ -311,8 +312,16 @@
 
   /* phone */
 
+  .phone_main_cover {
+    padding: 0;
+  }
+
   .phone_container {
     padding: 1rem;
+  }
+
+  .sub_title_phone {
+    width: 70%;
   }
 
   /* home */
@@ -336,6 +345,11 @@
   .pc_contents_cover {
     align-items: center;
   }
+
+  .title_pc {
+    text-align: center;
+  }
+
   /* .etc_contents */
   .etc_contents {
     flex-direction: column;

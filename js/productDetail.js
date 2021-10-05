@@ -3,6 +3,7 @@ $(function () {
     let scrollTop = $(this).scrollTop();
     console.log(scrollTop);
 
-    $('.product_img_cover').css('top', scrollTop - 50 + 'px');
+    scrollTop <= 650 &&
+      $('.product_img_cover').css('top', scrollTop - 100 + 'px');
   });
 });
