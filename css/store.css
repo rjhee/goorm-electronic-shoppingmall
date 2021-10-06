@@ -145,7 +145,8 @@
 .item_cover {
   margin: 1rem;
   padding: 30px;
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: 550px;
   border-radius: 20px;
   box-shadow: 5px 5px 25px 5px rgba(153, 153, 153, 0.288);
@@ -329,5 +330,9 @@
   .store_more_btn {
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .buy_btn {
+    width: 70%;
   }
 }
