@@ -83,11 +83,11 @@ header {
 .new_product_color_detail .text-cover .img span {
   display: block;
   background-repeat: no-repeat;
-  background-position: 20% bottom;
+  background-position: 10% 100%;
   background-size: 600px auto;
   background-attachment: fixed;
   width: 100%;
-  min-width: 700px;
+  max-width: 700px;
   height: 100%;
 }
 
@@ -460,9 +460,10 @@ header {
   }
 
   .new_product_color_detail .text-cover .img span {
-    background-position: 20% bottom;
-    background-size: 100%;
+    background-position: bottom 20%;
+    background-size: 70%;
     margin: 0;
+    width: 100%;
   }
 
   .new_product_color_detail .text-cover h3 {
