@@ -1,3 +1,54 @@
+@media screen and (min-width: 992px) {
+  .new_product_color_detail .text-cover:nth-child(1) {
+    background-color: #efe5fe;
+    color: #8464b4;
+  }
+  .new_product_color_detail .text-cover:nth-child(2) {
+    background-color: #9c99a2;
+  }
+
+  .new_product_color_detail .text-cover:nth-child(3) {
+    background-color: #aecbdb;
+    color: #3c81a7;
+  }
+  .new_product_color_detail .text-cover:nth-child(4) {
+    background-color: #e2f4de;
+    color: #499238;
+  }
+  .new_product_color_detail .text-cover:nth-child(5) {
+    background-color: #ff9e9d;
+    color: #fa3632;
+  }
+  .new_product_color_detail .text-cover:nth-child(6) {
+    background-color: #fef7f1;
+    color: #a7917d;
+  }
+
+  .new_product_color_detail .text-cover:nth-child(1) .img span {
+    background-image: url(../images/color0.jpg);
+  }
+
+  .new_product_color_detail .text-cover:nth-child(2) .img span {
+    background-image: url(../images/color1.jpg);
+  }
+
+  .new_product_color_detail .text-cover:nth-child(3) .img span {
+    background-image: url(../images/color2.jpg);
+  }
+
+  .new_product_color_detail .text-cover:nth-child(4) .img span {
+    background-image: url(../images/color3.jpg);
+  }
+
+  .new_product_color_detail .text-cover:nth-child(5) .img span {
+    background-image: url(../images/color4.jpg);
+  }
+
+  .new_product_color_detail .text-cover:nth-child(6) .img span {
+    background-image: url(../images/color5.jpg);
+  }
+}
+
 header {
   width: 100%;
 }
@@ -41,78 +92,37 @@ header {
   height: 100%;
 }
 
+.new_product_color_detail {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+}
+
 .new_product_color_detail .text-cover {
   display: flex;
   align-items: center;
   width: 100%;
-  height: fit-content;
-}
-
-.new_product_color_detail .text-cover:nth-child(1) {
-  background-color: #efe5fe;
-  color: #8464b4;
-}
-.new_product_color_detail .text-cover:nth-child(2) {
-  background-color: #9c99a2;
-}
-
-.new_product_color_detail .text-cover:nth-child(3) {
-  background-color: #aecbdb;
-  color: #3c81a7;
-}
-.new_product_color_detail .text-cover:nth-child(4) {
-  background-color: #e2f4de;
-  color: #499238;
-}
-.new_product_color_detail .text-cover:nth-child(5) {
-  background-color: #ff9e9d;
-  color: #fa3632;
-}
-.new_product_color_detail .text-cover:nth-child(6) {
-  background-color: #fef7f1;
-  color: #a7917d;
+  height: 100vh;
 }
 
 .new_product_color_detail .text-cover .img {
   width: 100%;
   max-width: 800px;
-  height: 700px;
+  height: 100vh;
   margin: 0px;
+  position: sticky;
+  top: 0;
 }
 
 .new_product_color_detail .text-cover .img span {
   display: block;
   background-repeat: no-repeat;
-  background-position: 10% 100%;
+  background-position: 10% bottom;
   background-size: 600px auto;
   background-attachment: fixed;
   width: 100%;
   max-width: 700px;
-  height: 100%;
-}
-
-.new_product_color_detail .text-cover:nth-child(1) .img span {
-  background-image: url(../images/color1.jpg);
-}
-
-.new_product_color_detail .text-cover:nth-child(2) .img span {
-  background-image: url(../images/color2.jpg);
-}
-
-.new_product_color_detail .text-cover:nth-child(3) .img span {
-  background-image: url(../images/color3.jpg);
-}
-
-.new_product_color_detail .text-cover:nth-child(4) .img span {
-  background-image: url(../images/color4.jpg);
-}
-
-.new_product_color_detail .text-cover:nth-child(5) .img span {
-  background-image: url(../images/color5.jpg);
-}
-
-.new_product_color_detail .text-cover:nth-child(6) .img span {
-  background-image: url(../images/color6.jpg);
+  height: inherit;
 }
 
 .new_product_color_detail .text-cover h3 {
@@ -175,6 +185,7 @@ header {
   height: 1400px;
   padding: 5rem 1rem;
 }
+
 .new_product_camera .text-cover:nth-child(2) h3 {
   margin-bottom: 10rem;
 }
@@ -462,6 +473,11 @@ header {
     background-size: 150%;
   }
 
+  .new_product_color_detail .text-cover {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .new_product_color_detail .text-cover .img {
     margin: 0;
     width: 100%;
@@ -476,13 +492,21 @@ header {
   }
 
   .new_product_color_detail .text-cover h3 {
-    display: none;
     font-size: 2rem;
   }
 
   .new_product_camera .text-cover h3 {
     margin: 0;
     font-size: 2rem;
+  }
+
+  .new_product_camera .text-cover:nth-child(3) .img span {
+    background-attachment: unset;
+  }
+
+  .new_product_camera .text-cover:nth-child(3) .img span:nth-child(2),
+  .new_product_camera .text-cover:nth-child(3) .img span:nth-child(3) {
+    display: none;
   }
 
   .new_product_camera .text-cover:nth-child(4) {
