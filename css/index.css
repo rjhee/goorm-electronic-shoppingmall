@@ -222,7 +222,6 @@
 .etc_store,
 .etc_service {
   width: 100%;
-
   margin: 1rem;
   text-align: center;
 }
@@ -231,7 +230,7 @@
   margin-bottom: 1.6rem;
   border-radius: 20px;
   overflow: hidden;
-  border: 1px solid #111;
+  box-shadow: 5px 9px 30px 7px rgba(85, 85, 85, 0.5);
 }
 
 .etc_img a {
@@ -254,7 +253,7 @@
 }
 
 .etc_service .etc_img a {
-  background-image: url(../images/abc.png);
+  background-image: url(../images/mainService.jpg);
 }
 
 .etc_title {
