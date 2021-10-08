@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
   height: 1000px;
   margin: 10rem auto 20rem;
   padding: 2rem 4rem;
   border-radius: 30px;
-  box-shadow: 5px 5px 25px 5px rgb(153, 153, 153);
+  box-shadow: 5px 5px 10px 5px rgb(209, 209, 209);
 }
 
 .join h2 {
@@ -18,8 +19,11 @@
 
 .join form {
   width: 100%;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .join_name,
 .join_birth,
 .join_id,
@@ -27,9 +31,11 @@
 .join_password_check,
 .join_phone_num {
   padding: 0.6rem 1rem;
-  margin: 0.5rem;
-  border: 1px solid #555;
+  margin: 0.5rem auto;
+  border: 1px solid rgba(153, 153, 153, 0.695);
   border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
 }
 
 .join_phone_num {
@@ -39,13 +45,10 @@
 .line {
   width: 100%;
   height: 1px;
-  margin: 1rem 0;
-  background-color: #555;
-}
-
-.join form {
-  display: flex;
-  flex-direction: column;
+  margin: 1rem auto;
+  max-width: 350px;
+  width: 100%;
+  background-color: rgba(153, 153, 153, 0.695);
 }
 
 .checkbox_cover {
@@ -64,9 +67,9 @@
 }
 
 .join form button {
-  width: 100%;
   height: 40px;
   padding: 0.6rem 2.2rem;
+  margin: 0 2rem;
   border-radius: 20px;
   color: #fff;
   background-image: linear-gradient(90deg, #00c6ff, #04276b);
@@ -77,4 +80,20 @@
   background-color: #fff;
   color: #00c6ff;
   border: 1px solid #00c6ff;
+}
+
+.join > a {
+  color: #555;
+  border-bottom: 1px solid #999;
+}
+
+@media screen and (max-width: 992px) {
+  .contents {
+    padding: 8rem 1rem;
+  }
+  .join {
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
 }

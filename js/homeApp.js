@@ -9,21 +9,22 @@ $(function () {
     $('.new_product_tema .img span').eq(i).hide();
   }
 
-  let i = -1;
+  let i = 0;
   function fadeInOutImg(name) {
     i > 2 ? (i = 0) : (i = i);
-    i++;
-    $(`.new_product_${name} .img span`).eq(i).fadeIn(500);
-    console.log(i);
+    $(`.new_product_${name} .img span`).eq(i).fadeIn(2000);
+
     setTimeout(() => {
-      $(`.new_product_${name} .img span`).eq(i).fadeOut(500);
-      console.log(i);
+      for (let i = 0; i < 3; i++) {
+        $(`.new_product_${name} .img span`).eq(i).fadeOut(1000);
+      }
     }, 1000);
   }
 
   setInterval(() => {
     fadeInOutImg('tema');
     fadeInOutImg('alone');
+    i++;
   }, 2000);
 
   function fadeIn(item) {

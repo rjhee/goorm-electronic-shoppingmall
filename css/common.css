@@ -118,6 +118,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -126,11 +127,14 @@ textarea {
 }
 
 .page_up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 0.5rem;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: #fff;
   background-color: #00c6ff;
 }
@@ -142,6 +146,8 @@ textarea {
   background-size: contain;
   width: 80px;
   height: 60px;
+  font-size: 0.7rem;
+  color: #000;
 }
 
 .page_up:hover,
@@ -154,6 +160,108 @@ textarea {
   padding-top: 0.8rem;
 }
 
+.chat_cover {
+  display: none;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 350px;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px rgba(99, 99, 99, 0.469);
+}
+
+.chat_cover header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(84, 177, 207);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
+.chat_cover header h2 {
+  font-size: 1rem;
+}
+
+.close {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.chat_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 90%;
+  padding: 1rem;
+}
+
+.chat_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.chat_consultant {
+  display: none;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.chat_box .chat_consultant img {
+  margin-right: 10px;
+}
+
+.chat_box .chat_consultant span {
+  width: 80%;
+  background-color: rgba(153, 153, 153, 0.507);
+  border-radius: 15px;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+.chat_box .chat_consultant img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.chat_box .chat_consultant:nth-child(2) span {
+  width: fit-content;
+  height: fit-content;
+  font-size: 0.4rem;
+}
+
+.chat_box .chat_consultant:nth-child(2) span .fas {
+  margin: 0 0.2rem;
+  color: rgb(84, 84, 84);
+}
+
+.chat_main form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.chat_main form input {
+  padding: 0.5rem 1rem;
+  background-color: rgba(153, 153, 153, 0.311);
+  width: 100%;
+  border-radius: 20px;
+}
+
+.chat_main form button {
+  font-size: 1.4rem;
+  color: #555;
+}
+
 .nav_cover {
   width: 100%;
   background-color: #000;
@@ -162,7 +270,7 @@ textarea {
   z-index: 20000;
 }
 
-.nav_cover header {
+.nav_cover > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -295,9 +403,9 @@ textarea {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: rgba(50, 50, 50, 0.8);
-  z-index: 1000;
+  height: 100vh;
+  background-color: rgba(6, 6, 6, 0.8);
+  z-index: 1000000;
 }
 
 .search_form {
@@ -307,7 +415,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 71;
+  z-index: 10000;
 }
 
 .search_input {
@@ -434,7 +542,7 @@ textarea {
 
 @media screen and (max-width: 992px) {
   .nav_cover {
-    min-height: 48px;
+    min-height: 60.78px;
   }
 
   .logo {
@@ -463,7 +571,7 @@ textarea {
   }
 
   .contents {
-    top: 47px;
+    top: 60.78px;
   }
 
   .page_up {
@@ -478,6 +586,20 @@ textarea {
     font-size: 0.4rem;
   }
 
+  .chat_cover {
+    max-width: 280px;
+  }
+
+  .chat_header h2,
+  .chat_header .close {
+    padding: 0.4rem 1rem;
+  }
+
+  .chat_box .chat_consultant img {
+    width: 40px;
+    height: 40px;
+  }
+
   .only_mobile {
     display: flex;
   }
@@ -485,7 +607,7 @@ textarea {
   .toggle_btn {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 4px;
     padding: 0.4rem;
     transition: transform 200ms ease-in-out;
     z-index: 300000;
@@ -515,7 +637,8 @@ textarea {
   .nav_cover nav {
     align-items: center;
     flex-grow: 1;
-    height: fit-content;
+    height: 48px;
+    position: relative;
   }
 
   .nav_main {
@@ -535,7 +658,24 @@ textarea {
     background-color: #999;
   }
 
+  .nav_main > li:hover:before {
+    width: 0;
+  }
+
+  .nav_main > li:active:before {
+    background-color: #999;
+  }
+
   .nav_side {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 10000;
+  }
+
+  .nav_side li:nth-child(3) {
     display: none;
   }
 

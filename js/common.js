@@ -128,9 +128,13 @@ $(function () {
   $('.toggle_btn').click(function () {
     if ($('.nav_main').css('display') === 'none') {
       $('.nav_main').css('display', 'flex');
+      $('.nav_side').css('display', 'flex');
+      $('.nav_cover nav').css('height', '400px');
     } else {
       $('.nav_main').css('display', 'none');
       $('.customer_banner_title').css('top');
+      $('.nav_side').css('display', 'none');
+      $('.nav_cover nav').css('height', 'fit-content');
     }
   });
 
@@ -139,8 +143,22 @@ $(function () {
     if ($('.search_form_cover').css('display') === 'none') {
       $('.search_form_cover').show();
       $('.search_input').focus();
+      $('.nav_main').css('display', 'none');
+      $('.nav_cover nav').css('height', 'fit-content');
     } else {
       $('.search_form_cover').hide();
     }
+  });
+
+  $('.chat').click(function () {
+    $('.chat_cover').show();
+    $('.chat_cover .chat_consultant').eq(0).css('display', 'flex');
+    setTimeout(() => {
+      $('.chat_cover .chat_consultant').eq(1).css('display', 'flex');
+    }, 1000);
+  });
+
+  $('.close').click(function () {
+    $('.chat_cover').hide();
   });
 });

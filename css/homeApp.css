@@ -60,7 +60,7 @@
 .new_product_time {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   min-height: 100vh;
 }
@@ -72,6 +72,7 @@
 .new_product_touch {
   display: flex;
   flex-direction: row-reverse;
+  align-items: flex-start;
   padding: 5rem 0;
   min-height: 100vh;
 }
@@ -118,7 +119,7 @@
 .life_edu {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   min-height: 100vh;
 }
@@ -136,9 +137,13 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   min-height: 100vh;
+}
+
+.life_shopping .img {
+  max-width: 800px;
 }
 
 .life_shopping .img span {
@@ -148,9 +153,13 @@
 .life_training {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   min-height: 100vh;
+}
+
+.life_training .img {
+  max-width: 800px;
 }
 
 .life_training .img span {
@@ -161,7 +170,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 5rem 0;
   height: 100vh;
   min-height: 100vh;
@@ -330,10 +339,17 @@
 
   .new_product_moving h2 {
     width: 85%;
+    margin: auto;
+  }
+
+  .new_product_moving p {
+    text-align: center;
+    margin: auto;
   }
 
   .new_product_time {
     flex-direction: column;
+    align-items: center;
   }
 
   .new_product_time p {
@@ -343,6 +359,12 @@
 
   .new_product_touch {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .new_product_touch p {
+    margin: auto;
   }
 
   .new_product_tema {
@@ -368,6 +390,8 @@
 
   .life_edu {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .life_edu p {
@@ -380,16 +404,24 @@
 
   .life_shopping {
     flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .life_shopping p {
+    margin: auto;
   }
 
   .life_training {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 
   .life_training h2 {
     width: 60%;
     margin: auto;
+    padding: 0;
   }
 
   .life_training p {
@@ -398,6 +430,12 @@
 
   .life_family {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .life_family p {
+    margin: auto;
   }
 
   .new_product_alone {
@@ -415,6 +453,10 @@
 
   .new_product_alone .img {
     max-height: 500px;
+  }
+
+  .new_product_spec h2 {
+    font-size: 1rem;
   }
 
   .new_product_spec .img span {

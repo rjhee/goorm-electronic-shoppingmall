@@ -46,9 +46,11 @@ $(function () {
     wheelNumUp === 5 ? (wheelNumUp = 0) : wheelNumUp;
     wheelNumUp++;
 
-    $('.new_product_color_detail .text-cover .img span').css({
-      'background-image': `url(../images/color${wheelNumUp}.jpg)`,
-    }),
+    $('.new_product_color_detail .text-cover .img span')
+      .eq(0)
+      .css({
+        'background-image': `url(../images/color${wheelNumUp}.jpg)`,
+      }),
       $('.new_product_color_detail').css('background-color', color[wheelNumUp]),
       $('.new_product_color_detail').css('color', color[wheelNumUp]),
       $('.new_product_color_detail h3').text(colorName[wheelNumUp]),
@@ -60,9 +62,11 @@ $(function () {
     wheelNumDown === 0 ? (wheelNumDown = 6) : wheelNumDown;
     wheelNumDown--;
 
-    $('.new_product_color_detail .text-cover .img span').css({
-      'background-image': `url(../images/color${wheelNumDown}.jpg)`,
-    });
+    $('.new_product_color_detail .text-cover .img span')
+      .eq(0)
+      .css({
+        'background-image': `url(../images/color${wheelNumDown}.jpg)`,
+      });
     $('.new_product_color_detail').css('background-color', color[wheelNumDown]),
       $('.new_product_color_detail').css('color', color[wheelNumDown]),
       $('.new_product_color_detail h3').text(colorName[wheelNumDown]),
@@ -107,6 +111,10 @@ $(function () {
     }
   }
 
+  function imgHide() {
+    $('.new_product_color_detail .text-cover').not(':first').hide();
+  }
+
   $(window).scroll(function () {
     let colorDetail = $('.new_product_color_detail').offset().top;
     let cameraTop =
@@ -122,6 +130,7 @@ $(function () {
 
     if (userScroll > colorDetail && userScroll < cameraTop) {
       if (window.innerWidth < 992) {
+        imgHide();
         wheelMoving() === true
           ? colorDetailImgChangeUp()
           : colorDetailImgChangeDown();

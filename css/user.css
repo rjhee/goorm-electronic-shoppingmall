@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 500px;
+  width: 100%;
+  max-width: 600px;
   height: 600px;
   margin: 10rem auto;
   padding: 2rem 4rem;
   border-radius: 30px;
-  box-shadow: 5px 5px 25px 5px rgb(153, 153, 153);
+  box-shadow: 5px 5px 10px 5px rgb(209, 209, 209);
 }
 
 .login h2 {
@@ -18,14 +19,17 @@
 
 .login form {
   width: 100%;
+
   margin-bottom: 4rem;
 }
 
 .login_id,
 .login_password {
   padding: 0.6rem 1rem;
-  margin: 0.4rem;
-  border: 1px solid #555;
+  margin: 0.4rem auto;
+  max-width: 350px;
+  width: 100%;
+  border: 1px solid rgba(153, 153, 153, 0.695);
   border-radius: 10px;
 }
 
@@ -36,6 +40,7 @@
 .login form button {
   height: 40px;
   padding: 0.6rem 2.2rem;
+  margin:0 2rem;
   border-radius: 20px;
   color: #fff;
   background-image: linear-gradient(90deg, #00c6ff, #04276b);
@@ -67,4 +72,31 @@
   font-size: 1rem;
   padding: 0;
   color: #555;
+}
+
+.login_footer a {
+  color: #555
+  border-bottom: 1px solid #999;
+}
+
+
+@media screen and (max-width: 992px) { 
+  .contents {
+    padding: 8rem 1rem;
+    
+  }
+
+  .login{
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+
+  .login_footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 }

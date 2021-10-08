@@ -139,8 +139,8 @@
   margin: 1rem auto;
   width: 80%;
   padding: 2rem 2rem 2rem 0;
-  height: 100%;
-  max-height: 100vh;
+  height: 100vh;
+  max-height: 700px;
   border-radius: 30px;
   color: #fff;
   background-color: #f1e38a;
@@ -158,6 +158,7 @@
 .spec_detail_storage .img span {
   background-image: url(../images/spec2.png);
   background-position: left center;
+  height: 100%;
 }
 
 .spec_detail_cover {
@@ -210,7 +211,7 @@
 }
 
 .spec_detail_memory p {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .spec_detail_memory .img span {

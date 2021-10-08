@@ -125,6 +125,11 @@
   width: 100%;
   padding: 1rem 0;
   text-indent: 1rem;
+  color: #000;
+}
+
+.store_nav button .fas {
+  color: rgb(196, 196, 196);
 }
 
 .store_nav button:hover {
@@ -143,7 +148,7 @@
 }
 
 .item_cover {
-  margin: 1rem;
+  margin: 0.8rem;
   padding: 30px;
   width: 100%;
   max-width: 350px;
@@ -255,7 +260,7 @@
 
 @media screen and (max-width: 992px) {
   .slide {
-    height: 300px;
+    max-height: 250px;
   }
 
   .prev_btn,
@@ -269,7 +274,7 @@
 
   .store_nav {
     position: sticky;
-    top: 48px;
+    top: 60.78px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

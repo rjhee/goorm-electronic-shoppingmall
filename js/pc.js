@@ -3,6 +3,7 @@ $(function () {
   let i;
   function pcImgOpen() {
     Num === 121 ? (Num = -1) : Num;
+
     Num = Num + 1;
     if (Num >= 0 && Num < 10) {
       i = '00';
@@ -21,6 +22,7 @@ $(function () {
 
   function pcImgClose() {
     Num === 0 ? (Num = 122) : Num;
+
     Num = Num - 1;
     if (Num >= 0 && Num < 10) {
       i = '00';

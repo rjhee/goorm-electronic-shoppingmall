@@ -1,4 +1,7 @@
 /* customer_banner  */
+button {
+  color: #000;
+}
 
 .customer_banner {
   position: relative;
@@ -255,7 +258,7 @@
 
 @media screen and (max-width: 992px) {
   .customer_menu {
-    top: 48px;
+    top: 60.78px;
   }
 
   .customer_menu li button {
