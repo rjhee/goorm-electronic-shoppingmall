@@ -127,9 +127,13 @@
   overflow: hidden;
 }
 
+.spec_detail_display .img {
+}
+
 .spec_detail_display .img span {
   background-image: url(../images/store.png);
   background-position: top center;
+  max-height: 500px;
 }
 
 .spec_detail_storage {
@@ -140,7 +144,7 @@
   width: 80%;
   padding: 2rem 2rem 2rem 0;
   height: 100vh;
-  max-height: 700px;
+  max-height: 500px;
   border-radius: 30px;
   color: #fff;
   background-color: #f1e38a;
@@ -153,6 +157,7 @@
 
 .spec_detail_storage .img {
   order: 1;
+  min-width: 300px;
 }
 
 .spec_detail_storage .img span {
@@ -548,16 +553,21 @@
 
   .spec_detail_storage {
     width: 100%;
-    max-height: 1000px;
+    max-height: 600px;
     flex-direction: column-reverse;
-    padding: 3rem 1rem 0 1rem;
+    padding: 3rem 1rem;
     overflow: hidden;
     border-radius: 20px;
+  }
+
+  .spec_detail_storage .img {
+    max-height: 300px;
   }
 
   .spec_detail_storage .img span {
     max-height: 300px;
     transform: translateX(-7%);
+    min-width: none;
   }
 
   .spec_detail_cover {

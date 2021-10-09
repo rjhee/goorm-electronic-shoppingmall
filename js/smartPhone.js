@@ -49,7 +49,7 @@ $(function () {
     $('.new_product_color_detail .text-cover .img span')
       .eq(0)
       .css({
-        'background-image': `url(../images/color${wheelNumUp}.jpg)`,
+        'background-image': `url(./images/color${wheelNumUp}.jpg)`,
       }),
       $('.new_product_color_detail').css('background-color', color[wheelNumUp]),
       $('.new_product_color_detail').css('color', color[wheelNumUp]),
@@ -65,7 +65,7 @@ $(function () {
     $('.new_product_color_detail .text-cover .img span')
       .eq(0)
       .css({
-        'background-image': `url(../images/color${wheelNumDown}.jpg)`,
+        'background-image': `url(./images/color${wheelNumDown}.jpg)`,
       });
     $('.new_product_color_detail').css('background-color', color[wheelNumDown]),
       $('.new_product_color_detail').css('color', color[wheelNumDown]),

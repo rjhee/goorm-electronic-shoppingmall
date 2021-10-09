@@ -51,6 +51,7 @@ button {
   padding: 1.4rem 3rem;
   font-size: 1rem;
   font-weight: 600;
+  color: #000;
 }
 
 .customer_menu li button:hover {
@@ -112,6 +113,7 @@ button {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   background-color: rgba(153, 153, 153, 0.247);
+  color: #000;
 }
 
 .FAQ_menu li:first-child button {

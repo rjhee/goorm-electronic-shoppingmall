@@ -24,6 +24,7 @@ $(function () {
   setInterval(() => {
     fadeInOutImg('tema');
     fadeInOutImg('alone');
+    fadeInOutImg('family');
     i++;
   }, 2000);
 

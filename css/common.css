@@ -680,6 +680,11 @@ textarea {
   }
 
   /* footer */
+
+  .footer_cover {
+    margin-top: 20rem;
+  }
+
   .footer_cover footer {
     font-size: 0.6rem;
     padding: 3rem 1rem;
