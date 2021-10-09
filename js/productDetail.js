@@ -11,7 +11,7 @@ $(function () {
 
   function imgcolorChange(color) {
     $('.product_img').css({
-      'background-image': `url(/images/${color}.png)`,
+      'background-image': `url(./images/${color}.png)`,
     });
     console.log(color);
   }
