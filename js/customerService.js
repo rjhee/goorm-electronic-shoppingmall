@@ -207,6 +207,7 @@ function setEventListeners(faqText) {
 
 function onFaqNavClick(event, faqText) {
   let category = event.target.className;
+
   switch (category) {
     case 'user':
       displayfaq(faqText.filter((text) => text.category == '회원가입/탈퇴'));

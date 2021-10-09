@@ -113,22 +113,24 @@ function createHTMLString(item) {
     <h2 class="item_title">${item.title}</h2>
     <span class="item_product_name">${item.productName}</span>
     <ul class="item_color">
-      <li style="background-color:${item.color[0]}"></li>
-      <li style="background-color:${item.color[1]}"></li>
-      <li style="background-color:${item.color[2]}"></li>
-      <li style="background-color:${item.color[3]}"></li>
-      <li style="background-color:${item.color[4]}"></li>
-      <li style="background-color:${item.color[5]}"></li>
-    </ul>
-    <strong class="item_price">${item.price}</strong>
-    <div class="btn_cover">
-      <a herf="./productDetail.html" class="buy_btn">구매하기</a>
-      <button class="heart_btn">
+      ${item.color
+        .map((color) =>
+          color
+            ? '<li style="background-color:' + color + '"></li>'
+            : '<li style="box-shadow:none"></li>'
+        )
+        .join('')}
+
+        </ul>
+        <strong class="item_price">${item.price}</strong>
+        <div class="btn_cover">
+        <a herf="./productDetail.html" class="buy_btn">구매하기</a>
+        <button class="heart_btn">
         <i class="fas fa-heart"></i>
-      </button>
-    </div>
-  </li>
-`;
+        </button>
+        </div>
+        </li>
+        `;
 }
 
 function setEventListeners(items) {

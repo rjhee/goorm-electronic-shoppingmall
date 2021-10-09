@@ -82,14 +82,12 @@ button {
   display: flex;
   align-items: flex-end;
   border-bottom: 2px solid #555;
-  padding: 0.2rem 0;
 }
 
 .QNA_title {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #555;
-  padding: 0.2rem 0;
 }
 
 .FAQ_title h2,
@@ -101,14 +99,23 @@ button {
 .FAQ_menu {
   display: flex;
   margin: 0 2rem;
+  position: sticky;
+  top: 100px;
 }
 
 .FAQ_menu li {
-  margin: 0.8rem;
+  margin: 0 0.2rem;
 }
 
 .FAQ_menu li button {
-  padding: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: rgba(153, 153, 153, 0.247);
+}
+
+.FAQ_menu li:first-child button {
+  font-weight: 600;
 }
 
 .FAQ_menu li button:hover {

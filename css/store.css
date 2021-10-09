@@ -1,3 +1,7 @@
+.contants {
+  background-color: #f2f2f2;
+}
+
 .slide {
   position: relative;
   width: 100%;
@@ -29,6 +33,7 @@
 .slide_img span:nth-child(3) {
   background-image: url(../images/storeslide3.png);
   background-color: #fff;
+  background-size: 110%;
 }
 
 .slide_img span:nth-child(4) {
@@ -148,7 +153,7 @@
 }
 
 .item_cover {
-  margin: 0.8rem;
+  margin: 5rem 0.8rem;
   padding: 30px;
   width: 100%;
   max-width: 350px;
@@ -206,7 +211,7 @@
   width: 0.8rem;
   height: 0.8rem;
   border-radius: 50%;
-
+  box-shadow: inset 3px 3px 5px rgba(159, 159, 159, 0.325);
   margin: 0 2px;
 }
 
@@ -328,8 +333,39 @@
   }
 
   .item_cover {
-    max-width: 300px;
-    margin: 0.4rem;
+    width: 45%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 400px;
+    margin: 4rem 0.2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    flex-grow: 1;
+    box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.2),
+      -5px -5px 10px rgba(160, 160, 160, 0.2);
+  }
+
+  .item_category {
+    margin-bottom: 0.4rem;
+  }
+
+  .item_img {
+    width: 100%;
+    max-height: 120px;
+    margin-bottom: 0.4rem;
+    background-position: top center;
+  }
+
+  .item_title {
+    font-size: 0.8rem;
+  }
+
+  .item_product_name {
+    font-size: 0.6rem;
+  }
+
+  .item_color {
+    margin-bottom: 0.5rem;
   }
 
   .store_more_btn {
@@ -339,5 +375,7 @@
 
   .buy_btn {
     width: 70%;
+    height: 30px;
+    font-size: 0.8rem;
   }
 }

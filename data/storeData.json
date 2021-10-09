@@ -5,7 +5,16 @@
       "image": "./images/storephone.jpg",
       "title": "GR폰 22 PRO",
       "productName": "GR-PHROHJAE2022HEEPRO",
-      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": [
+        "#fff",
+        "#000",
+        "#555",
+        "#8464b4",
+        "#499238",
+        "#a7917d",
+        "#fa3632",
+        "#00c6ff"
+      ],
       "price": " 730,000원~"
     },
     {
@@ -13,7 +22,7 @@
       "image": "./images/storephone2.jpg",
       "title": "GR폰 22 AIR",
       "productName": "GR-PHROHJAE2022HEEAIR",
-      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": ["#fff", "#000", "#555", "#00c6ff"],
       "price": " 610,000원~"
     },
     {
@@ -21,7 +30,7 @@
       "image": "./images/storephone3.jpg",
       "title": "GR폰 X",
       "productName": "GR-PHROHJAE2022HEEX",
-      "color": ["#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": ["#fff", "#000", "#555", "#00c6ff"],
       "price": " 610,000원~"
     },
     {
@@ -29,7 +38,7 @@
       "image": "./images/storePad.jpg",
       "title": "GR패드 22 PRO",
       "productName": "GR-PDROHJAE2022HEEPRO",
-      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": ["#fff", "#000", "#555", "#00c6ff", "#8464b4"],
       "price": " 920,000원~"
     },
     {
@@ -37,7 +46,15 @@
       "image": "./images/etc7.png",
       "title": "GR패드 22 AIR",
       "productName": "GR-PDROHJAE2022HEEAIR",
-      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": [
+        "#fff",
+        "#000",
+        "#555",
+        "#3c81a7",
+        "#00c6ff",
+        "#8464b4",
+        "#499238"
+      ],
       "price": " 790,000원~"
     },
     {
@@ -45,7 +62,7 @@
       "image": "./images/pad3.jpg",
       "title": "GR패드 11",
       "productName": "GR-PDROHJAE201HEE1234",
-      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": ["#fff", "#000", "#555", "#3c81a7", "#00c6ff"],
       "price": " 560,000원~"
     },
     {
@@ -53,7 +70,7 @@
       "image": "./images/storePad2.jpg",
       "title": "GR패드 NIMI",
       "productName": "GR-MINIROHJAE201HEE00",
-      "color": ["#fffb5c", "#00c6ff", "#fff", "#000", "#555", "#c9332d"],
+      "color": ["#fff", "#000", "#555", "#00c6ff", "#3c81a7"],
       "price": " 360,000원~"
     },
     {
@@ -61,7 +78,7 @@
       "image": "./images/storepc2.jpg",
       "title": "GR 북 PRO 16인치",
       "productName": "GR-BOOKPROJAEHEE202216",
-      "color": ["#000", "#555", "#c9332d"],
+      "color": ["#000", "#555"],
       "price": " 1,650,000원~"
     },
     {
@@ -69,7 +86,7 @@
       "image": "./images/storepc.jpg",
       "title": "GR 북 PRO 13인치",
       "productName": "GR-BOOKPROJAEHEE202213",
-      "color": ["#000", "#555", "#c9332d"],
+      "color": ["#000", "#555"],
       "price": " 1,350,000원~"
     },
     {
@@ -77,7 +94,7 @@
       "image": "./images/pc3.jpg",
       "title": "GR 북 AIR 13인치",
       "productName": "GR-BOOKAIRJAEHEE202213",
-      "color": ["#000", "#555", "#c9332d"],
+      "color": ["#000", "#555"],
       "price": " 1,150,000원~"
     },
     {
@@ -94,7 +111,7 @@
       "image": "./images/storehomeapp.jpg",
       "title": "프라이빗 홈스크린",
       "productName": "HOME SCREEN 2022",
-      "color": "#fff",
+      "color": ["#fff"],
       "price": " 920,000원"
     },
     {
@@ -102,7 +119,7 @@
       "image": "./images/homeapp.jpg",
       "title": "스마트 로봇청소기",
       "productName": "SMART robotic vacuum",
-      "color": "#fff",
+      "color": ["#fff"],
       "price": " 350,000원"
     },
     {
@@ -110,7 +127,7 @@
       "image": "./images/homeapp2.jpg",
       "title": "스마트 에어프라이어",
       "productName": "SMART airfryer",
-      "color": "#fff",
+      "color": ["#fff"],
       "price": " 45,000원"
     },
     {
@@ -118,15 +135,7 @@
       "image": "./images/storecase2.jpg",
       "title": "GR폰 케이스 범퍼",
       "productName": "GR case bumper",
-      "color": [
-        "#00c6ff",
-        "#ff9bcd",
-        "#fff",
-        "#c9332d",
-        "#fffb5c",
-        "#000",
-        "#555"
-      ],
+      "color": ["#fff", "#000", "#ff9bcd", "#00c6ff", "#3c81a7", "#555"],
       "price": "23,000원"
     },
     {
@@ -134,7 +143,7 @@
       "image": "./images/keyborad.jpg",
       "title": "GR패드 블루투스 키보드",
       "productName": "GR smatrt keyborad",
-      "color": "#555",
+      "color": ["#555"],
       "price": "113,000원"
     },
     {
@@ -142,7 +151,7 @@
       "image": "./images/ear.jpg",
       "title": "유선 이어폰",
       "productName": "line earphone",
-      "color": "#555",
+      "color": ["#555"],
       "price": "21,000원"
     },
     {
@@ -150,7 +159,7 @@
       "image": "./images/keyboard2.jpg",
       "title": "스마트 블루투스 키보드2",
       "productName": "GR smatrt keyboard2",
-      "color": "#555",
+      "color": ["#555"],
       "price": "210,000원"
     },
     {
@@ -158,15 +167,7 @@
       "image": "./images/bookcase.jpg",
       "title": "GRBOOK CASE color",
       "productName": "GRBOOK case ",
-      "color": [
-        "#fff",
-        "#00c6ff",
-        "#ff9bcd",
-        "#c9332d",
-        "#fffb5c",
-        "#000",
-        "#555"
-      ],
+      "color": ["#fff", "#000", "#ff9bcd", "#00c6ff", "#c9332d", "#555"],
       "price": "32,000원"
     },
     {
@@ -174,15 +175,7 @@
       "image": "./images/store.jpg",
       "title": "GR Pad CASE 스탠드형",
       "productName": "GR Pad case ",
-      "color": [
-        "#fff",
-        "#00c6ff",
-        "#ff9bcd",
-        "#c9332d",
-        "#fffb5c",
-        "#000",
-        "#555"
-      ],
+      "color": ["#fff", "#000", "#00c6ff", "#ff9bcd", "#c9332d", "#555"],
       "price": "45,000원"
     },
     {
