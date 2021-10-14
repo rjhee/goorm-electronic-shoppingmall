@@ -9,7 +9,9 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link
       rel="icon"
       type="image/png"
@@ -24,8 +26,13 @@
       src="https://kit.fontawesome.com/e4031df8e6.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script defer src="./js/jquery-1.12.3.js"></script>
     <script defer src="./js/common.js"></script>
+    <script type="module" src="./js/join.js"></script>
   </head>
   <body>
     <div class="nav_cover">
@@ -72,7 +79,9 @@
         <nav>
           <h1 class="logo">
             <a href="./index.html"
-              ><img src="./images/icon/logowhite.png" alt="logo"
+              >
+              <span>구름</span>
+              <img src="./images/icon/logowhite.png" alt="logo"
             /></a>
           </h1>
           <ul class="nav_main">
@@ -144,12 +153,12 @@
 
         <ul class="nav_side">
           <li>
-            <a href="./user.html"
+            <button
               ><img src="./images/icon/user.png" alt="user-profile"
-            /></a>
+            /></button>
           </li>
           <li>
-            <a href="./user.html"
+            <a href="./cart.html"
               ><img src="./images/icon/Cart.png" alt="cart"
             /></a>
           </li>
@@ -157,6 +166,7 @@
             <button class="search_btn">
               <img src="./images/icon/Search.png" alt="search" />
             </button>
+          </li>
             <div class="search_form_cover">
               <form class="search_form hidden">
                 <input type="text" class="search_input" autofocus />
@@ -180,22 +190,43 @@
       <section class="join">
         <h2>회원가입</h2>
         <form>
-          <input type="text" class="join_name" placeholder="이름" autofocus />
-          <input type="text" class="join_birth" placeholder="생년월일" />
-          <div class="line"></div>
-          <input type="text" class="join_id" placeholder="아이디" />
-          <input type="password" class="join_password" placeholder="비밀번호" />
+          <input
+            type="text"
+            class="join_name"
+            placeholder="이름 "
+            autofocus
+            required
+          />
+          <input
+            type="email"
+            class="join_id"
+            placeholder="아이디 (이메일@email.com)"
+            required
+          />
+          <input
+            type="password"
+            class="join_password"
+            placeholder="비밀번호 (6자이상)"
+            minlength="6"
+            required
+          />
           <input
             type="password"
             class="join_password_check"
-            placeholder="비밀번호 확인"
+            placeholder="비밀번호 확인 (4자이상)"
+            minlength="6"
+            required
+          />
+
+          <div class="line"></div>
+          <input type="text" class="join_birth" placeholder="생년월일 (선택)" />
+          <input
+            type="tel"
+            class="join_phone_num"
+            placeholder="핸드폰번호 (선택)"
           />
           <div class="line"></div>
-          <input
-            type="password"
-            class="join_phone_num"
-            placeholder="핸드폰번호"
-          />
+
           <div class="checkbox_cover">
             <p>
               <input type="checkbox" value="join_agree" id="all_agree" />

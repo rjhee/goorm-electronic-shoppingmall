@@ -124,13 +124,20 @@ function createHTMLString(item) {
         </ul>
         <strong class="item_price">${item.price}</strong>
         <div class="btn_cover">
-        <a herf="./productDetail.html" class="buy_btn">구매하기</a>
-        <button class="heart_btn">
-        <i class="fas fa-heart"></i>
-        </button>
+          <a href='./productDetail.html' class="buy_btn">구매하기</a>
+          <button class="heart_btn" onclick="putProductInCart()">
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+          <button class="heart_btn">
+            <i class="fas fa-heart"></i>
+          </button>
         </div>
         </li>
         `;
+}
+
+function putProductInCart() {
+  console.log('asdf');
 }
 
 function setEventListeners(items) {
@@ -138,10 +145,6 @@ function setEventListeners(items) {
   let buttons = document.querySelector('.store_nav');
   all.addEventListener('click', () => displayItems(items));
   buttons.addEventListener('click', (event) => onButtonClick(event, items));
-  let buyBtn = document.querySelector('.btn_cover');
-  buyBtn.addEventListener('click', () => {
-    open('./productDetail.html');
-  });
 }
 
 // store nav 메뉴 클릭시 카테고리별로 상품 보여주기

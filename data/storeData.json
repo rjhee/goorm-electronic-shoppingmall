@@ -1,6 +1,7 @@
 {
   "items": [
     {
+      "id": 1,
       "category": "스마트폰",
       "image": "./images/storephone.jpg",
       "title": "GR폰 22 PRO",
@@ -18,6 +19,7 @@
       "price": " 730,000원~"
     },
     {
+      "id": 2,
       "category": "스마트폰",
       "image": "./images/storephone2.jpg",
       "title": "GR폰 22 AIR",
@@ -26,6 +28,7 @@
       "price": " 610,000원~"
     },
     {
+      "id": 3,
       "category": "스마트폰",
       "image": "./images/storephone3.jpg",
       "title": "GR폰 X",
@@ -34,6 +37,7 @@
       "price": " 610,000원~"
     },
     {
+      "id": 4,
       "category": "태블릿",
       "image": "./images/storePad.jpg",
       "title": "GR패드 22 PRO",
@@ -42,6 +46,7 @@
       "price": " 920,000원~"
     },
     {
+      "id": 5,
       "category": "태블릿",
       "image": "./images/etc7.png",
       "title": "GR패드 22 AIR",
@@ -58,6 +63,7 @@
       "price": " 790,000원~"
     },
     {
+      "id": 6,
       "category": "태블릿",
       "image": "./images/pad3.jpg",
       "title": "GR패드 11",
@@ -66,6 +72,7 @@
       "price": " 560,000원~"
     },
     {
+      "id": 7,
       "category": "태블릿",
       "image": "./images/storePad2.jpg",
       "title": "GR패드 NIMI",
@@ -74,6 +81,7 @@
       "price": " 360,000원~"
     },
     {
+      "id": 8,
       "category": "PC",
       "image": "./images/storepc2.jpg",
       "title": "GR 북 PRO 16인치",
@@ -82,6 +90,7 @@
       "price": " 1,650,000원~"
     },
     {
+      "id": 9,
       "category": "PC",
       "image": "./images/storepc.jpg",
       "title": "GR 북 PRO 13인치",
@@ -90,6 +99,7 @@
       "price": " 1,350,000원~"
     },
     {
+      "id": 10,
       "category": "PC",
       "image": "./images/pc3.jpg",
       "title": "GR 북 AIR 13인치",
@@ -98,6 +108,7 @@
       "price": " 1,150,000원~"
     },
     {
+      "id": 11,
       "category": "PC",
       "image": "./images/pc.png",
       "title": "GR 데스크탑 일체형",
@@ -107,6 +118,7 @@
     },
 
     {
+      "id": 12,
       "category": "가전",
       "image": "./images/storehomeapp.jpg",
       "title": "프라이빗 홈스크린",
@@ -115,6 +127,7 @@
       "price": " 920,000원"
     },
     {
+      "id": 13,
       "category": "가전",
       "image": "./images/homeapp.jpg",
       "title": "스마트 로봇청소기",
@@ -123,6 +136,7 @@
       "price": " 350,000원"
     },
     {
+      "id": 14,
       "category": "가전",
       "image": "./images/homeapp2.jpg",
       "title": "스마트 에어프라이어",
@@ -131,6 +145,7 @@
       "price": " 45,000원"
     },
     {
+      "id": 15,
       "category": "악세서리",
       "image": "./images/storecase2.jpg",
       "title": "GR폰 케이스 범퍼",
@@ -139,6 +154,7 @@
       "price": "23,000원"
     },
     {
+      "id": 16,
       "category": "악세서리",
       "image": "./images/keyborad.jpg",
       "title": "GR패드 블루투스 키보드",
@@ -147,6 +163,7 @@
       "price": "113,000원"
     },
     {
+      "id": 17,
       "category": "악세서리",
       "image": "./images/ear.jpg",
       "title": "유선 이어폰",
@@ -155,6 +172,7 @@
       "price": "21,000원"
     },
     {
+      "id": 18,
       "category": "악세서리",
       "image": "./images/keyboard2.jpg",
       "title": "스마트 블루투스 키보드2",
@@ -163,6 +181,7 @@
       "price": "210,000원"
     },
     {
+      "id": 19,
       "category": "악세서리",
       "image": "./images/bookcase.jpg",
       "title": "GRBOOK CASE color",
@@ -171,6 +190,7 @@
       "price": "32,000원"
     },
     {
+      "id": 20,
       "category": "악세서리",
       "image": "./images/store.jpg",
       "title": "GR Pad CASE 스탠드형",
@@ -179,6 +199,7 @@
       "price": "45,000원"
     },
     {
+      "id": 21,
       "category": "악세서리",
       "image": "./images/etc10.png",
       "title": "GR pencil",

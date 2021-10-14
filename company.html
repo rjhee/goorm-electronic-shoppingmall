@@ -9,7 +9,9 @@
       rel="stylesheet"
       type="text/css"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <link
       rel="icon"
       type="image/png"
@@ -74,7 +76,9 @@
         <nav>
           <h1 class="logo">
             <a href="./index.html"
-              ><img src="./images/icon/logowhite.png" alt="logo"
+              >
+              <span>구름</span>
+              <img src="./images/icon/logowhite.png" alt="logo"
             /></a>
           </h1>
           <ul class="nav_main">
@@ -146,12 +150,12 @@
 
         <ul class="nav_side">
           <li>
-            <a href="./user.html"
+            <button
               ><img src="./images/icon/user.png" alt="user-profile"
-            /></a>
+            /></button>
           </li>
           <li>
-            <a href="./user.html"
+            <a  href="./cart.html"
               ><img src="./images/icon/Cart.png" alt="cart"
             /></a>
           </li>
@@ -159,6 +163,7 @@
             <button class="search_btn">
               <img src="./images/icon/Search.png" alt="search" />
             </button>
+          </li>
             <div class="search_form_cover">
               <form class="search_form hidden">
                 <input type="text" class="search_input" autofocus />

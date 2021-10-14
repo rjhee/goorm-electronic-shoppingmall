@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 600px;
   height: 1000px;
-  margin: 10rem auto 20rem;
+  margin: 5rem auto 20rem;
   padding: 2rem 4rem;
   border-radius: 30px;
   box-shadow: 5px 5px 10px 5px rgb(209, 209, 209);
@@ -38,14 +38,10 @@
   width: 100%;
 }
 
-.join_phone_num {
-  margin-bottom: 2rem;
-}
-
 .line {
   width: 100%;
   height: 1px;
-  margin: 1rem auto;
+  margin: 1rem auto 2rem;
   max-width: 350px;
   width: 100%;
   background-color: rgba(153, 153, 153, 0.695);
@@ -89,7 +85,7 @@
 
 @media screen and (max-width: 992px) {
   .contents {
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
   }
   .join {
     padding: 1rem;
