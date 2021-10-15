@@ -176,7 +176,7 @@ $(function () {
       $('.nav_cover nav').css('height', windowHeigth + 'px');
       $('.logo').css('display', 'none');
       $('.search_btn').css('display', 'none');
-      $('.toggle_btn img').attr('src', '../images/icon/Close.png');
+      $('.toggle_btn img').attr('src', './images/icon/Close.png');
     } else {
       $('.nav_main').hide();
       $('.nav_cover nav').css('height', '48px');
