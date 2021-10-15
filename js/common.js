@@ -182,7 +182,7 @@ $(function () {
       $('.nav_cover nav').css('height', '48px');
       $('.logo').css('display', 'flex');
       $('.search_btn').css('display', 'flex');
-      $('.toggle_btn img').attr('src', '../images/icon/Menu.png');
+      $('.toggle_btn img').attr('src', './images/icon/Menu.png');
     }
   });
 
