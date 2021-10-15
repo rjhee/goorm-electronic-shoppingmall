@@ -30,6 +30,11 @@ function getUserInfoLogin() {
         onModal(NONE, SUCCESS_TEXT);
       }, 2000)
     )
+    .then(() => {
+      setTimeout(() => {
+        history.back();
+      }, 1000);
+    })
     .catch((error) => alert(error));
 }
 

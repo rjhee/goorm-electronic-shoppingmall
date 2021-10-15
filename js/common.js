@@ -1,3 +1,5 @@
+import { firebaseConfig } from './firebaseData.js';
+
 $(function () {
   // 버튼 클릭시 스크롤 맨위
 
@@ -125,6 +127,8 @@ $(function () {
       $('.nav_sub').hide();
       $('.only_pc').hide();
       $('.sub_cover').hide();
+    } else {
+      $('.nav_main').show();
     }
   });
 
@@ -170,39 +174,77 @@ $(function () {
     }
   });
 
-  // user 버튼 클릭시 메뉴 보이기
-  $('.nav_side li:eq(0) button').click(function () {
+  function navSideMenuDisplay() {
     if ($('.nav_side li:eq(0)')[0].childElementCount === 1) {
       $('.nav_side li:eq(0)').append(`
-      <div class="side_btn_cover">
-        <a href='./cart.html' class='only_mobile'>
-          <i class="fas fa-shopping-basket"></i>
-          장바구니
-        </a>
-        <a href='./cart.html' class='only_mobile'>
-          <i class="far fa-heart"></i>
-          찜한상품
-        </a>
-        <a href='./user.html'>
-          <i class="far fa-user"></i>
-          로그인
-        </a>
-        <a href='./join.html'>
-          <i class="fas fa-sign-in-alt"></i>
-          회원가입
-        </a>
-        <div class="search_form_cover_mobile only_mobile" >
-        <form class="search_form">
-          <input type="text" class="search_input" autofocus />
-          <button type="submit" id="search_input_btn">
-            <img src="./images/icon/Search.png" alt="search" />
-          </button>
-        </form>
-      </div>
-      </div>`);
+    <div class="side_btn_cover">
+      <a href='./cart.html' class='only_mobile'>
+        <i class="fas fa-shopping-basket"></i>
+        장바구니
+      </a>
+      <a href='./cart.html' class='only_mobile'>
+        <i class="far fa-heart"></i>
+        찜한상품
+      </a>
+      <a href='./user.html'>
+        <i class="far fa-user"></i>
+        로그인
+      </a>
+      <button class="hidden">
+        <i class="fas fa-door-open"></i>
+        로그아웃
+      </button>
+      <a href='./join.html'>
+        <i class="fas fa-sign-in-alt"></i>
+        회원가입
+      </a>
+      <button class='app_download'>
+      <i class="fas fa-download"></i>
+        앱 다운로드
+      </button>
+      <div class="search_form_cover_mobile only_mobile" >
+      <form class="search_form">
+        <input type="text" class="search_input" autofocus />
+        <button type="submit" id="search_input_btn">
+          <img src="./images/icon/Search.png" alt="search" />
+        </button>
+      </form>
+    </div>
+    </div>`);
     } else if ($('.nav_side li:eq(0)')[0].childElementCount === 2) {
       $('.side_btn_cover').remove();
     }
+  }
+
+  // user 버튼 클릭시 메뉴 보이기
+  $('.nav_side li:eq(0) button').click(function () {
+    navSideMenuDisplay();
+    const login = document.querySelector('.side_btn_cover a:nth-child(3)');
+    const logout = document.querySelector(
+      '.side_btn_cover button:nth-child(4)'
+    );
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        login.setAttribute('class', 'hidden');
+        logout.setAttribute('class', '');
+        console.log(user);
+      } else {
+        login.setAttribute('class', '');
+        logout.setAttribute('class', 'hidden');
+      }
+    });
+    logout.addEventListener('click', () => {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => (window.location.href = 'index.html'));
+    });
+    $('.app_download').click(function () {
+      // let = template = `
+      // <div>
+      // </div>
+      // `;
+    });
   });
 
   // 돋보기 버튼 클릭시 검색창 보이기

@@ -27,9 +27,12 @@
       src="https://kit.fontawesome.com/e4031df8e6.js"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
     <script defer src="./js/jquery-1.12.3.js"></script>
-    <script defer src="./js/common.js"></script>
+    <script type="module" defer src="./js/common.js"></script>
   </head>
   <body>
     <div class="nav_cover">
@@ -199,9 +202,7 @@
                 <tr>
                   <th colspan="6">주문상품</th>
                 </tr>
-
                 <tr class="cart_product_title"> 
-                  
                   <th>상품</th>
                   <th>가격</th>
                   <th id='cart_quantity_title'>수량</th>
@@ -212,7 +213,6 @@
               </thead>
               <tbody>
                 <tr class="product_order">
-                  
                   <td class="product_name">
                     <span class="product_img"></span>
                     <strong>GR폰 2021</strong>
@@ -324,7 +324,7 @@
             </thead>
             <tr class="pay_title">
               <th>상품수</th>
-              <td class="quantity_pay">1</td>
+              <td class="quantity_pay">1개</td>
             </tr>
             <tr class="pay_title">
               <th>주문금액</th>

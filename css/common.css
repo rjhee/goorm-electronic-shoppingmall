@@ -153,7 +153,7 @@ textarea {
 
 .contents {
   position: relative;
-  top: 80px;
+  top: 58px;
 }
 
 .fixed_btn {
@@ -443,10 +443,6 @@ textarea {
   transform: scale(1.2);
 }
 
-.nav_side li button {
-  padding: 0;
-}
-
 .side_btn_cover {
   position: absolute;
   display: flex;
@@ -481,17 +477,33 @@ textarea {
   border-bottom: 1px rgb(154, 154, 154) solid;
 }
 
+.side_btn_cover > button {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-bottom: 1px rgb(154, 154, 154) solid;
+  text-align: left;
+}
+
+.side_btn_cover button:hover,
 .side_btn_cover a:hover {
   color: #555;
 }
 
-.side_btn_cover a:nth-child(4) {
+.side_btn_cover a:nth-child(6) {
   border: none;
 }
 
+.side_btn_cover button .fas,
 .side_btn_cover a .far,
 .side_btn_cover a .fas {
   padding: 0 0.4rem;
+}
+
+.how_to_app_download {
+  width: 100%;
+  height: 100vh;
+  background-color: #5e5e5e;
 }
 
 .search_form_cover {
@@ -691,7 +703,7 @@ textarea {
   }
 
   .contents {
-    top: 60.78px;
+    top: 40px;
   }
 
   .page_up {
@@ -745,6 +757,7 @@ textarea {
 
   .only_pc {
     display: none;
+    flex-direction: column;
   }
 
   .nav_cover {
@@ -869,7 +882,8 @@ textarea {
   }
 
   .side_btn_cover a .far,
-  .side_btn_cover a .fas {
+  .side_btn_cover a .fas,
+  .side_btn_cover button .fas {
     padding: 0 2rem;
   }
 
@@ -877,7 +891,8 @@ textarea {
     background-color: inherit;
   }
 
-  .side_btn_cover a {
+  .side_btn_cover a,
+  .side_btn_cover > button {
     padding: 1rem 3rem;
     width: 100%;
   }

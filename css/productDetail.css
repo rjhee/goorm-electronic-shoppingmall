@@ -291,6 +291,10 @@
   background-image: linear-gradient(90deg, #00c6ff, #04276b);
 }
 
+.product_detail_img img {
+  width: 100%;
+}
+
 @media screen and (max-width: 992px) {
   .product_detail {
     flex-direction: column;

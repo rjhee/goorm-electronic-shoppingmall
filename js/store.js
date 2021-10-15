@@ -125,7 +125,7 @@ function createHTMLString(item) {
         <strong class="item_price">${item.price}</strong>
         <div class="btn_cover">
           <a href='./productDetail.html' class="buy_btn">구매하기</a>
-          <button class="heart_btn" onclick="putProductInCart()">
+          <button class="heart_btn" onclick="putProductInCart(${item.id})">
             <i class="fas fa-shopping-cart"></i>
           </button>
           <button class="heart_btn">
@@ -136,8 +136,8 @@ function createHTMLString(item) {
         `;
 }
 
-function putProductInCart() {
-  console.log('asdf');
+function putProductInCart(item) {
+  return item;
 }
 
 function setEventListeners(items) {

@@ -230,6 +230,7 @@ thead tr:nth-child(1) th {
   color: #fff;
   font-size: 1rem;
   border-radius: 20px;
+  margin: 5rem 0 0 0;
   background-image: linear-gradient(90deg, #00c6ff, #04276b);
 }
 
@@ -241,13 +242,52 @@ thead tr:nth-child(1) th {
 }
 
 @media screen and (max-width: 992px) {
+  .cart_banner_title {
+    font-size: 1.5rem;
+  }
+
+  .cart_banner_title p {
+    font-size: 1rem;
+  }
+
+  th {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  td {
+    padding: 0.4rem;
+  }
+
+  thead tr:nth-child(1) th {
+    font-size: 1rem;
+  }
+
+  .product_name strong {
+    font-size: 1rem;
+  }
+
   .cart_product_cover_1 {
     flex-direction: column;
   }
 
   .cart_product_cover_2 {
+    width: 100%;
     height: fit-content;
     margin-bottom: 5rem;
+  }
+
+  .cart_product_title th {
+    padding: 0.4rem;
+  }
+
+  .product_img {
+    height: 120px;
+  }
+
+  .price,
+  .total_price {
+    font-size: 0.8rem;
   }
 
   .cart_pay {
