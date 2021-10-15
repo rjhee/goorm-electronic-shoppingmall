@@ -34,7 +34,12 @@ $(function () {
     mobileFooter.innerHTML = footertemplate;
   }
 
-  mobileFooter.innerHTML = footertemplate;
+  window.addEventListener('resize', (e) => {
+    console.log(e.currentTarget.innerWidth);
+    if (e.currentTarget.innerWidth <= 992) {
+      mobileFooter.innerHTML = footertemplate;
+    }
+  });
 
   // 버튼 클릭시 스크롤 맨위
 

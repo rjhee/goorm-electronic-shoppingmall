@@ -1,7 +1,7 @@
 $(function () {
   const FLEX = 'flex';
   const NONE = 'none';
-  const SIGNIN_TEXT = '회원가입시 50%쿠폰 증정 이벤트! 회원가입 하러가기👉🏼';
+  const SIGNIN_TEXT = '회원가입시 50%쿠폰 증정! 회원가입 하러가기👉🏼';
   const modal = document.querySelector('.nav_cover');
   function onModal(display, text) {
     return (

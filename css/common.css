@@ -997,6 +997,11 @@ textarea {
     height: inherit;
   }
 
+  .footer_menu_mobile > li {
+    width: 25px;
+    height: auto;
+  }
+
   .footer_menu_mobile > li > a,
   .footer_menu_mobile > li > button {
     font-size: 1.4rem;
