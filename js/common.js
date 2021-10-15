@@ -5,27 +5,27 @@ $(function () {
   <ul class="footer_menu_mobile">
     <li>
       <button class="goback_btn">
-        <i class="fas fa-arrow-left"></i>
+        <img src="./images/icon/back.svg" alt="back icon"/>
       </button>
     </li>
     <li>
       <a href="./store.html">
-        <i class="fas fa-store"></i>
+        <img src="./images/icon/Store.svg" alt="store icon"/>
       </a>
     </li>
     <li>
       <a href="./index.html" class="home_btn">
-        <i class="fas fa-home"></i>
+        <img src="./images/icon/home.svg" alt="home icon"/>
       </a>
     </li>
     <li>
       <button class="chat">
-        <i class="fas fa-comment-dots"></i>
+        <img src="./images/icon/chat.svg" alt="chat icon"/>
       </button>
     </li>
     <li>
       <button class="user_btn">
-        <i class="fas fa-user"></i>
+        <img src="./images/icon/user.svg" alt="user icon"/>
       </button>
     </li>
   </ul>`;
@@ -180,13 +180,13 @@ $(function () {
       $('.nav_cover nav').css('height', windowHeigth + 'px');
       $('.logo').css('display', 'none');
       $('.search_btn').css('display', 'none');
-      $('.toggle_btn img').attr('src', './images/icon/Close.png');
+      $('.toggle_btn img').attr('src', './images/icon/Close-black.png');
     } else {
       $('.nav_main').hide();
       $('.nav_cover nav').css('height', '48px');
       $('.logo').css('display', 'flex');
       $('.search_btn').css('display', 'flex');
-      $('.toggle_btn img').attr('src', './images/icon/Menu.png');
+      $('.toggle_btn img').attr('src', './images/icon/Menu-black.png');
     }
   });
 
@@ -221,27 +221,27 @@ $(function () {
       $('.user_btn').append(`
     <div class="side_btn_cover">
       <a href='./cart.html' class='only_mobile'>
-        <i class="fas fa-shopping-basket"></i>
+      <img src="./images/icon/cart.svg" alt="cart icon"/>
         장바구니
       </a>
       <a href='./cart.html' class='only_mobile'>
-        <i class="far fa-heart"></i>
+        <img src="./images/icon/heart.svg" alt="heart icon"/>
         찜한상품
       </a>
       <a href='./user.html'>
-        <i class="far fa-user"></i>
+        <img src="./images/icon/user.svg" alt="user icon"/>
         로그인
       </a>
       <button class="hidden">
-        <i class="fas fa-door-open"></i>
+      <img src="./images/icon/opendoor.svg" alt="logout icon"/>
         로그아웃
       </button>
       <a href='./join.html'>
-        <i class="fas fa-sign-in-alt"></i>
+        <img src="./images/icon/signin.svg" alt="signin icon"/>
         회원가입
       </a>
       <button class='app_download only_mobile'>
-      <i class="fas fa-download"></i>
+        <img src="./images/icon/download.svg" alt="download icon"/>
         앱 다운로드
       </button>
     </div>`);

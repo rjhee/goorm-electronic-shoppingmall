@@ -240,12 +240,17 @@
 
 .heart_btn,
 .cart_btn {
-  font-size: 1.6rem;
-  color: #888;
+  transition: transform 250ms;
 }
 
-.heart_btn:hover {
-  color: #c9332d;
+.heart_btn img,
+.cart_btn img {
+  width: 30px;
+}
+
+.heart_btn:hover,
+.cart_btn:hover {
+  transform: scale(1.1);
 }
 
 .cart_btn:hover {

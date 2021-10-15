@@ -209,18 +209,23 @@
   color: #555;
 }
 
+.product_btn_cover {
+  display: flex;
+}
+
 .product_cart,
 .product_heart {
-  font-size: 1.4rem;
-  color: rgb(158, 157, 157);
+  transition: transform 250ms;
 }
 
-.product_cart:hover {
-  color: #00c6ff;
+.product_cart img,
+.product_heart img {
+  width: 30px;
 }
 
+.product_cart:hover,
 .product_heart:hover {
-  color: #c9332d;
+  transform: scale(1.1);
 }
 
 .product_buy {
@@ -352,10 +357,6 @@
 
   .product_volume > ul > li {
     max-width: none;
-  }
-
-  .product_btn_cover {
-    display: flex;
   }
 
   .product_detail_nav {

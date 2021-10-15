@@ -217,7 +217,7 @@ textarea {
   width: 350px;
   height: 500px;
   background-color: #fff;
-  border-radius: 20px;
+  border-radius: 24px;
   box-shadow: 5px 5px 30px rgba(99, 99, 99, 0.469);
 }
 
@@ -480,31 +480,31 @@ textarea {
 }
 
 .side_btn_cover a {
+  display: flex;
+  align-items: center;
+  color: #000;
   padding: 0.8rem 1rem;
   border-bottom: 1px rgb(154, 154, 154) solid;
 }
 
 .side_btn_cover > button {
-  color: #fff;
+  align-items: center;
+  color: #000;
   font-size: 1rem;
   padding: 0.8rem 1rem;
   border-bottom: 1px rgb(154, 154, 154) solid;
   text-align: left;
 }
 
-.side_btn_cover button:hover,
-.side_btn_cover a:hover {
-  color: #555;
-}
-
 .side_btn_cover a:nth-child(6) {
   border: none;
 }
 
-.side_btn_cover button .fas,
-.side_btn_cover a .far,
-.side_btn_cover a .fas {
-  padding: 0 0.4rem;
+.side_btn_cover button img,
+.side_btn_cover a img {
+  width: 20px;
+  height: auto;
+  margin: 0 1rem;
 }
 
 .how_to_app_download {
@@ -816,7 +816,7 @@ textarea {
   }
 
   .toggle_btn img {
-    width: 2rem;
+    width: 1.8rem;
     height: auto;
   }
 
@@ -998,15 +998,17 @@ textarea {
     height: inherit;
   }
 
-  .footer_menu_mobile > li {
-    width: 25px;
+  .footer_menu_mobile li:nth-child(1) img {
+    width: 20px;
     height: auto;
   }
 
-  .footer_menu_mobile > li > a,
-  .footer_menu_mobile > li > button {
-    font-size: 1.4rem;
-    color: #fff;
+  .footer_menu_mobile li:nth-child(2) img,
+  .footer_menu_mobile li:nth-child(3) img,
+  .footer_menu_mobile li:nth-child(4) img,
+  .footer_menu_mobile li:nth-child(5) img {
+    width: 26px;
+    height: auto;
   }
 
   .footer_menu_mobile a:active,

@@ -126,10 +126,10 @@ function createHTMLString(item) {
         <div class="btn_cover">
           <a href='./productDetail.html' class="buy_btn">구매하기</a>
           <button class="cart_btn" onclick="putProductInCart()">
-            <i class="fas fa-shopping-cart"></i>
+            <img src="./images/icon/cart.svg" alt="cart icon"/>
           </button>
           <button class="heart_btn">
-            <i class="fas fa-heart"></i>
+            <img src="./images/icon/heart.svg" alt="heart icon"/>
           </button>
         </div>
         </li>

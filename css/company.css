@@ -72,6 +72,11 @@
   line-height: 1.2;
 }
 
+.company_title img {
+  width: 30px;
+  height: auto;
+}
+
 .company_text {
   width: 100%;
   font-size: 1rem;
