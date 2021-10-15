@@ -38,12 +38,6 @@ function getUserInfoLogin() {
     .catch((error) => alert(error));
 }
 
-// firebase.auth().onAuthStateChanged((user) => {
-//   if (user) {
-//     console.log(user);
-//   }
-// });
-
 loginBtn.addEventListener('click', function (e) {
   event.preventDefault();
   getUserInfoLogin();

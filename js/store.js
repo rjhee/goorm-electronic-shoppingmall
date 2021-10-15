@@ -125,7 +125,7 @@ function createHTMLString(item) {
         <strong class="item_price">${item.price}</strong>
         <div class="btn_cover">
           <a href='./productDetail.html' class="buy_btn">구매하기</a>
-          <button class="heart_btn" onclick="putProductInCart(${item.id})">
+          <button class="cart_btn" onclick="putProductInCart()">
             <i class="fas fa-shopping-cart"></i>
           </button>
           <button class="heart_btn">
@@ -136,8 +136,18 @@ function createHTMLString(item) {
         `;
 }
 
-function putProductInCart(item) {
-  return item;
+function putProductInCart() {
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      let cartIn = confirm('장바구니로 이동하시겠습니까?');
+      cartIn === true ? (window.location.href = 'cart.html') : null;
+    } else {
+      let onlyUser = confirm('회원만 사용 가능합니다! 회원가입 하시겠습니까?');
+      onlyUser === true
+        ? (window.location.href = 'join.html')
+        : alert('회원가입 해보세요🥳 쿠폰드려요!');
+    }
+  });
 }
 
 function setEventListeners(items) {

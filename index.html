@@ -9,15 +9,16 @@
 <!-- 상태 바의 스타일을 지정 -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
-<meta name="apple-mobile-web-app-title" content="Timer">
+<meta name="apple-mobile-web-app-title" content="online shopping">
 <!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
-<link rel="apple-touch-icon" href="icons/icon-152x152.png">
+<link rel="apple-touch-icon" href="./images/icon/192.png">
 <!-- 웹 앱 매니페스트를 읽어 들이기 -->
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="./manifest.json">
+
 <!-- 서비스 워커를 등록 -->
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
+    navigator.serviceWorker.register('/service-worker.js')
     .then((reg) => {
       console.log('서비스 워커가 등록됨.', reg);
     });
@@ -35,8 +36,8 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/icon/logoblue.png"
-    />import { firebaseConfig } from './firebaseData.js';
+      href="./images/icon/32.ico"
+    />
 
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/index.css" />
@@ -54,6 +55,9 @@
     ></script>
   </head>
   <body>
+    
+      
+    
     <div class="nav_cover">
       <header>
         <div class="fixed_btn">
@@ -173,7 +177,7 @@
 
         <ul class="nav_side">
           <li>
-            <button
+            <button class="user_btn"
               ><img src="./images/icon/user.png" alt="user-profile"
             /></button>
           </li>
@@ -194,6 +198,37 @@
                   <img src="./images/icon/Search.png" alt="search" />
                 </button>
               </form>
+              <div class="search-keyword">
+                <button class="search-close-btn">
+                  <i class="fas fa-times"></i>
+                </button>
+                <span>최근 검색 목록</span>
+                <ul>
+                  <li>GR폰</li>
+                  <li>신학기 학생할인</li>
+                  <li>GR패드</li>
+                  <li>고객센터</li>
+                </ul>
+    
+                <span>가장 인기있는</span>
+                <ul>
+                  <li>GR패드22 AIR</li>
+                  <li>GR패드 11</li>
+                  <li>GR북 256GB</li>
+                  <li>노트북 할인</li>
+                  <li>신규가입 이벤트</li>
+                  <li>GR폰 케이스</li>
+                  <li>무료배송</li>
+                </ul>
+                <span>최근 본 상품</span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
             </div>
           </li>
         </ul>
@@ -204,7 +239,7 @@
       </header>
     </div>
     <div class="sub_cover"></div>
-
+<div class="mobile_footer"></div>
     <div class="contents">
       <div class="main_cover tablet_main_cover">
         <section class="tablet_container">

@@ -367,6 +367,10 @@
     padding: 0.2rem;
   }
 
+  .product_buy {
+    width: 100%;
+  }
+
   .product_detail_nav li:last-child a {
     padding: 0.2rem;
     width: 100%;

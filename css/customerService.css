@@ -24,8 +24,8 @@ button {
   display: block;
   background-image: url(../images/customerService.jpg);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100%;
   background-attachment: fixed;
   width: 100%;
   height: 100%;
@@ -277,6 +277,11 @@ button {
 
   .customer_banner_title {
     font-size: 1.6rem;
+  }
+
+  .customer_banner span {
+    background-size: cover;
+    background-attachment: unset;
   }
 
   .customer_contents {

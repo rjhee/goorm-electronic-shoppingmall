@@ -1,6 +1,41 @@
 import { firebaseConfig } from './firebaseData.js';
-
 $(function () {
+  // footer nav bar 보이기
+  let footertemplate = `
+  <ul class="footer_menu_mobile">
+    <li>
+      <button class="goback_btn">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+    </li>
+    <li>
+      <a href="./store.html">
+        <i class="fas fa-store"></i>
+      </a>
+    </li>
+    <li>
+      <a href="./index.html" class="home_btn">
+        <i class="fas fa-home"></i>
+      </a>
+    </li>
+    <li>
+      <button class="chat">
+        <i class="fas fa-comment-dots"></i>
+      </button>
+    </li>
+    <li>
+      <button class="user_btn">
+        <i class="fas fa-user"></i>
+      </button>
+    </li>
+  </ul>`;
+  const mobileFooter = document.querySelector('.mobile_footer');
+  if (window.innerWidth <= 992) {
+    mobileFooter.innerHTML = footertemplate;
+  }
+
+  mobileFooter.innerHTML = footertemplate;
+
   // 버튼 클릭시 스크롤 맨위
 
   $(window).load(function () {
@@ -99,7 +134,7 @@ $(function () {
   }, 250);
 
   function hasScrolled() {
-    if (window.innerWidth > 992) {
+    if (window.innerWidth >= 992) {
       let userScrollTop = $(this).scrollTop();
       if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
 
@@ -119,7 +154,7 @@ $(function () {
     }
   }
 
-  // 모바일 버전에서만 toggle 버튼 보이기
+  // 모바일 버전에서만 toggle 버튼,
 
   window.addEventListener('resize', (e) => {
     if (e.currentTarget.innerWidth <= 992) {
@@ -137,20 +172,22 @@ $(function () {
 
   $('.toggle_btn').click(function () {
     if ($('.nav_main').css('display') === 'none') {
-      // $('.nav_main').css('display', 'flex');
       $('.nav_main').slideDown('fast');
       $('.nav_cover nav').css('height', windowHeigth + 'px');
       $('.logo').css('display', 'none');
+      $('.search_btn').css('display', 'none');
       $('.toggle_btn img').attr('src', '../images/icon/Close.png');
-      $('.nav_side li').eq(0).hide();
     } else {
       $('.nav_main').hide();
-      $('.nav_cover').css('width', '100%');
-      $('.nav_cover nav').css('height', 'fit-content');
+      $('.nav_cover nav').css('height', '48px');
       $('.logo').css('display', 'flex');
+      $('.search_btn').css('display', 'flex');
       $('.toggle_btn img').attr('src', '../images/icon/Menu.png');
-      $('.nav_side li').eq(0).show();
     }
+  });
+
+  $('.goback_btn').click(function () {
+    history.back();
   });
 
   // 모바일 버전 nav_main 버튼 클릭시 sub 메뉴 토글
@@ -175,8 +212,9 @@ $(function () {
   });
 
   function navSideMenuDisplay() {
-    if ($('.nav_side li:eq(0)')[0].childElementCount === 1) {
-      $('.nav_side li:eq(0)').append(`
+    console.log($('.side_btn_cover').css('display'));
+    if ($('.side_btn_cover').css('display') === undefined) {
+      $('.user_btn').append(`
     <div class="side_btn_cover">
       <a href='./cart.html' class='only_mobile'>
         <i class="fas fa-shopping-basket"></i>
@@ -198,53 +236,47 @@ $(function () {
         <i class="fas fa-sign-in-alt"></i>
         회원가입
       </a>
-      <button class='app_download'>
+      <button class='app_download only_mobile'>
       <i class="fas fa-download"></i>
         앱 다운로드
       </button>
-      <div class="search_form_cover_mobile only_mobile" >
-      <form class="search_form">
-        <input type="text" class="search_input" autofocus />
-        <button type="submit" id="search_input_btn">
-          <img src="./images/icon/Search.png" alt="search" />
-        </button>
-      </form>
-    </div>
     </div>`);
-    } else if ($('.nav_side li:eq(0)')[0].childElementCount === 2) {
+    } else if ($('.side_btn_cover').css('display') === 'flex') {
       $('.side_btn_cover').remove();
     }
   }
 
   // user 버튼 클릭시 메뉴 보이기
-  $('.nav_side li:eq(0) button').click(function () {
+  $('.user_btn').click(function () {
     navSideMenuDisplay();
     const login = document.querySelector('.side_btn_cover a:nth-child(3)');
     const logout = document.querySelector(
       '.side_btn_cover button:nth-child(4)'
     );
+
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         login.setAttribute('class', 'hidden');
         logout.setAttribute('class', '');
         console.log(user);
       } else {
-        login.setAttribute('class', '');
-        logout.setAttribute('class', 'hidden');
+        login && login.setAttribute('class', '');
+        logout && logout.setAttribute('class', 'hidden');
       }
     });
-    logout.addEventListener('click', () => {
-      firebase
-        .auth()
-        .signOut()
-        .then(() => (window.location.href = 'index.html'));
-    });
-    $('.app_download').click(function () {
-      // let = template = `
-      // <div>
-      // </div>
-      // `;
-    });
+    logout &&
+      logout.addEventListener('click', () => {
+        firebase
+          .auth()
+          .signOut()
+          .then(() => (window.location.href = 'index.html'));
+      });
+    // $('.app_download').click(function () {
+    //   let = template = `
+    //   <div>
+    //   </div>
+    //   `;
+    // });
   });
 
   // 돋보기 버튼 클릭시 검색창 보이기
@@ -253,18 +285,27 @@ $(function () {
       $('.search_form_cover').show();
       $('.search_input').focus();
       $('.nav_main').css('display', 'none');
-      $('.nav_cover nav').css('height', 'fit-content');
+      $('.toggle_btn').css('display', 'none');
+      $('.nav_cover nav').css('height', '48px');
     } else {
       $('.search_form_cover').hide();
     }
+    $('.search_form_cover').click(function () {
+      $('.search_form_cover').hide();
+      $('.toggle_btn').show();
+    });
   });
 
   $('.chat').click(function () {
-    $('.chat_cover').show();
-    $('.chat_cover .chat_consultant').eq(0).css('display', 'flex');
-    setTimeout(() => {
-      $('.chat_cover .chat_consultant').eq(1).css('display', 'flex');
-    }, 1000);
+    if ($('.chat_cover').css('display') === 'block') {
+      $('.chat_cover').hide();
+    } else {
+      $('.chat_cover').show();
+      $('.chat_cover .chat_consultant').eq(0).css('display', 'flex');
+      setTimeout(() => {
+        $('.chat_cover .chat_consultant').eq(1).css('display', 'flex');
+      }, 1000);
+    }
   });
 
   $('.close').click(function () {

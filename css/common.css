@@ -123,7 +123,12 @@ textarea {
   align-items: center;
   color: #fff;
   font-size: 1.4rem;
-  background-image: linear-gradient(90deg, #00c6ff, #04276b);
+  background-image: linear-gradient(
+    90deg,
+    #5ea8bf,
+    rgb(126, 152, 206),
+    rgb(25, 45, 84)
+  );
   width: 100%;
   height: 80px;
   animation: downMadal 200ms;
@@ -154,6 +159,8 @@ textarea {
 .contents {
   position: relative;
   top: 58px;
+  width: 100%;
+  min-height: 1000px;
 }
 
 .fixed_btn {
@@ -164,7 +171,7 @@ textarea {
   position: fixed;
   bottom: 0;
   right: 0;
-  z-index: 100;
+  z-index: 10000;
   margin: 0 0.8rem;
 }
 
@@ -181,7 +188,7 @@ textarea {
   background-color: #00c6ff;
 }
 
-.chat {
+.nav_cover .chat {
   background-image: url(../images/icon/logostroke6.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -193,11 +200,11 @@ textarea {
 }
 
 .page_up:hover,
-.chat:hover {
+.nav_cover .chat:hover {
   transform: scale(1.1);
 }
 
-.chat span {
+.nav_cover .chat span {
   display: block;
   padding-top: 0.8rem;
 }
@@ -263,8 +270,8 @@ textarea {
 
 .chat_box .chat_consultant span {
   width: 80%;
-  background-color: rgba(153, 153, 153, 0.507);
-  border-radius: 15px;
+  background-color: rgba(191, 191, 191, 0.507);
+  border-radius: 12px;
   padding: 1rem;
   font-size: 0.8rem;
 }
@@ -309,7 +316,7 @@ textarea {
   background-color: #000;
   position: fixed;
   top: 0;
-  z-index: 20000;
+  z-index: 200000;
 }
 
 .nav_cover > header {
@@ -321,7 +328,7 @@ textarea {
   height: 80px;
   margin: 0 auto;
   background-color: #000;
-  z-index: 200;
+  z-index: 200000;
 }
 
 .nav_cover nav {
@@ -429,7 +436,7 @@ textarea {
   margin: 0 10px;
 }
 
-.nav_side li img {
+.nav_side > li img {
   width: 20px;
   height: 22px;
   transition: transform 200ms ease-in-out;
@@ -513,7 +520,7 @@ textarea {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: rgba(6, 6, 6, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   z-index: 1000000;
 }
 
@@ -524,7 +531,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10000;
+  z-index: 1000000;
 }
 
 .search_input {
@@ -542,6 +549,71 @@ textarea {
   height: auto;
 }
 
+.search-keyword {
+  width: 100%;
+  height: fit-content;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.search-close-btn {
+  display: block;
+  font-size: 1rem;
+  text-align: right;
+  width: 100%;
+  color: #fff;
+}
+
+.search-keyword span {
+  display: block;
+  color: #999;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.search-keyword ul {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.search-keyword ul:last-child li {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 33%;
+  max-width: 140px;
+  height: 140px;
+  border-radius: 20px;
+}
+
+.search-keyword ul:last-child li:nth-child(1) {
+  background-image: url(../images/store.jpg);
+}
+
+.search-keyword ul:last-child li:nth-child(2) {
+  background-image: url(../images/storephone3.jpg);
+}
+
+.search-keyword ul:last-child li:nth-child(3) {
+  background-image: url(../images/pad3.jpg);
+}
+
+.search-keyword ul:last-child li:nth-child(4) {
+  background-image: url(../images/pc3.jpg);
+}
+
+.search-keyword li {
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  background-color: #e2e2e2;
+  font-weight: 400;
+  line-height: 1rem;
+  border-radius: 50px;
+  margin: 0.4rem;
+}
+
 .sub_cover {
   position: fixed;
   top: 80px;
@@ -551,12 +623,10 @@ textarea {
   z-index: 199;
 }
 
-.contents {
-  width: 100%;
-  min-height: 1000px;
-}
-
 /* footer */
+.footer_menu_mobile {
+  display: none;
+}
 
 .footer_cover {
   background-color: #555;
@@ -651,20 +721,10 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
-  .nav_cover {
-    min-height: 60.78px;
-    background-color: #333;
-  }
-
-  .nav_cover header {
-    background-color: #333;
-  }
-
   .logo {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
     padding: 0.5rem;
     transition: none;
     margin: 0;
@@ -686,7 +746,6 @@ textarea {
 
   .logo:hover {
     transform: scale(1);
-    transform: translateX(-50%);
   }
 
   .nav_main,
@@ -706,6 +765,10 @@ textarea {
     top: 40px;
   }
 
+  .fixed_btn {
+    bottom: 80px;
+  }
+
   .page_up {
     width: 40px;
     height: 40px;
@@ -713,9 +776,14 @@ textarea {
     margin-bottom: 0;
   }
 
-  .chat {
+  .nav_cover .chat {
+    display: none;
     width: 60px;
     font-size: 0.4rem;
+  }
+
+  .nav_cover::after {
+    font-size: 1rem;
   }
 
   .chat_cover {
@@ -764,13 +832,16 @@ textarea {
     position: fixed;
     width: 100%;
     height: fit-content;
+    min-height: 60.78px;
+    background-color: #3e545e;
   }
 
   .nav_cover header {
     position: relative;
     padding: 0.4rem 0;
-    align-items: flex-start;
+    align-items: center;
     height: fit-content;
+    background-color: #3e545e;
   }
 
   .nav_cover nav {
@@ -849,36 +920,36 @@ textarea {
     border-bottom: 1px #444 solid;
   }
 
-  .nav_side li:nth-child(1) {
-    display: flex;
-    position: fixed;
-    top: 1.8%;
-    right: 0;
-    z-index: 10000;
-  }
-
   .nav_side li:nth-child(1) button img {
     width: 22px;
     height: auto;
   }
 
-  .nav_side li:nth-child(2),
-  .nav_side li:nth-child(3) {
+  .nav_side > li:nth-child(1),
+  .nav_side > li:nth-child(2) {
     display: none;
   }
 
   .side_btn_cover {
     position: fixed;
-    top: 8%;
+    top: 0;
     left: 0;
     justify-content: flex-start;
     border-radius: 0;
     width: 100%;
     height: 100vh;
+    padding: 4rem 1rem;
+    text-align: left;
   }
 
   .side_btn_cover::before {
     display: none;
+  }
+
+  .side_btn_cover a,
+  .side_btn_cover > button {
+    padding: 1rem;
+    width: 100%;
   }
 
   .side_btn_cover a .far,
@@ -887,23 +958,14 @@ textarea {
     padding: 0 2rem;
   }
 
-  .search_form_cover {
-    background-color: inherit;
-  }
-
-  .side_btn_cover a,
-  .side_btn_cover > button {
-    padding: 1rem 3rem;
-    width: 100%;
-  }
-
-  .search_form_cover_mobile {
-    width: 100%;
+  .nav_side > li > .search_btn > img {
+    display: block;
+    width: 25px;
+    height: auto;
   }
 
   .search_form {
     position: relative;
-    background-color: inherit;
     width: 100%;
     height: 100px;
     padding: 0 2rem;
@@ -917,6 +979,33 @@ textarea {
 
   #search_input_btn img {
     width: 24px;
+  }
+
+  .mobile_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #3e545e;
+    z-index: 1000000;
+  }
+
+  .footer_menu_mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+  }
+
+  .footer_menu_mobile > li > a,
+  .footer_menu_mobile > li > button {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  .footer_menu_mobile a:active,
+  .footer_menu_mobile button:active {
+    color: #00c6ff;
   }
 
   /* footer */

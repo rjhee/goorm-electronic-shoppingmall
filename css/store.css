@@ -238,13 +238,18 @@
   color: #fff;
 }
 
-.heart_btn {
+.heart_btn,
+.cart_btn {
   font-size: 1.6rem;
   color: #888;
 }
 
 .heart_btn:hover {
   color: #c9332d;
+}
+
+.cart_btn:hover {
+  color: #00c6ff;
 }
 
 .store_more_btn {
@@ -341,6 +346,7 @@
     padding: 1rem 0.5rem;
     border-radius: 10px;
     flex-grow: 1;
+
     box-shadow: 5px 5px 10px rgba(160, 160, 160, 0.2),
       -5px -5px 10px rgba(160, 160, 160, 0.2);
   }
