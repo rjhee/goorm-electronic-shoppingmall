@@ -4,26 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <!-- Splash Screens -->
+    <link rel="apple-touch-startup-image" href="./images/splash1.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
     <!-- 주소창 등의 웹 브라우저 UI를 표시하지 않기 -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<!-- 상태 바의 스타일을 지정 -->
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
-<meta name="apple-mobile-web-app-title" content="online shopping">
-<!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
-<link rel="apple-touch-icon" href="./images/icon/192.png">
-<!-- 웹 앱 매니페스트를 읽어 들이기 -->
-<link rel="manifest" href="./manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 상태 바의 스타일을 지정 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3e545e">
+    <!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
+    <meta name="apple-mobile-web-app-title" content="online shopping">
+    <!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
+    <link rel="apple-touch-icon" href="./images/icon/192.png">
+    <!-- 웹 앱 매니페스트를 읽어 들이기 -->
+    <link rel="manifest" href="./manifest.json">
 
-<!-- 서비스 워커를 등록 -->
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then((reg) => {
-      console.log('서비스 워커가 등록됨.', reg);
-    });
-  }
-</script>
+    <!-- 서비스 워커를 등록 -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+        .then((reg) => {
+          console.log('서비스 워커가 등록됨.', reg);
+        });
+      }
+    </script>
     <link
       href="//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
       rel="stylesheet"

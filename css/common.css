@@ -551,13 +551,14 @@ textarea {
 
 .search-keyword {
   width: 100%;
+  max-width: 600px;
   height: fit-content;
-  margin: 1rem auto;
   padding: 1rem;
+  margin: auto;
 }
 
 .search-close-btn {
-  display: block;
+  display: none;
   font-size: 1rem;
   text-align: right;
   width: 100%;
@@ -573,19 +574,19 @@ textarea {
 .search-keyword ul {
   display: flex;
   flex-wrap: wrap;
-
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   width: 100%;
+  font-size: 0.8rem;
 }
 
 .search-keyword ul:last-child li {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  width: 33%;
-  max-width: 140px;
-  height: 140px;
-  border-radius: 20px;
+  width: 21%;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 10px;
 }
 
 .search-keyword ul:last-child li:nth-child(1) {
@@ -606,7 +607,7 @@ textarea {
 
 .search-keyword li {
   cursor: pointer;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 0.8rem;
   background-color: #e2e2e2;
   font-weight: 400;
   line-height: 1rem;

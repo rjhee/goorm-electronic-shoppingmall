@@ -35,7 +35,6 @@ $(function () {
   }
 
   window.addEventListener('resize', (e) => {
-    console.log(e.currentTarget.innerWidth);
     if (e.currentTarget.innerWidth <= 992) {
       mobileFooter.innerHTML = footertemplate;
     }
@@ -297,7 +296,8 @@ $(function () {
     }
     $('.search_form_cover').click(function () {
       $('.search_form_cover').hide();
-      $('.toggle_btn').show();
+      window.innerWidth >= 992 && $('.nav_main').css('display', 'flex');
+      window.innerWidth <= 992 && $('.toggle_btn').show();
     });
   });
 
