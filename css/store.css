@@ -379,10 +379,14 @@
     left: 50%;
     transform: translateX(-50%);
   }
+  .btn_cover button {
+    padding: 0;
+  }
 
   .heart_btn img,
   .cart_btn img {
     width: 20px;
+    padding: 0;
   }
 
   .buy_btn {
