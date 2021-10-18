@@ -65,7 +65,6 @@ $(function () {
       $('.nav_sub').hide();
       $('.sub_cover').hide();
       $('.nav_main').css('flex-direction', 'column');
-      $('.company_menu, .customer_menu').css('top', '48px');
       $('.nav_cover nav').css('height', '48px');
     }
   });
@@ -137,7 +136,8 @@ $(function () {
 
   function hasScrolled() {
     if (window.innerWidth >= 992) {
-      let userScrollTop = $(this).scrollTop();
+      let userScrollTop = $(window).scrollTop();
+
       if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
 
       if (userScrollTop > lastScrollTop && userScrollTop > navbarHeight) {
