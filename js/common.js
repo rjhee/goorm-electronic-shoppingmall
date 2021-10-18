@@ -25,13 +25,15 @@ $(function () {
     </li>
     <li>
       <button class="user_btn">
-        <img src="./images/icon/user.svg" alt="user icon"/>
+        <img src="./images/icon/user.svg" alt="user-profile"/>
       </button>
     </li>
   </ul>`;
   const mobileFooter = document.querySelector('.mobile_footer');
+
   if (window.innerWidth <= 992) {
     mobileFooter.innerHTML = footertemplate;
+    $('.search_btn img').attr('src', './images/icon/search-icon120px.png');
   }
 
   window.addEventListener('resize', (e) => {
@@ -41,10 +43,6 @@ $(function () {
   });
 
   // 버튼 클릭시 스크롤 맨위
-
-  $(window).load(function () {
-    $('.img_tablet').fadeIn(3000);
-  });
 
   $('.page_up').click(function () {
     $(window).scrollTop(0);
@@ -166,8 +164,10 @@ $(function () {
       $('.nav_sub').hide();
       $('.only_pc').hide();
       $('.sub_cover').hide();
+      $('.search_btn img').attr('src', './images/icon/search-icon120px.png');
     } else {
       $('.nav_main').show();
+      $('.search_btn img').attr('src', './images/icon/Search.png');
     }
   });
 
@@ -215,32 +215,34 @@ $(function () {
     }
   });
 
-  function navSideMenuDisplay() {
-    console.log($('.side_btn_cover').css('display'));
+  function navSideMenuDisplay(login, logout) {
     if ($('.side_btn_cover').css('display') === undefined) {
       $('.user_btn').append(`
     <div class="side_btn_cover">
-      <a href='./cart.html' class='only_mobile'>
+      <button class="close_btn">
+        <img src="./images/icon/Close-black.png"/>
+      </button>
+      <a href="./cart.html" class="only_mobile">
       <img src="./images/icon/cart.svg" alt="cart icon"/>
         장바구니
       </a>
-      <a href='./cart.html' class='only_mobile'>
+      <a href="./cart.html" class="only_mobile">
         <img src="./images/icon/heart.svg" alt="heart icon"/>
         찜한상품
       </a>
-      <a href='./user.html'>
+        <a href="./user.html" style="display:${login}">
         <img src="./images/icon/user.svg" alt="user icon"/>
         로그인
       </a>
-      <button class="hidden">
-      <img src="./images/icon/opendoor.svg" alt="logout icon"/>
+      <button class="logout_btn" style="display:${logout}">
+        <img src="./images/icon/opendoor.svg" alt="logout icon"/>
         로그아웃
       </button>
-      <a href='./join.html'>
+      <a href="./join.html" style="display:${login}">
         <img src="./images/icon/signin.svg" alt="signin icon"/>
         회원가입
       </a>
-      <button class='app_download only_mobile'>
+      <button class="app_download only_mobile">
         <img src="./images/icon/download.svg" alt="download icon"/>
         앱 다운로드
       </button>
@@ -248,33 +250,45 @@ $(function () {
     } else if ($('.side_btn_cover').css('display') === 'flex') {
       $('.side_btn_cover').remove();
     }
+
+    $('.logout_btn').click(function () {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => (window.location.href = 'index.html'));
+    });
+
+    $('.side_btn_cover .close_btn').click(function () {
+      if ($('.side_btn_cover').css('display') === 'flex') {
+        $('.side_btn_cover').remove();
+      }
+    });
   }
 
   // user 버튼 클릭시 메뉴 보이기
-  $('.user_btn').click(function () {
-    navSideMenuDisplay();
-    const login = document.querySelector('.side_btn_cover a:nth-child(3)');
-    const logout = document.querySelector(
-      '.side_btn_cover button:nth-child(4)'
-    );
 
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        login.setAttribute('class', 'hidden');
-        logout.setAttribute('class', '');
-        console.log(user);
-      } else {
-        login && login.setAttribute('class', '');
-        logout && logout.setAttribute('class', 'hidden');
+  $(window).click(function (e) {
+    if (e.target.alt != 'user-profile') {
+      if ($('.side_btn_cover').css('display') === 'flex') {
+        $('.side_btn_cover').remove();
       }
-    });
-    logout &&
-      logout.addEventListener('click', () => {
-        firebase
-          .auth()
-          .signOut()
-          .then(() => (window.location.href = 'index.html'));
+    }
+  });
+
+  $('.user_btn').click(function () {
+    if ($('.side_btn_cover').css('display') === undefined) {
+      firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+          navSideMenuDisplay('none', 'block');
+          console.log(user);
+        } else {
+          navSideMenuDisplay('block', 'none');
+        }
       });
+    } else if ($('.side_btn_cover').css('display') === 'flex') {
+      $('.side_btn_cover').remove();
+    }
+
     // $('.app_download').click(function () {
     //   let = template = `
     //   <div>

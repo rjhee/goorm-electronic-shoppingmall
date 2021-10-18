@@ -21,6 +21,6 @@
   ],
   "start_url": "http://127.0.0.1:5502/index.html",
   "display": "standalone",
-  "background_color": "#000",
+  "background_color": "#bbbbbb",
   "theme_color": "#fff"
 }

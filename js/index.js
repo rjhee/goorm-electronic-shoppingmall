@@ -26,7 +26,7 @@ $(function () {
   }, 4000);
 
   // 스크롤시 이미지 보여주기
-  $('.img_tablet, .img_phone, .home_container, .pc_container').hide();
+  $('.img_phone, .home_container, .pc_container').hide();
 
   $(window).scroll(function () {
     let phoneImg = $('.phone_main_cover').offset().top - 500;

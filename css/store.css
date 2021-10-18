@@ -253,10 +253,6 @@
   transform: scale(1.1);
 }
 
-.cart_btn:hover {
-  color: #00c6ff;
-}
-
 .store_more_btn {
   position: absolute;
   bottom: 10rem;
@@ -384,8 +380,14 @@
     transform: translateX(-50%);
   }
 
+  .heart_btn img,
+  .cart_btn img {
+    width: 20px;
+  }
+
   .buy_btn {
     width: 70%;
+    min-width: 100px;
     height: 30px;
     font-size: 0.8rem;
   }
