@@ -1,4 +1,5 @@
 <img src="https://user-images.githubusercontent.com/87287296/138562098-80cc2e55-ee5b-471e-951f-3bbf0e3e10f6.gif" alt="">
+<img src="https://user-images.githubusercontent.com/87287296/138562213-8547f2dc-2d6a-4236-a912-53bf1a03c7cf.gif" alt="">
 
 <h2>GOORM 스토어 (소형 전자제품 쇼핑몰)</h2>
   <a
