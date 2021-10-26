@@ -23,7 +23,7 @@ $(function () {
 
   setTimeout(() => {
     onModal(NONE, SIGNIN_TEXT);
-  }, 4000);
+  }, 2000);
 
   // 스크롤시 이미지 보여주기
   $('.img_phone, .home_container, .pc_container').hide();

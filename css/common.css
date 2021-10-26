@@ -463,6 +463,7 @@ textarea {
   width: 200px;
   height: 100px;
   border-radius: 10px;
+  z-index: 10000000;
 }
 
 .side_btn_cover .close_btn {

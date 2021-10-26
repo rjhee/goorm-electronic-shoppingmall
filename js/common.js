@@ -137,7 +137,6 @@ $(function () {
   function hasScrolled() {
     if (window.innerWidth >= 992) {
       let userScrollTop = $(window).scrollTop();
-
       if (Math.abs(lastScrollTop - userScrollTop) <= delta) return;
 
       if (userScrollTop > lastScrollTop && userScrollTop > navbarHeight) {
