@@ -145,7 +145,7 @@ function putProductInCart() {
       let onlyUser = confirm('회원만 사용 가능합니다! 회원가입 하시겠습니까?');
       onlyUser === true
         ? (window.location.href = 'join.html')
-        : alert('회원가입 해보세요🥳 쿠폰드려요!');
+        : alert('지금 회원 가입시 쿠폰을 드려요!');
     }
   });
 }
